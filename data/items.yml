@@ -1,0 +1,417 @@
+---
+- item_id: 1
+  name: blink
+  lname: Blink Dagger
+- item_id: 2
+  name: blades_of_attack
+  lname: Blades of Attack
+- item_id: 3
+  name: broadsword
+  lname: Broadsword
+- item_id: 4
+  name: chainmail
+  lname: Chainmail
+- item_id: 5
+  name: claymore
+  lname: Claymore
+- item_id: 6
+  name: helm_of_iron_will
+  lname: Helm of Iron Will
+  qual: component
+- item_id: 7
+  name: javelin
+  lname: Javelin
+- item_id: 8
+  name: mithril_hammer
+  lname: Mithril Hammer
+- item_id: 9
+  name: platemail
+  lname: Platemail
+- item_id: 10
+  name: quarterstaff
+  lname: Quarterstaff
+  qual: component
+- item_id: 11
+  name: quelling_blade
+  lname: Quelling Blade
+- item_id: 12
+  name: ring_of_protection
+  lname: Ring of Protection
+- item_id: 182
+  name: stout_shield
+  lname: Stout Shield
+- item_id: 13
+  name: gauntlets
+  lname: Gauntlets of Strength
+- item_id: 14
+  name: slippers
+  lname: Slippers of Agility
+- item_id: 15
+  name: mantle
+  lname: Mantle of Intelligence
+- item_id: 16
+  name: branches
+  lname: Iron Branch
+- item_id: 17
+  name: belt_of_strength
+  lname: Belt of Strength
+- item_id: 18
+  name: boots_of_elves
+  lname: Band of Elvenskin
+- item_id: 19
+  name: robe
+  lname: Robe of the Magi
+- item_id: 20
+  name: circlet
+  lname: Circlet
+- item_id: 21
+  name: ogre_axe
+  lname: Ogre Club
+- item_id: 22
+  name: blade_of_alacrity
+  lname: Blade of Alacrity
+- item_id: 23
+  name: staff_of_wizardry
+  lname: Staff of Wizardry
+- item_id: 24
+  name: ultimate_orb
+  lname: Ultimate Orb
+- item_id: 25
+  name: gloves
+  lname: Gloves of Haste
+- item_id: 26
+  name: lifesteal
+  lname: Morbid Mask
+- item_id: 27
+  name: ring_of_regen
+  lname: Ring of Regen
+- item_id: 28
+  name: sobi_mask
+  lname: Sage's Mask
+- item_id: 29
+  name: boots
+  lname: Boots of Speed
+- item_id: 30
+  name: gem
+  lname: Gem of True Sight
+- item_id: 31
+  name: cloak
+  lname: Cloak
+- item_id: 32
+  name: talisman_of_evasion
+  lname: Talisman of Evasion
+- item_id: 33
+  name: cheese
+  lname: Cheese
+- item_id: 34
+  name: magic_stick
+  lname: Magic Stick
+- item_id: 36
+  name: magic_wand
+  lname: Magic Wand
+- item_id: 37
+  name: ghost
+  lname: Ghost Scepter
+- item_id: 38
+  name: clarity
+  lname: Clarity
+- item_id: 39
+  name: flask
+  lname: Healing Salve
+- item_id: 40
+  name: dust
+  lname: Dust of Appearance
+- item_id: 41
+  name: bottle
+  lname: Bottle
+- item_id: 42
+  name: ward_observer
+  lname: Observer Ward
+- item_id: 43
+  name: ward_sentry
+  lname: Sentry Ward
+- item_id: 44
+  name: tango
+  lname: Tango
+- item_id: 241
+  name: tango_single
+  lname: Tango (Shared)
+- item_id: 45
+  name: courier
+  lname: Animal Courier
+- item_id: 46
+  name: tpscroll
+  lname: Town Portal Scroll
+- item_id: 48
+  name: travel_boots
+  lname: Boots of Travel
+- item_id: 50
+  name: phase_boots
+  lname: Phase Boots
+- item_id: 51
+  name: demon_edge
+  lname: Demon Edge
+- item_id: 52
+  name: eagle
+  lname: Eaglesong
+- item_id: 53
+  name: reaver
+  lname: Reaver
+- item_id: 54
+  name: relic
+  lname: Sacred Relic
+- item_id: 55
+  name: hyperstone
+  lname: Hyperstone
+- item_id: 56
+  name: ring_of_health
+  lname: Ring of Health
+- item_id: 57
+  name: void_stone
+  lname: Void Stone
+- item_id: 58
+  name: mystic_staff
+  lname: Mystic Staff
+- item_id: 59
+  name: energy_booster
+  lname: Energy Booster
+- item_id: 60
+  name: point_booster
+  lname: Point Booster
+- item_id: 61
+  name: vitality_booster
+  lname: Vitality Booster
+- item_id: 63
+  name: power_treads
+  lname: Power Treads
+- item_id: 65
+  name: hand_of_midas
+  lname: Hand of Midas
+- item_id: 67
+  name: oblivion_staff
+  lname: Oblivion Staff
+- item_id: 69
+  name: pers
+  lname: Perseverance
+- item_id: 71
+  name: poor_mans_shield
+  lname: Poor Man's Shield
+- item_id: 73
+  name: bracer
+  lname: Bracer
+- item_id: 75
+  name: wraith_band
+  lname: Wraith Band
+- item_id: 77
+  name: null_talisman
+  lname: Null Talisman
+- item_id: 79
+  name: mekansm
+  lname: Mekansm
+- item_id: 81
+  name: vladmir
+  lname: Vladmir's Offering
+- item_id: 84
+  name: flying_courier
+  lname: Flying Courier
+- item_id: 86
+  name: buckler
+  lname: Buckler
+- item_id: 88
+  name: ring_of_basilius
+  lname: Ring of Basilius
+- item_id: 90
+  name: pipe
+  lname: Pipe of Insight
+- item_id: 92
+  name: urn_of_shadows
+  lname: Urn of Shadows
+- item_id: 94
+  name: headdress
+  lname: Headdress
+- item_id: 96
+  name: sheepstick
+  lname: Scythe of Vyse
+- item_id: 98
+  name: orchid
+  lname: Orchid Malevolence
+- item_id: 100
+  name: cyclone
+  lname: Eul's Scepter of Divinity
+- item_id: 102
+  name: force_staff
+  lname: Force Staff
+- item_id: 104
+  name: dagon
+  lname: Dagon
+- item_id: 201
+  name: dagon_2
+  lname: Dagon
+- item_id: 202
+  name: dagon_3
+  lname: Dagon
+- item_id: 203
+  name: dagon_4
+  lname: Dagon
+- item_id: 204
+  name: dagon_5
+  lname: Dagon
+- item_id: 106
+  name: necronomicon
+  lname: Necronomicon
+- item_id: 193
+  name: necronomicon_2
+  lname: Necronomicon
+- item_id: 194
+  name: necronomicon_3
+  lname: Necronomicon
+- item_id: 108
+  name: ultimate_scepter
+  lname: Aghanim's Scepter
+- item_id: 110
+  name: refresher
+  lname: Refresher Orb
+- item_id: 112
+  name: assault
+  lname: Assault Cuirass
+- item_id: 114
+  name: heart
+  lname: Heart of Tarrasque
+- item_id: 116
+  name: black_king_bar
+  lname: Black King Bar
+- item_id: 117
+  name: aegis
+  lname: Aegis of the Immortal
+- item_id: 119
+  name: shivas_guard
+  lname: Shiva's Guard
+- item_id: 121
+  name: bloodstone
+  lname: Bloodstone
+- item_id: 123
+  name: sphere
+  lname: Linken's Sphere
+- item_id: 125
+  name: vanguard
+  lname: Vanguard
+- item_id: 127
+  name: blade_mail
+  lname: Blade Mail
+- item_id: 129
+  name: soul_booster
+  lname: Soul Booster
+- item_id: 131
+  name: hood_of_defiance
+  lname: Hood of Defiance
+- item_id: 133
+  name: rapier
+  lname: Divine Rapier
+- item_id: 135
+  name: monkey_king_bar
+  lname: Monkey King Bar
+- item_id: 137
+  name: radiance
+  lname: Radiance
+- item_id: 139
+  name: butterfly
+  lname: Butterfly
+- item_id: 141
+  name: greater_crit
+  lname: Daedalus
+- item_id: 143
+  name: basher
+  lname: Skull Basher
+- item_id: 145
+  name: bfury
+  lname: Battle Fury
+- item_id: 147
+  name: manta
+  lname: Manta Style
+- item_id: 149
+  name: lesser_crit
+  lname: Crystalys
+- item_id: 151
+  name: armlet
+  lname: Armlet of Mordiggian
+- item_id: 152
+  name: invis_sword
+  lname: Shadow Blade
+- item_id: 154
+  name: sange_and_yasha
+  lname: Sange and Yasha
+- item_id: 156
+  name: satanic
+  lname: Satanic
+- item_id: 158
+  name: mjollnir
+  lname: Mjollnir
+- item_id: 160
+  name: skadi
+  lname: Eye of Skadi
+- item_id: 162
+  name: sange
+  lname: Sange
+- item_id: 164
+  name: helm_of_the_dominator
+  lname: Helm of the Dominator
+- item_id: 166
+  name: maelstrom
+  lname: Maelstrom
+- item_id: 168
+  name: desolator
+  lname: Desolator
+- item_id: 170
+  name: yasha
+  lname: Yasha
+- item_id: 172
+  name: mask_of_madness
+  lname: Mask of Madness
+- item_id: 174
+  name: diffusal_blade
+  lname: Diffusal Blade
+- item_id: 196
+  name: diffusal_blade_2
+  lname: Diffusal Blade
+- item_id: 176
+  name: ethereal_blade
+  lname: Ethereal Blade
+- item_id: 178
+  name: soul_ring
+  lname: Soul Ring
+- item_id: 180
+  name: arcane_boots
+  lname: Arcane Boots
+- item_id: 181
+  name: orb_of_venom
+  lname: Orb of Venom
+- item_id: 185
+  name: ancient_janggo
+  lname: Drum of Endurance
+- item_id: 187
+  name: medallion_of_courage
+  lname: Medallion of Courage
+- item_id: 188
+  name: smoke_of_deceit
+  lname: Smoke of Deceit
+- item_id: 190
+  name: veil_of_discord
+  lname: Veil of Discord
+- item_id: 206
+  name: rod_of_atos
+  lname: Rod of Atos
+- item_id: 208
+  name: abyssal_blade
+  lname: Abyssal Blade
+- item_id: 210
+  name: heavens_halberd
+  lname: Heaven's Halberd
+- item_id: 212
+  name: ring_of_aquila
+  lname: Ring of Aquila
+- item_id: 214
+  name: tranquil_boots
+  lname: Tranquil Boots
+- item_id: 215
+  name: shadow_amulet
+  lname: Shadow Amulet
