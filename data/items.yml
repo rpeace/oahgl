@@ -1,4 +1,7 @@
 ---
+- item_id: 0
+  name: nothing
+  lname: No item
 - item_id: 1
   name: blink
   lname: Blink Dagger
@@ -106,6 +109,9 @@
 - item_id: 34
   name: magic_stick
   lname: Magic Stick
+- item_id: 35
+  name: recipe_magic_wand
+  lname: Recipe - Magic Wand
 - item_id: 36
   name: magic_wand
   lname: Magic Wand
@@ -142,9 +148,15 @@
 - item_id: 46
   name: tpscroll
   lname: Town Portal Scroll
+- item_id: 47
+  name: recipe_travel_boots
+  lname: Recipe - Boots of Travel
 - item_id: 48
   name: travel_boots
   lname: Boots of Travel
+- item_id: 49
+  name: recipe_phase_boots
+  lname: Recipe - Phase Boots
 - item_id: 50
   name: phase_boots
   lname: Phase Boots
@@ -181,126 +193,243 @@
 - item_id: 61
   name: vitality_booster
   lname: Vitality Booster
+- item_id: 62
+  name: recipe_power_treads
+  lname: Recipe - Power Treads
 - item_id: 63
   name: power_treads
   lname: Power Treads
+- item_id: 64
+  name: recipe_hand_of_midas
+  lname: Recipe - Hand of Midas
 - item_id: 65
   name: hand_of_midas
   lname: Hand of Midas
+- item_id: 66
+  name: recipe_oblivion_staff
+  lname: Recipe - Oblivion Staff
 - item_id: 67
   name: oblivion_staff
   lname: Oblivion Staff
+- item_id: 68
+  name: recipe_pers
+  lname: Recipe - Perseverance
 - item_id: 69
   name: pers
   lname: Perseverance
+- item_id: 70
+  name: recipe_poor_mans_shield
+  lname: Recipe - Poor Man's Shield
 - item_id: 71
   name: poor_mans_shield
   lname: Poor Man's Shield
+- item_id: 72
+  name: recipe_bracer
+  lname: Recipe - Bracer
 - item_id: 73
   name: bracer
   lname: Bracer
+- item_id: 74
+  name: recipe_wraith_band
+  lname: Recipe - Wraith Band
 - item_id: 75
   name: wraith_band
   lname: Wraith Band
+- item_id: 76
+  name: recipe_null_talisman
+  lname: Recipe - Null Talisman
 - item_id: 77
   name: null_talisman
   lname: Null Talisman
+- item_id: 78
+  name: recipe_mekansm
+  lname: Recipe - Mekansm
 - item_id: 79
   name: mekansm
   lname: Mekansm
+- item_id: 80
+  name: recipe_vladmir
+  lname: Recipe - Vladmir's Offering
 - item_id: 81
   name: vladmir
   lname: Vladmir's Offering
 - item_id: 84
   name: flying_courier
   lname: Flying Courier
+- item_id: 85
+  name: recipe_buckler
+  lname: Recipe - Buckler
 - item_id: 86
   name: buckler
   lname: Buckler
+- item_id: 87
+  name: recipe_ring_of_basilius
+  lname: Recipe - Ring of Basilius
 - item_id: 88
   name: ring_of_basilius
   lname: Ring of Basilius
+- item_id: 89
+  name: recipe_pipe
+  lname: Recipe - Pipe of Insight
 - item_id: 90
   name: pipe
   lname: Pipe of Insight
+- item_id: 91
+  name: recipe_urn_of_shadows
+  lname: Recipe - Urn of Shadows
 - item_id: 92
   name: urn_of_shadows
   lname: Urn of Shadows
+- item_id: 93
+  name: recipe_headdress
+  lname: Recipe - Headdress
 - item_id: 94
   name: headdress
   lname: Headdress
+- item_id: 95
+  name: recipe_sheepstick
+  lname: Recipe - Scythe of Vyse
 - item_id: 96
   name: sheepstick
   lname: Scythe of Vyse
+- item_id: 97
+  name: recipe_orchid
+  lname: Recipe - Orchid Malevolence
 - item_id: 98
   name: orchid
   lname: Orchid Malevolence
+- item_id: 99
+  name: recipe_cyclone
+  lname: Recipe - Eul's Scepter of Divinity
 - item_id: 100
   name: cyclone
   lname: Eul's Scepter of Divinity
+- item_id: 101
+  name: recipe_force_staff
+  lname: Recipe - Force Staff
 - item_id: 102
   name: force_staff
   lname: Force Staff
+- item_id: 103
+  name: recipe_dagon
+  lname: Recipe - Dagon
+- item_id: 197
+  name: recipe_dagon_2
+  lname: Recipe - Dagon 2
+- item_id: 198
+  name: recipe_dagon_3
+  lname: Recipe - Dagon 3
+- item_id: 199
+  name: recipe_dagon_4
+  lname: Recipe - Dagon 4
+- item_id: 200
+  name: recipe_dagon_5
+  lname: Recipe - Dagon 5
 - item_id: 104
   name: dagon
   lname: Dagon
 - item_id: 201
   name: dagon_2
-  lname: Dagon
+  lname: Dagon 2
 - item_id: 202
   name: dagon_3
-  lname: Dagon
+  lname: Dagon 3
 - item_id: 203
   name: dagon_4
-  lname: Dagon
+  lname: Dagon 4
 - item_id: 204
   name: dagon_5
-  lname: Dagon
+  lname: Dagon 5
+- item_id: 105
+  name: recipe_necronomicon
+  lname: Recipe - Necronomicon
+- item_id: 191
+  name: recipe_necronomicon_2
+  lname: Recipe - Necronomicon II
+- item_id: 192
+  name: recipe_necronomicon_3
+  lname: Recipe - Necronomicon III
 - item_id: 106
   name: necronomicon
   lname: Necronomicon
 - item_id: 193
   name: necronomicon_2
-  lname: Necronomicon
+  lname: Necronomicon II
 - item_id: 194
   name: necronomicon_3
-  lname: Necronomicon
+  lname: Necronomicon III
+- item_id: 107
+  name: recipe_ultimate_scepter
+  lname: Recipe - Aghanim's Scepter
 - item_id: 108
   name: ultimate_scepter
   lname: Aghanim's Scepter
+- item_id: 109
+  name: recipe_refresher
+  lname: Recipe - Refresher Orb
 - item_id: 110
   name: refresher
   lname: Refresher Orb
+- item_id: 111
+  name: recipe_assault
+  lname: Recipe - Assault Cuirass
 - item_id: 112
   name: assault
   lname: Assault Cuirass
+- item_id: 113
+  name: recipe_heart
+  lname: Recipe - Heart of Tarrasque
 - item_id: 114
   name: heart
   lname: Heart of Tarrasque
+- item_id: 115
+  name: recipe_black_king_bar
+  lname: Recipe - Black King Bar
 - item_id: 116
   name: black_king_bar
   lname: Black King Bar
 - item_id: 117
   name: aegis
   lname: Aegis of the Immortal
+- item_id: 118
+  name: recipe_shivas_guard
+  lname: Recipe - Shiva's Guard
 - item_id: 119
   name: shivas_guard
   lname: Shiva's Guard
+- item_id: 120
+  name: recipe_bloodstone
+  lname: Recipe - Bloodstone
 - item_id: 121
   name: bloodstone
   lname: Bloodstone
+- item_id: 122
+  name: recipe_sphere
+  lname: Recipe - Linken's Sphere
 - item_id: 123
   name: sphere
   lname: Linken's Sphere
+- item_id: 124
+  name: recipe_vanguard
+  lname: Recipe - Vanguard
 - item_id: 125
   name: vanguard
   lname: Vanguard
+- item_id: 126
+  name: recipe_blade_mail
+  lname: Recipe - Blade Mail
 - item_id: 127
   name: blade_mail
   lname: Blade Mail
+- item_id: 128
+  name: recipe_soul_booster
+  lname: Recipe - Soul Booster
 - item_id: 129
   name: soul_booster
   lname: Soul Booster
+- item_id: 130
+  name: recipe_hood_of_defiance
+  lname: Recipe - Hood of Defiance
 - item_id: 131
   name: hood_of_defiance
   lname: Hood of Defiance
@@ -310,27 +439,45 @@
 - item_id: 135
   name: monkey_king_bar
   lname: Monkey King Bar
+- item_id: 136
+  name: recipe_radiance
+  lname: Recipe - Radiance
 - item_id: 137
   name: radiance
   lname: Radiance
 - item_id: 139
   name: butterfly
   lname: Butterfly
+- item_id: 140
+  name: recipe_greater_crit
+  lname: Recipe - Daedalus
 - item_id: 141
   name: greater_crit
   lname: Daedalus
+- item_id: 142
+  name: recipe_basher
+  lname: Recipe - Skull Basher
 - item_id: 143
   name: basher
   lname: Skull Basher
 - item_id: 145
   name: bfury
   lname: Battle Fury
+- item_id: 146
+  name: recipe_manta
+  lname: Recipe - Manta Style
 - item_id: 147
   name: manta
   lname: Manta Style
+- item_id: 148
+  name: recipe_lesser_crit
+  lname: Recipe - Crystalys
 - item_id: 149
   name: lesser_crit
   lname: Crystalys
+- item_id: 150
+  name: recipe_armlet
+  lname: Recipe - Armlet of Mordiggian
 - item_id: 151
   name: armlet
   lname: Armlet of Mordiggian
@@ -340,33 +487,60 @@
 - item_id: 154
   name: sange_and_yasha
   lname: Sange and Yasha
+- item_id: 155
+  name: recipe_satanic
+  lname: Recipe - Satanic
 - item_id: 156
   name: satanic
   lname: Satanic
+- item_id: 157
+  name: recipe_mjollnir
+  lname: Recipe - Mjollnir
 - item_id: 158
   name: mjollnir
   lname: Mjollnir
 - item_id: 160
   name: skadi
   lname: Eye of Skadi
+- item_id: 161
+  name: recipe_sange
+  lname: Recipe - Sange
 - item_id: 162
   name: sange
   lname: Sange
 - item_id: 164
   name: helm_of_the_dominator
   lname: Helm of the Dominator
+- item_id: 165
+  name: recipe_maelstrom
+  lname: Recipe - Maelstrom
 - item_id: 166
   name: maelstrom
   lname: Maelstrom
+- item_id: 167
+  name: recipe_desolator
+  lname: Recipe - Desolator
 - item_id: 168
   name: desolator
   lname: Desolator
+- item_id: 69
+  name: recipe_yasha
+  lname: Recipe - Yasha
 - item_id: 170
   name: yasha
   lname: Yasha
+- item_id: 171
+  name: recipe_mask_of_madness
+  lname: Recipe - Mask of Madness
 - item_id: 172
   name: mask_of_madness
   lname: Mask of Madness
+- item_id: 173
+  name: recipe_diffusal_blade
+  lname: Recipe - Diffusal Blade
+- item_id: 195
+  name: recipe_diffusal_blade_2
+  lname: Recipe - Diffusal Blade
 - item_id: 174
   name: diffusal_blade
   lname: Diffusal Blade
@@ -376,6 +550,9 @@
 - item_id: 176
   name: ethereal_blade
   lname: Ethereal Blade
+- item_id: 177
+  name: recipe_soul_ring
+  lname: Recipe - Soul Ring
 - item_id: 178
   name: soul_ring
   lname: Soul Ring
@@ -385,15 +562,24 @@
 - item_id: 181
   name: orb_of_venom
   lname: Orb of Venom
+- item_id: 184
+  name: recipe_ancient_jango
+  lname: Recipe - Drum of Endurance
 - item_id: 185
   name: ancient_janggo
   lname: Drum of Endurance
+- item_id: 186
+  name: recipe_medallion_of_courage
+  lname: Recipe - Medallion of Courage
 - item_id: 187
   name: medallion_of_courage
   lname: Medallion of Courage
 - item_id: 188
   name: smoke_of_deceit
   lname: Smoke of Deceit
+- item_id: 189
+  name: recipe_veil_of_discord
+  lname: Recipe - Veil of Discord
 - item_id: 190
   name: veil_of_discord
   lname: Veil of Discord

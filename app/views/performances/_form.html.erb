@@ -1,0 +1,93 @@
+<%= form_for(@performance) do |f| %>
+  <% if @performance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@performance.errors.count, "error") %> prohibited this performance from being saved:</h2>
+
+      <ul>
+      <% @performance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :performance_id %><br>
+    <%= f.text_field :performance_id %>
+  </div>
+  <div class="field">
+    <%= f.label :hero_id %><br>
+    <%= f.text_field :hero_id %>
+  </div>
+  <div class="field">
+    <%= f.label :item_0 %><br>
+    <%= f.text_field :item_0 %>
+  </div>
+  <div class="field">
+    <%= f.label :item_1 %><br>
+    <%= f.text_field :item_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :item_2 %><br>
+    <%= f.text_field :item_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :item_3 %><br>
+    <%= f.text_field :item_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :item_4 %><br>
+    <%= f.text_field :item_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :item_5 %><br>
+    <%= f.text_field :item_5 %>
+  </div>
+  <div class="field">
+    <%= f.label :level %><br>
+    <%= f.number_field :level %>
+  </div>
+  <div class="field">
+    <%= f.label :kills %><br>
+    <%= f.number_field :kills %>
+  </div>
+  <div class="field">
+    <%= f.label :deaths %><br>
+    <%= f.number_field :deaths %>
+  </div>
+  <div class="field">
+    <%= f.label :assists %><br>
+    <%= f.number_field :assists %>
+  </div>
+  <div class="field">
+    <%= f.label :last_hits %><br>
+    <%= f.number_field :last_hits %>
+  </div>
+  <div class="field">
+    <%= f.label :denies %><br>
+    <%= f.number_field :denies %>
+  </div>
+  <div class="field">
+    <%= f.label :gpm %><br>
+    <%= f.number_field :gpm %>
+  </div>
+  <div class="field">
+    <%= f.label :xpm %><br>
+    <%= f.number_field :xpm %>
+  </div>
+  <div class="field">
+    <%= f.label :hero_damage %><br>
+    <%= f.number_field :hero_damage %>
+  </div>
+  <div class="field">
+    <%= f.label :tower_damage %><br>
+    <%= f.number_field :tower_damage %>
+  </div>
+  <div class="field">
+    <%= f.label :hero_healing %><br>
+    <%= f.number_field :hero_healing %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

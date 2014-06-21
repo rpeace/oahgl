@@ -54,6 +54,7 @@ match_ids.each do |match_id|
 	json = JSON.parse(File.open("matches/"+match_id.to_s+".json").read)
 	json['result']['players'].each do |p|
 		outFile.write("- performance_id: "+match_id.to_s+"-"+p['account_id'].to_s+"\n")
+		outFile.write("  player_id: "+p['account_id'].to_s+"\n")
 		outFile.write("  hero_id: "+p['hero_id'].to_s+"\n")
 		outFile.write("  item_0: "+p['item_0'].to_s+"\n")
 		outFile.write("  item_1: "+p['item_1'].to_s+"\n")

@@ -1,0 +1,1 @@
+rails generate scaffold Performance performance_id:string hero_id:string item_0:string item_1:string item_2:string item_3:string item_4:string item_5:string level:integer kills:integer deaths:integer assists:integer last_hits:integer denies:integer gpm:integer xpm:integer hero_damage:integer tower_damage:integer hero_healing:integer

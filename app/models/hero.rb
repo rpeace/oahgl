@@ -2,7 +2,6 @@ require 'json'
 require 'frozen_record'
 
 class Hero < FrozenRecord::Base
-
 	self.base_path = 'data/'
 
 	def get_portrait_url_large
