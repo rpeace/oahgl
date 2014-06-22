@@ -1,19 +1,36 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Portrait:</strong>
-  <img src="http://cdn.dota2.com/apps/dota2/images/heroes/"+<%= @hero.name %>+"_sb.png">
+  <h1><%= @hero.lname %></h1>
 </p>
 
 <p>
-  <strong>Lname:</strong>
-  <%= @hero.lname %>
+  <img src = <%= @hero.get_portrait_url_large %>
 </p>
 
 <p>
-  <strong>Hero:</strong>
-  <%= @hero.hero_id %>
+  <strong>Number of times picked:</strong>
+  <%= Match.num_picked(@hero.hero_id) %>
+  (<%= number_with_precision(100.0 * Match.num_picked(@hero.hero_id) / Match.where('ap_remake'=>false).size, :precision=>2) %>%)
+  (Pick rank: <%= Match.hero_pick_rank(@hero.hero_id) %>)
 </p>
+
+<p>
+  <strong>Number of times banned:</strong>
+  <%= Match.num_banned(@hero.hero_id) %>
+  (<%= number_with_precision(100.0 * Match.num_banned(@hero.hero_id) / Match.where('ap_remake'=>false).size, :precision=>2) %>%)
+  (Ban rank: <%= Match.hero_ban_rank(@hero.hero_id) %>)
+</p>
+
+<p>
+  <strong>Record:</strong><br />
+  <strong>W:</strong>
+  <%= Match.num_won(@hero.hero_id) %>
+  <strong> L:</strong>
+  <%= Match.num_lost(@hero.hero_id) %>
+  (<%= number_with_precision(100.0 * Match.num_won(@hero.hero_id)/(Match.num_won(@hero.hero_id)+Match.num_lost(@hero.hero_id)), :precision=>2) %>% win rate)
+</p>
+
 
 <%= link_to 'Edit', edit_hero_path(@hero) %> |
 <%= link_to 'Back', heros_path %>
