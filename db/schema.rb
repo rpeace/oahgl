@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140620193401) do
+ActiveRecord::Schema.define(version: 20140621221032) do
 
   create_table "heros", force: true do |t|
     t.string   "name"
@@ -25,6 +25,48 @@ ActiveRecord::Schema.define(version: 20140620193401) do
     t.string   "name"
     t.integer  "item_id"
     t.string   "lname"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "matches", force: true do |t|
+    t.string   "match_id"
+    t.string   "winner"
+    t.string   "duration"
+    t.string   "radiant_team_id"
+    t.string   "dire_team_id"
+    t.string   "player_0_id"
+    t.string   "player_1_id"
+    t.string   "player_2_id"
+    t.string   "player_3_id"
+    t.string   "player_4_id"
+    t.string   "player_5_id"
+    t.string   "player_6_id"
+    t.string   "player_7_id"
+    t.string   "player_8_id"
+    t.string   "player_9_id"
+    t.string   "first_pick"
+    t.string   "ap_remake"
+    t.string   "d_ban_0"
+    t.string   "r_ban_0"
+    t.string   "d_ban_1"
+    t.string   "r_ban_1"
+    t.string   "d_pick_0"
+    t.string   "r_pick_0"
+    t.string   "r_pick_1"
+    t.string   "d_pick_1"
+    t.string   "d_ban_2"
+    t.string   "r_ban_2"
+    t.string   "d_ban_3"
+    t.string   "r_ban_3"
+    t.string   "r_pick_2"
+    t.string   "d_pick_2"
+    t.string   "r_pick_3"
+    t.string   "d_pick_3"
+    t.string   "r_ban_4"
+    t.string   "d_ban_4"
+    t.string   "r_pick_4"
+    t.string   "d_pick_4"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

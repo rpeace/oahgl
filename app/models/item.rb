@@ -3,6 +3,11 @@ require 'frozen_record'
 
 class Item < FrozenRecord::Base
 
+	def self.get_portrait_url(iid)
+		url = find_by_item_id(iid).get_portrait_url_large
+		url
+	end
+
 	self.base_path = 'data/'
 
 	def get_portrait_url_large

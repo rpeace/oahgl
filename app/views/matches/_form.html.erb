@@ -1,0 +1,165 @@
+<%= form_for(@match) do |f| %>
+  <% if @match.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@match.errors.count, "error") %> prohibited this match from being saved:</h2>
+
+      <ul>
+      <% @match.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :match_id %><br>
+    <%= f.text_field :match_id %>
+  </div>
+  <div class="field">
+    <%= f.label :winner %><br>
+    <%= f.text_field :winner %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br>
+    <%= f.text_field :duration %>
+  </div>
+  <div class="field">
+    <%= f.label :radiant_team_id %><br>
+    <%= f.text_field :radiant_team_id %>
+  </div>
+  <div class="field">
+    <%= f.label :dire_team_id %><br>
+    <%= f.text_field :dire_team_id %>
+  </div>
+  <div class="field">
+    <%= f.label :player_0_id %><br>
+    <%= f.text_field :player_0_id %>
+  </div>
+  <div class="field">
+    <%= f.label :player_1_id %><br>
+    <%= f.text_field :player_1_id %>
+  </div>
+  <div class="field">
+    <%= f.label :player_2_id %><br>
+    <%= f.text_field :player_2_id %>
+  </div>
+  <div class="field">
+    <%= f.label :player_3_id %><br>
+    <%= f.text_field :player_3_id %>
+  </div>
+  <div class="field">
+    <%= f.label :player_4_id %><br>
+    <%= f.text_field :player_4_id %>
+  </div>
+  <div class="field">
+    <%= f.label :player_5_id %><br>
+    <%= f.text_field :player_5_id %>
+  </div>
+  <div class="field">
+    <%= f.label :player_6_id %><br>
+    <%= f.text_field :player_6_id %>
+  </div>
+  <div class="field">
+    <%= f.label :player_7_id %><br>
+    <%= f.text_field :player_7_id %>
+  </div>
+  <div class="field">
+    <%= f.label :player_8_id %><br>
+    <%= f.text_field :player_8_id %>
+  </div>
+  <div class="field">
+    <%= f.label :player_9_id %><br>
+    <%= f.text_field :player_9_id %>
+  </div>
+  <div class="field">
+    <%= f.label :first_pick %><br>
+    <%= f.text_field :first_pick %>
+  </div>
+  <div class="field">
+    <%= f.label :ap_remake %><br>
+    <%= f.text_field :ap_remake %>
+  </div>
+  <div class="field">
+    <%= f.label :d_ban_0 %><br>
+    <%= f.text_field :d_ban_0 %>
+  </div>
+  <div class="field">
+    <%= f.label :r_ban_0 %><br>
+    <%= f.text_field :r_ban_0 %>
+  </div>
+  <div class="field">
+    <%= f.label :d_ban_1 %><br>
+    <%= f.text_field :d_ban_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :r_ban_1 %><br>
+    <%= f.text_field :r_ban_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :d_pick_0 %><br>
+    <%= f.text_field :d_pick_0 %>
+  </div>
+  <div class="field">
+    <%= f.label :r_pick_0 %><br>
+    <%= f.text_field :r_pick_0 %>
+  </div>
+  <div class="field">
+    <%= f.label :r_pick_1 %><br>
+    <%= f.text_field :r_pick_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :d_pick_1 %><br>
+    <%= f.text_field :d_pick_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :d_ban_2 %><br>
+    <%= f.text_field :d_ban_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :r_ban_2 %><br>
+    <%= f.text_field :r_ban_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :d_ban_3 %><br>
+    <%= f.text_field :d_ban_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :r_ban_3 %><br>
+    <%= f.text_field :r_ban_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :r_pick_2 %><br>
+    <%= f.text_field :r_pick_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :d_pick_2 %><br>
+    <%= f.text_field :d_pick_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :r_pick_3 %><br>
+    <%= f.text_field :r_pick_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :d_pick_3 %><br>
+    <%= f.text_field :d_pick_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :r_ban_4 %><br>
+    <%= f.text_field :r_ban_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :d_ban_4 %><br>
+    <%= f.text_field :d_ban_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :r_pick_4 %><br>
+    <%= f.text_field :r_pick_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :d_pick_4 %><br>
+    <%= f.text_field :d_pick_4 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

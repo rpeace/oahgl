@@ -77,6 +77,73 @@ match_ids.each do |match_id|
 end
 outFile.close()
 
+outFile = File.open("matches.yml","w")
+match_ids.each do |match_id|
+	p match_id
+	json = JSON.parse(File.open("matches/"+match_id.to_s+".json").read)['result']
+	outFile.write("- match_id: "+match_id.to_s+"\n")
+	if json['radiant_win'] == "true"
+		outFile.write("  winner: radiant\n")
+	else
+		outFile.write("  winner: dire\n")
+	end
+	outFile.write("  duration: "+json['duration'].to_s+"\n")
+	outFile.write("  radiant_team_id: "+json['radiant_team_id'].to_s+"\n")
+	outFile.write("  dire_team_id: "+json['dire_team_id'].to_s+"\n")
+	for i in 0..9
+		outFile.write("  player_"+i.to_s+"_id: "+json['players'][i]['account_id'].to_s+"\n")
+	end
+	
+	if json['game_mode'] == 2
+		if json['picks_bans'][0]['team'] == 1
+			outFile.write("  first_pick: dire\n")
+		else
+			outFile.write("  first_pick: radiant\n")
+		end
+		outFile.write("  ap_remake: false\n")
+		dp = 0
+		rp = 0
+		db = 0
+		rb = 0
+		json['picks_bans'].each do |pick|
+			if pick['is_pick'] == true
+				if pick['team'] == 0
+					outFile.write("  r_pick_"+rp.to_s+": "+pick['hero_id'].to_s+"\n")
+					rp += 1
+				else
+					outFile.write("  d_pick_"+dp.to_s+": "+pick['hero_id'].to_s+"\n")
+					dp += 1
+				end
+			else
+				if pick['team'] == 0
+					outFile.write("  r_ban_"+rb.to_s+": "+pick['hero_id'].to_s+"\n")
+					rb += 1
+				else
+					outFile.write("  d_ban_"+db.to_s+": "+pick['hero_id'].to_s+"\n")
+					db += 1
+				end
+			end
+		end
+		while db <= 4
+			outFile.write("  d_ban_"+db.to_s+": NA\n")
+			db += 1
+		end
+		while rb <= 4
+			outFile.write("  r_ban_"+rb.to_s+": NA\n")
+			rb += 1
+		end
+	else
+		outFile.write("  ap_remake: true\n")
+		for i in 0..4
+			outFile.write("  r_pick_"+rp.to_s+": NA\n")
+			outFile.write("  d_pick_"+rp.to_s+": NA\n")
+			outFile.write("  r_ban_"+rp.to_s+": NA\n")
+			outFile.write("  d_ban_"+rp.to_s+": NA\n")
+		end
+	end
+end
+outFile.close()
+
 outFile = File.open("abilitybuilds.yml","w")
 match_ids.each do |match_id|
 	json = JSON.parse(File.open("matches/"+match_id.to_s+".json").read)

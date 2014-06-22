@@ -1,0 +1,23 @@
+<% performances.each do |performance| %>
+  <tr>
+    <td><%= performance.performance_id %></td>
+    <td><img src=<%= Hero.get_portrait_url(performance.hero_id) %>></td>
+    <td><img src=<%= Item.get_portrait_url(performance.item_0) %>></td>
+    <td><img src=<%= Item.get_portrait_url(performance.item_1) %>></td>
+    <td><img src=<%= Item.get_portrait_url(performance.item_2) %>></td>
+    <td><img src=<%= Item.get_portrait_url(performance.item_3) %>></td>
+    <td><img src=<%= Item.get_portrait_url(performance.item_4) %>></td>
+    <td><img src=<%= Item.get_portrait_url(performance.item_5) %>></td>
+    <td><%= performance.level %></td>
+    <td><%= performance.kills %></td>
+    <td><%= performance.deaths %></td>
+    <td><%= performance.assists %></td>
+    <td><%= performance.last_hits %></td>
+    <td><%= performance.denies %></td>
+    <td><%= performance.gpm %></td>
+    <td><%= performance.xpm %></td>
+    <td><%= performance.hero_damage %></td>
+    <td><%= performance.tower_damage %></td>
+    <td><%= performance.hero_healing %></td>
+  </tr>
+<% end %>

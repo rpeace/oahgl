@@ -29,13 +29,13 @@
     <% @performances.each do |performance| %>
       <tr>
         <td><%= performance.performance_id %></td>
-        <td><img src=<%= performance.get_hero_portrait_url %>></td>
-        <td><img src=<%= performance.get_item_portrait_url(performance.item_0) %>></td>
-        <td><img src=<%= performance.get_item_portrait_url(performance.item_1) %>></td>
-        <td><img src=<%= performance.get_item_portrait_url(performance.item_2) %>></td>
-        <td><img src=<%= performance.get_item_portrait_url(performance.item_3) %>></td>
-        <td><img src=<%= performance.get_item_portrait_url(performance.item_4) %>></td>
-        <td><img src=<%= performance.get_item_portrait_url(performance.item_5) %>></td>
+        <td><img src=<%= Hero.get_portrait_url(performance.hero_id) %>></td>
+        <td><img src=<%= Item.get_portrait_url(performance.item_0) %> height="42" width="32"></td>
+        <td><img src=<%= Item.get_portrait_url(performance.item_1) %> height="42" width="32"></td>
+        <td><img src=<%= Item.get_portrait_url(performance.item_2) %> height="42" width="32"></td>
+        <td><img src=<%= Item.get_portrait_url(performance.item_3) %> height="42" width="32"></td>
+        <td><img src=<%= Item.get_portrait_url(performance.item_4) %> height="42" width="32"></td>
+        <td><img src=<%= Item.get_portrait_url(performance.item_5) %> height="42" width="32"></td>
         <td><%= performance.level %></td>
         <td><%= performance.kills %></td>
         <td><%= performance.deaths %></td>
