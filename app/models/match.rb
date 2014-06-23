@@ -64,6 +64,13 @@ class Match < FrozenRecord::Base
 		numLost
 	end
 
+	def self.win_percentage(hid)
+		if num_picked(hid) == 0
+			return 0.0
+		end
+		100.0 * num_won(hid) / num_picked(hid)
+	end
+
 	def won_game(hid)
 		if [r_pick_0,r_pick_1,r_pick_2,r_pick_3,r_pick_4].include? hid and winner=='radiant'
 			return true

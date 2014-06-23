@@ -4,19 +4,40 @@ require 'frozen_record'
 class Hero < FrozenRecord::Base
 	self.base_path = 'data/'
 
-	def self.get_num_played(hid)
-		Performance.where(hero_id: hid).size
+	def self.all_by_picks
+		rheros = []
+		hero_ranks = Hash.new
+		Hero.all.each do |hero|
+			hero_ranks[hero] = Match.num_picked(hero.hero_id)
+		end
+		hero_ranks.keys.sort_by {|e| hero_ranks[e] }.reverse!.each do |hero|
+			rheros.push(hero)
+		end
+		rheros
 	end
 
-	def self.get_rank(hid)
-		rank = 1
-		numPlayed = Performance.where(hero_id: hid).size
+	def self.all_by_winrate
+		rheros = []
+		hero_ranks = Hash.new
 		Hero.all.each do |hero|
-			if Performance.where(hero_id: hero.hero_id).size > numPlayed
-				rank += 1
-			end
+			hero_ranks[hero] = Match.win_percentage(hero.hero_id)
 		end
-		rank
+		hero_ranks.keys.sort_by {|e| hero_ranks[e] }.reverse!.each do |hero|
+			rheros.push(hero)
+		end
+		rheros
+	end
+
+	def self.all_by_bans
+		rheros = []
+		hero_ranks = Hash.new
+		Hero.all.each do |hero|
+			hero_ranks[hero] = Match.num_banned(hero.hero_id)
+		end
+		hero_ranks.keys.sort_by {|e| hero_ranks[e] }.reverse!.each do |hero|
+			rheros.push(hero)
+		end
+		rheros
 	end
 
 	def self.get_portrait_url(hid)
@@ -32,21 +53,6 @@ class Hero < FrozenRecord::Base
 	def get_portrait_url_small
 		url = "http://cdn.dota2.com/apps/dota2/images/heroes/"+name+"_sb.png" 
 		url
-	end
-
-	def num_played
-		Performance.where(hero_id: hero_id).size
-	end
-
-	def hero_rank
-		rank = 1
-		numPlayed = num_played
-		Hero.all.each do |hero|
-			if Performance.where(hero_id: hero.hero_id).size > numPlayed
-				rank += 1
-			end
-		end
-		rank
 	end
 
 	def to_param

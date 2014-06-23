@@ -11,14 +11,14 @@ class Item < FrozenRecord::Base
 	self.base_path = 'data/'
 
 	def get_portrait_url_large
-		if item_id != "0"
+		if item_id != 0
 			if name.include? "recipe"
 				url = "http://cdn.dota2.com/apps/dota2/images/items/recipe_lg.png"
 			else
 				url = "http://cdn.dota2.com/apps/dota2/images/items/"+name+"_lg.png"
 			end
 		else
-			url = "http://cdn.dota2.com/apps/dota2/images/items/blink_lg.png"
+			url = "no_item.png"
 		end
 		url
 	end

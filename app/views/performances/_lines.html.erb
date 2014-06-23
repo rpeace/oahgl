@@ -1,47 +1,7 @@
 <% @performances[0..4].each do |performance| %>
-  <tr>
-    <td><%= performance.performance_id %></td>
-    <td><img src=<%= Hero.get_portrait_url(performance.hero_id) %>></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_0) %> height="32" width="42"></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_1) %> height="32" width="42"></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_2) %> height="32" width="42"></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_3) %> height="32" width="42"></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_4) %> height="32" width="42"></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_5) %> height="32" width="42"></td>
-    <td><%= performance.level %></td>
-    <td><%= performance.kills %></td>
-    <td><%= performance.deaths %></td>
-    <td><%= performance.assists %></td>
-    <td><%= performance.last_hits %></td>
-    <td><%= performance.denies %></td>
-    <td><%= performance.gpm %></td>
-    <td><%= performance.xpm %></td>
-    <td><%= performance.hero_damage %></td>
-    <td><%= performance.tower_damage %></td>
-    <td><%= performance.hero_healing %></td>
-  </tr>
+  <%= render partial: "performances/line", locals: { performance: performance } %>
 <% end %>
 <tr><td><br /></td></tr>
 <% @performances[5..9].each do |performance| %>
-  <tr>
-    <td><%= performance.performance_id %></td>
-    <td><img src=<%= Hero.get_portrait_url(performance.hero_id) %>></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_0) %> height="32" width="42"></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_1) %> height="32" width="42"></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_2) %> height="32" width="42"></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_3) %> height="32" width="42"></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_4) %> height="32" width="42"></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_5) %> height="32" width="42"></td>
-    <td><%= performance.level %></td>
-    <td><%= performance.kills %></td>
-    <td><%= performance.deaths %></td>
-    <td><%= performance.assists %></td>
-    <td><%= performance.last_hits %></td>
-    <td><%= performance.denies %></td>
-    <td><%= performance.gpm %></td>
-    <td><%= performance.xpm %></td>
-    <td><%= performance.hero_damage %></td>
-    <td><%= performance.tower_damage %></td>
-    <td><%= performance.hero_healing %></td>
-  </tr>
+  <%= render partial: "performances/line", locals: { performance: performance } %>
 <% end %>

@@ -1,13 +1,12 @@
-<% performances.each do |performance| %>
   <tr>
     <td><%= performance.performance_id %></td>
-    <td><img src=<%= Hero.get_portrait_url(performance.hero_id) %>></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_0) %>></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_1) %>></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_2) %>></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_3) %>></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_4) %>></td>
-    <td><img src=<%= Item.get_portrait_url(performance.item_5) %>></td>
+    <td><%= image_tag(Hero.get_portrait_url(performance.hero_id)) %></td>
+    <td><%= image_tag(Item.get_portrait_url(performance.item_0), size:"42x32") %> </td>
+    <td><%= image_tag(Item.get_portrait_url(performance.item_1), size:"42x32") %> </td>
+    <td><%= image_tag(Item.get_portrait_url(performance.item_2), size:"42x32") %> </td>
+    <td><%= image_tag(Item.get_portrait_url(performance.item_3), size:"42x32") %> </td>
+    <td><%= image_tag(Item.get_portrait_url(performance.item_4), size:"42x32") %> </td>
+    <td><%= image_tag(Item.get_portrait_url(performance.item_5), size:"42x32") %> </td>
     <td><%= performance.level %></td>
     <td><%= performance.kills %></td>
     <td><%= performance.deaths %></td>
@@ -20,4 +19,3 @@
     <td><%= performance.tower_damage %></td>
     <td><%= performance.hero_healing %></td>
   </tr>
-<% end %>
