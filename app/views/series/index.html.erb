@@ -1,0 +1,49 @@
+<h1>SCOREBOARD!!!</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Team</th>
+      <th>Wins</th>
+      <th>Losses</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% Series.teams_by_wins.each do |team_id| %>
+      <tr>
+        <td><%= team_id %></td>
+        <td><%= Series.num_wins(team_id) %></td>
+        <td><%= Series.num_losses(team_id) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h1>Listing series</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Series</th>
+      <th>Series type</th>
+      <th>Matches</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @series.each do |series| %>
+      <tr>
+        <td><%= series.series_id %></td>
+        <td><%= series.series_type %></td>
+        <td><%= series.matches %></td>
+        <td><%= link_to 'Edit', edit_series_path(series) %></td>
+        <td><%= link_to 'Destroy', series, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Series', new_series_path %>

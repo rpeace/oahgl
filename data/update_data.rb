@@ -5,30 +5,27 @@ require 'yaml'
 league_id = "600"
 p "Pulling data for league " + league_id.to_s
 steam_key = "14DECACD2740DB8213B5DA8438E301C5"
-outFile = File.open("match_history.json", "w")
+
 match_ids = []
 
+# Read in match history from GetMatchHistory API calls
+# Write to match_history.json and save match IDs to match_ids array
 p "Reading first Match History list..."
 page = open("https://api.steampowered.com/IDOTA2Match_570/GetMatchHistory/V001/?league_id=600&key="+steam_key).read
 sleep(1)
 json = JSON.parse(page)
-json['result']['matches'].each do |match|
-	match_ids << match['match_id']
-end
-outFile.write(page)
-
-while json['result']['results_remaining'] > 0 do
-	next_match_id = match_ids[-1] - 1
+while JSON.parse(page)['result']['results_remaining'] > 0 do
+	next_match_id = json['result']['matches'][-1]['match_id'] - 1
 	p "Reading next Match History list..."
 	page = open("https://api.steampowered.com/IDOTA2Match_570/GetMatchHistory/V001/?league_id=600&start_at_match_id="+next_match_id.to_s+"&key="+steam_key).read
 	sleep(1)
-	json = JSON.parse(page)
-	json['result']['matches'].each do |match|
-		match_ids << match['match_id']
-	end
+	json['result']['matches'] += JSON.parse(page)['result']['matches']
 end
-
-outFile.write(page)
+json['result']['matches'].each do |match|
+	match_ids << match['match_id']
+end
+outFile = File.open("match_history.json", "w")
+outFile.write(JSON.pretty_generate(json))
 outFile.close()
 
 outFile = File.open("match_id_list.json", "w")
@@ -82,7 +79,7 @@ match_ids.each do |match_id|
 	p match_id
 	json = JSON.parse(File.open("matches/"+match_id.to_s+".json").read)['result']
 	outFile.write("- match_id: "+match_id.to_s+"\n")
-	if json['radiant_win'] == "true"
+	if json['radiant_win'] == true
 		outFile.write("  winner: radiant\n")
 	else
 		outFile.write("  winner: dire\n")
@@ -160,3 +157,30 @@ match_ids.each do |match_id|
 	end
 end
 outFile.close()
+
+outFile = File.open("series.yml", "w")
+matches = JSON.parse(File.open("match_history.json").read)['result']['matches']
+last_series = 0
+unique_series_id = 9999
+series_match_ids = []
+matches.each do |match|
+	current_series = match['series_id']
+	if current_series != last_series or current_series == 0
+		if not series_match_ids.empty?
+			outFile.write("  matches: "+series_match_ids.to_s+"\n")
+			match_json = JSON.parse(File.open("matches/"+series_match_ids[0].to_s+".json").read)
+			outFile.write("  team_1_id: "+match_json['result']['radiant_team_id'].to_s+"\n")
+			outFile.write("  team_2_id: "+match_json['result']['dire_team_id'].to_s+"\n")
+			series_match_ids = []
+		end
+		outFile.write("- series_id: "+unique_series_id.to_s+"\n")
+		unique_series_id -= 1
+		outFile.write("  series_type: "+match['series_type'].to_s+"\n")
+	end
+	series_match_ids.push(match['match_id'])
+	last_series = current_series
+end
+outFile.write("  matches: "+series_match_ids.to_s+"\n")
+match_json = JSON.parse(File.open("matches/"+series_match_ids[0].to_s+".json").read)
+outFile.write("  team_1_id: "+match_json['result']['radiant_team_id'].to_s+"\n")
+outFile.write("  team_2_id: "+match_json['result']['dire_team_id'].to_s+"\n")

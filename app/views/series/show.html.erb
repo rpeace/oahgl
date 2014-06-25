@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Series:</strong>
+  <%= @series.series_id %>
+</p>
+
+<p>
+  <strong>Series type:</strong>
+  <%= @series.series_type %>
+</p>
+
+<p>
+  <strong>Matches:</strong>
+  <%= @series.matches %>
+</p>
+
+<%= link_to 'Edit', edit_series_path(@series) %> |
+<%= link_to 'Back', series_index_path %>

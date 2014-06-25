@@ -65,10 +65,19 @@ class Match < FrozenRecord::Base
 	end
 
 	def self.win_percentage(hid)
-		if num_picked(hid) == 0
+		numPicked = num_picked(hid) 
+		if numPicked == 0
 			return 0.0
 		end
-		100.0 * num_won(hid) / num_picked(hid)
+		100.0 * num_won(hid) / numPicked
+	end
+
+	def winning_team
+		if winner == "dire"
+			return dire_team_id
+		else
+			return radiant_team_id
+		end
 	end
 
 	def won_game(hid)

@@ -36,7 +36,7 @@
   r_pick_4: 69
   d_pick_4: 40
 - match_id: 683782650
-  winner: dire
+  winner: radiant
   duration: 3927
   radiant_team_id: 40
   dire_team_id: 26
@@ -73,7 +73,7 @@
   r_pick_4: 75
   d_pick_4: 86
 - match_id: 683949082
-  winner: dire
+  winner: radiant
   duration: 2154
   radiant_team_id: 26
   dire_team_id: 40
@@ -147,7 +147,7 @@
   r_pick_4: 6
   d_pick_4: 33
 - match_id: 684084787
-  winner: dire
+  winner: radiant
   duration: 2473
   radiant_team_id: 26
   dire_team_id: 40
@@ -184,7 +184,7 @@
   r_pick_4: 87
   d_pick_4: 41
 - match_id: 683300315
-  winner: dire
+  winner: radiant
   duration: 1662
   radiant_team_id: 40
   dire_team_id: 293390
@@ -221,7 +221,7 @@
   r_pick_4: 42
   d_pick_4: 102
 - match_id: 683374616
-  winner: dire
+  winner: radiant
   duration: 2835
   radiant_team_id: 293390
   dire_team_id: 40
@@ -332,7 +332,7 @@
   r_pick_4: 27
   d_pick_4: 15
 - match_id: 681999237
-  winner: dire
+  winner: radiant
   duration: 2938
   radiant_team_id: 40
   dire_team_id: 1595874
@@ -369,7 +369,7 @@
   r_pick_4: 10
   d_pick_4: 66
 - match_id: 681491340
-  winner: dire
+  winner: radiant
   duration: 3180
   radiant_team_id: 26
   dire_team_id: 293390
@@ -406,7 +406,7 @@
   r_pick_4: 29
   d_pick_4: 78
 - match_id: 681632587
-  winner: dire
+  winner: radiant
   duration: 3302
   radiant_team_id: 293390
   dire_team_id: 26
@@ -443,7 +443,7 @@
   r_pick_4: 87
   d_pick_4: 55
 - match_id: 681777722
-  winner: dire
+  winner: radiant
   duration: 2702
   radiant_team_id: 26
   dire_team_id: 293390
@@ -480,7 +480,7 @@
   r_pick_4: 93
   d_pick_4: 21
 - match_id: 680140517
-  winner: dire
+  winner: radiant
   duration: 2021
   radiant_team_id: 293390
   dire_team_id: 26
@@ -554,7 +554,7 @@
   r_pick_4: 41
   d_pick_4: 58
 - match_id: 680003044
-  winner: dire
+  winner: radiant
   duration: 2272
   radiant_team_id: 40
   dire_team_id: 1055544
@@ -665,7 +665,7 @@
   r_pick_4: 88
   d_pick_4: 63
 - match_id: 679818285
-  winner: dire
+  winner: radiant
   duration: 2152
   radiant_team_id: 1595874
   dire_team_id: 1371515
@@ -702,7 +702,7 @@
   r_pick_4: 31
   d_pick_4: 63
 - match_id: 679793120
-  winner: dire
+  winner: radiant
   duration: 1954
   radiant_team_id: 1055544
   dire_team_id: 1335685
@@ -739,7 +739,7 @@
   d_pick_4: 21
   r_pick_4: 67
 - match_id: 679789578
-  winner: dire
+  winner: radiant
   duration: 1778
   radiant_team_id: 26
   dire_team_id: 40
@@ -776,7 +776,7 @@
   r_pick_4: 42
   d_pick_4: 1
 - match_id: 679787098
-  winner: dire
+  winner: radiant
   duration: 4573
   radiant_team_id: 1194118
   dire_team_id: 1161668
@@ -813,7 +813,7 @@
   r_pick_4: 34
   d_pick_4: 47
 - match_id: 679702198
-  winner: dire
+  winner: radiant
   duration: 2533
   radiant_team_id: 293390
   dire_team_id: 55
@@ -887,7 +887,7 @@
   r_pick_4: 79
   d_pick_4: 62
 - match_id: 679642123
-  winner: dire
+  winner: radiant
   duration: 1635
   radiant_team_id: 1194118
   dire_team_id: 1371515
@@ -961,7 +961,7 @@
   r_pick_4: 11
   d_pick_4: 33
 - match_id: 679502128
-  winner: dire
+  winner: radiant
   duration: 1592
   radiant_team_id: 26
   dire_team_id: 1161668
@@ -998,7 +998,7 @@
   r_pick_4: 60
   d_pick_4: 87
 - match_id: 679501763
-  winner: dire
+  winner: radiant
   duration: 1240
   radiant_team_id: 293390
   dire_team_id: 40
@@ -1072,7 +1072,7 @@
   r_pick_4: 89
   d_pick_4: 13
 - match_id: 679500572
-  winner: dire
+  winner: radiant
   duration: 4821
   radiant_team_id: 1595874
   dire_team_id: 55
@@ -1109,7 +1109,7 @@
   d_pick_4: 78
   r_pick_4: 76
 - match_id: 678365221
-  winner: dire
+  winner: radiant
   duration: 1790
   radiant_team_id: 26
   dire_team_id: 1371515
@@ -1146,7 +1146,7 @@
   r_pick_4: 49
   d_pick_4: 34
 - match_id: 678360536
-  winner: dire
+  winner: radiant
   duration: 2121
   radiant_team_id: 40
   dire_team_id: 1335685
@@ -1183,7 +1183,7 @@
   d_pick_4: 64
   r_pick_4: 6
 - match_id: 678359304
-  winner: dire
+  winner: radiant
   duration: 2341
   radiant_team_id: 293390
   dire_team_id: 1595874
@@ -1257,7 +1257,7 @@
   r_pick_4: 69
   d_pick_4: 80
 - match_id: 678215431
-  winner: dire
+  winner: radiant
   duration: 1465
   radiant_team_id: 293390
   dire_team_id: 1335685
@@ -1368,7 +1368,7 @@
   r_pick_4: 10
   d_pick_4: 74
 - match_id: 678213665
-  winner: dire
+  winner: radiant
   duration: 1718
   radiant_team_id: 1161668
   dire_team_id: 40
@@ -1405,7 +1405,7 @@
   r_pick_4: 72
   d_pick_4: 54
 - match_id: 678064820
-  winner: dire
+  winner: radiant
   duration: 1529
   radiant_team_id: 1161668
   dire_team_id: 1335685
@@ -1479,7 +1479,7 @@
   r_pick_4: 52
   d_pick_4: 31
 - match_id: 678061731
-  winner: dire
+  winner: radiant
   duration: 1838
   radiant_team_id: 26
   dire_team_id: 55
@@ -1553,7 +1553,7 @@
   r_pick_4: 63
   d_pick_4: 7
 - match_id: 677897918
-  winner: dire
+  winner: radiant
   duration: 1441
   radiant_team_id: 293390
   dire_team_id: 1194118
@@ -1664,7 +1664,7 @@
   r_pick_4: 93
   d_pick_4: 33
 - match_id: 677895646
-  winner: dire
+  winner: radiant
   duration: 2029
   radiant_team_id: 40
   dire_team_id: 55
@@ -1701,7 +1701,7 @@
   r_pick_4: 63
   d_pick_4: 2
 - match_id: 677739913
-  winner: dire
+  winner: radiant
   duration: 1979
   radiant_team_id: 55
   dire_team_id: 1335685
@@ -1812,7 +1812,7 @@
   r_pick_4: 15
   d_pick_4: 49
 - match_id: 677738070
-  winner: dire
+  winner: radiant
   duration: 1879
   radiant_team_id: 1194118
   dire_team_id: 1055544
@@ -1960,7 +1960,7 @@
   r_pick_4: 51
   d_pick_4: 13
 - match_id: 677590955
-  winner: dire
+  winner: radiant
   duration: 1879
   radiant_team_id: 1161668
   dire_team_id: 1371515
@@ -2034,7 +2034,7 @@
   r_pick_4: 45
   d_pick_4: 15
 - match_id: 677459470
-  winner: dire
+  winner: radiant
   duration: 2921
   radiant_team_id: 26
   dire_team_id: 1055544
@@ -2145,7 +2145,7 @@
   r_pick_4: 53
   d_pick_4: 96
 - match_id: 675370824
-  winner: dire
+  winner: radiant
   duration: 1473
   radiant_team_id: 15
   dire_team_id: 1312775
@@ -2293,7 +2293,7 @@
   d_pick_4: 63
   r_pick_4: 101
 - match_id: 675240359
-  winner: dire
+  winner: radiant
   duration: 3128
   radiant_team_id: 1312775
   dire_team_id: 1059824
@@ -2404,7 +2404,7 @@
   d_pick_4: 31
   r_pick_4: 46
 - match_id: 673481500
-  winner: dire
+  winner: radiant
   duration: 1009
   radiant_team_id: 1059824
   dire_team_id: 20
@@ -2515,7 +2515,7 @@
   d_pick_4: 78
   r_pick_4: 93
 - match_id: 673369513
-  winner: dire
+  winner: radiant
   duration: 2516
   radiant_team_id: 15
   dire_team_id: 1312775
@@ -2589,7 +2589,7 @@
   d_pick_4: 15
   r_pick_4: 80
 - match_id: 672054173
-  winner: dire
+  winner: radiant
   duration: 1895
   radiant_team_id: 1059824
   dire_team_id: 484909
@@ -2626,7 +2626,7 @@
   d_pick_4: 63
   r_pick_4: 21
 - match_id: 672053069
-  winner: dire
+  winner: radiant
   duration: 2082
   radiant_team_id: 1312775
   dire_team_id: 20
@@ -2663,7 +2663,7 @@
   d_pick_4: 63
   r_pick_4: 12
 - match_id: 671922990
-  winner: dire
+  winner: radiant
   duration: 2445
   radiant_team_id: 15
   dire_team_id: 1059824
@@ -2700,7 +2700,7 @@
   d_pick_4: 66
   r_pick_4: 69
 - match_id: 671874467
-  winner: dire
+  winner: radiant
   duration: 1648
   radiant_team_id: 20
   dire_team_id: 1520578
@@ -2736,7 +2736,7 @@
   r_ban_: NA
   d_ban_: NA
 - match_id: 671851710
-  winner: dire
+  winner: radiant
   duration: 590
   radiant_team_id: 633833
   dire_team_id: 1373008
@@ -2773,7 +2773,7 @@
   d_pick_4: 31
   r_pick_4: 4
 - match_id: 671846248
-  winner: dire
+  winner: radiant
   duration: 1130
   radiant_team_id: 484909
   dire_team_id: 1392666
@@ -2810,7 +2810,7 @@
   d_pick_4: 55
   r_pick_4: 53
 - match_id: 671844122
-  winner: dire
+  winner: radiant
   duration: 2991
   radiant_team_id: 1312775
   dire_team_id: 465398
@@ -2958,7 +2958,7 @@
   d_pick_4: 10
   r_pick_4: 63
 - match_id: 671752016
-  winner: dire
+  winner: radiant
   duration: 2886
   radiant_team_id: 20
   dire_team_id: 1392666
@@ -2995,7 +2995,7 @@
   d_pick_4: 15
   r_pick_4: 55
 - match_id: 671682165
-  winner: dire
+  winner: radiant
   duration: 2250
   radiant_team_id: 15
   dire_team_id: 484909
@@ -3106,7 +3106,7 @@
   d_pick_4: 13
   r_pick_4: 11
 - match_id: 671675270
-  winner: dire
+  winner: radiant
   duration: 1837
   radiant_team_id: 1520578
   dire_team_id: 465398
@@ -3254,7 +3254,7 @@
   d_pick_4: 98
   r_pick_4: 3
 - match_id: 671619214
-  winner: dire
+  winner: radiant
   duration: 3637
   radiant_team_id: 1312775
   dire_team_id: 15
@@ -3328,7 +3328,7 @@
   d_pick_4: 92
   r_pick_4: 62
 - match_id: 670604245
-  winner: dire
+  winner: radiant
   duration: 760
   radiant_team_id: 15
   dire_team_id: 20
@@ -3364,7 +3364,7 @@
   r_ban_: NA
   d_ban_: NA
 - match_id: 670575639
-  winner: dire
+  winner: radiant
   duration: 2124
   radiant_team_id: 1059824
   dire_team_id: 1392666
@@ -3401,7 +3401,7 @@
   d_pick_4: 11
   r_pick_4: 63
 - match_id: 670575175
-  winner: dire
+  winner: radiant
   duration: 1560
   radiant_team_id: 633833
   dire_team_id: 484909
@@ -3475,7 +3475,7 @@
   d_pick_4: 40
   r_pick_4: 80
 - match_id: 670476346
-  winner: dire
+  winner: radiant
   duration: 1579
   radiant_team_id: 1520578
   dire_team_id: 1312775
@@ -3549,7 +3549,7 @@
   d_pick_4: 25
   r_pick_4: 45
 - match_id: 670470179
-  winner: dire
+  winner: radiant
   duration: 2048
   radiant_team_id: 484909
   dire_team_id: 465398
@@ -3586,7 +3586,7 @@
   d_pick_4: 15
   r_pick_4: 78
 - match_id: 670458989
-  winner: dire
+  winner: radiant
   duration: 2241
   radiant_team_id: 15
   dire_team_id: 1373008
@@ -3623,7 +3623,7 @@
   d_pick_4: 60
   r_pick_4: 98
 - match_id: 670370659
-  winner: dire
+  winner: radiant
   duration: 1937
   radiant_team_id: 1520578
   dire_team_id: 1373008
@@ -3660,7 +3660,7 @@
   d_pick_4: 49
   r_pick_4: 3
 - match_id: 670370590
-  winner: dire
+  winner: radiant
   duration: 2030
   radiant_team_id: 20
   dire_team_id: 465398
@@ -3697,7 +3697,7 @@
   d_pick_4: 76
   r_pick_4: 27
 - match_id: 670370270
-  winner: dire
+  winner: radiant
   duration: 1750
   radiant_team_id: 1312775
   dire_team_id: 1392666
@@ -3734,7 +3734,7 @@
   d_pick_4: 33
   r_pick_4: 40
 - match_id: 670369902
-  winner: dire
+  winner: radiant
   duration: 1920
   radiant_team_id: 1059824
   dire_team_id: 484909
@@ -3808,7 +3808,7 @@
   d_pick_4: 26
   r_pick_4: 6
 - match_id: 670288135
-  winner: dire
+  winner: radiant
   duration: 1008
   radiant_team_id: 484909
   dire_team_id: 1312775
@@ -3845,7 +3845,7 @@
   d_pick_4: 47
   r_pick_4: 45
 - match_id: 670287814
-  winner: dire
+  winner: radiant
   duration: 1825
   radiant_team_id: 15
   dire_team_id: 633833
@@ -3882,7 +3882,7 @@
   d_pick_4: 88
   r_pick_4: 30
 - match_id: 670265032
-  winner: dire
+  winner: radiant
   duration: 3516
   radiant_team_id: 1373008
   dire_team_id: 1392666
@@ -3919,7 +3919,7 @@
   d_pick_4: 59
   r_pick_4: 47
 - match_id: 670204896
-  winner: dire
+  winner: radiant
   duration: 1808
   radiant_team_id: 633833
   dire_team_id: 465398
@@ -4067,7 +4067,7 @@
   d_pick_4: 92
   r_pick_4: 30
 - match_id: 670103245
-  winner: dire
+  winner: radiant
   duration: 2680
   radiant_team_id: 484909
   dire_team_id: 1373008
@@ -4178,7 +4178,7 @@
   d_pick_4: 29
   r_pick_4: 54
 - match_id: 669978947
-  winner: dire
+  winner: radiant
   duration: 1476
   radiant_team_id: 15
   dire_team_id: 1392666
@@ -4252,7 +4252,7 @@
   r_pick_4: 62
   d_pick_4: 3
 - match_id: 669978229
-  winner: dire
+  winner: radiant
   duration: 2297
   radiant_team_id: 484909
   dire_team_id: 1520578
@@ -4326,7 +4326,7 @@
   d_pick_4: 13
   r_pick_4: 7
 - match_id: 668456784
-  winner: dire
+  winner: radiant
   duration: 1600
   radiant_team_id: 1277104
   dire_team_id: 1148284
@@ -4363,7 +4363,7 @@
   d_pick_4: 46
   r_pick_4: 55
 - match_id: 668512374
-  winner: dire
+  winner: radiant
   duration: 2472
   radiant_team_id: 1148284
   dire_team_id: 1277104
@@ -4400,7 +4400,7 @@
   d_pick_4: 1
   r_pick_4: 41
 - match_id: 668585041
-  winner: dire
+  winner: radiant
   duration: 2185
   radiant_team_id: 1277104
   dire_team_id: 1148284
@@ -4511,7 +4511,7 @@
   d_pick_4: 93
   r_pick_4: 15
 - match_id: 668358769
-  winner: dire
+  winner: radiant
   duration: 3213
   radiant_team_id: 1148284
   dire_team_id: 24
@@ -4548,7 +4548,7 @@
   d_pick_4: 15
   r_pick_4: 89
 - match_id: 666517998
-  winner: dire
+  winner: radiant
   duration: 2971
   radiant_team_id: 24
   dire_team_id: 543897
@@ -4585,7 +4585,7 @@
   r_pick_4: 64
   d_pick_4: 48
 - match_id: 666643697
-  winner: dire
+  winner: radiant
   duration: 3194
   radiant_team_id: 543897
   dire_team_id: 24
@@ -4622,7 +4622,7 @@
   r_pick_4: 9
   d_pick_4: 58
 - match_id: 666796448
-  winner: dire
+  winner: radiant
   duration: 2856
   radiant_team_id: 24
   dire_team_id: 543897
@@ -4696,7 +4696,7 @@
   d_pick_4: 20
   r_pick_4: 28
 - match_id: 666296174
-  winner: dire
+  winner: radiant
   duration: 1676
   radiant_team_id: 1277104
   dire_team_id: 1148284
@@ -4733,7 +4733,7 @@
   d_pick_4: 88
   r_pick_4: 15
 - match_id: 665140039
-  winner: dire
+  winner: radiant
   duration: 3170
   radiant_team_id: 543897
   dire_team_id: 1075534
@@ -4770,7 +4770,7 @@
   d_pick_4: 8
   r_pick_4: 15
 - match_id: 664973961
-  winner: dire
+  winner: radiant
   duration: 2644
   radiant_team_id: 543897
   dire_team_id: 24
@@ -4807,7 +4807,7 @@
   r_pick_4: 50
   d_pick_4: 1
 - match_id: 664789734
-  winner: dire
+  winner: radiant
   duration: 2987
   radiant_team_id: 24
   dire_team_id: 1075534
@@ -4844,7 +4844,7 @@
   d_pick_4: 99
   r_pick_4: 56
 - match_id: 664732744
-  winner: dire
+  winner: radiant
   duration: 2678
   radiant_team_id: 1283482
   dire_team_id: 1277104
@@ -4881,7 +4881,7 @@
   d_pick_4: 98
   r_pick_4: 9
 - match_id: 664529609
-  winner: dire
+  winner: radiant
   duration: 2815
   radiant_team_id: 254140
   dire_team_id: 1075534
@@ -4918,7 +4918,7 @@
   r_pick_4: 43
   d_pick_4: 9
 - match_id: 664519568
-  winner: dire
+  winner: radiant
   duration: 1408
   radiant_team_id: 1105664
   dire_team_id: 24
@@ -5102,7 +5102,7 @@
   r_pick_4: 49
   d_pick_4: 43
 - match_id: 664399142
-  winner: dire
+  winner: radiant
   duration: 1363
   radiant_team_id: 1075534
   dire_team_id: 494197
@@ -5139,7 +5139,7 @@
   d_pick_4: 70
   r_pick_4: 9
 - match_id: 664398157
-  winner: dire
+  winner: radiant
   duration: 2392
   radiant_team_id: 543897
   dire_team_id: 1105664
@@ -5176,7 +5176,7 @@
   d_pick_4: 9
   r_pick_4: 46
 - match_id: 664326618
-  winner: dire
+  winner: radiant
   duration: 1589
   radiant_team_id: 254140
   dire_team_id: 1105664
@@ -5250,7 +5250,7 @@
   d_pick_4: 17
   r_pick_4: 98
 - match_id: 664299704
-  winner: dire
+  winner: radiant
   duration: 2048
   radiant_team_id: 24
   dire_team_id: 1277104
@@ -5287,7 +5287,7 @@
   d_pick_4: 58
   r_pick_4: 33
 - match_id: 664297619
-  winner: dire
+  winner: radiant
   duration: 1856
   radiant_team_id: 1283482
   dire_team_id: 1075534
@@ -5435,7 +5435,7 @@
   r_pick_4: 16
   d_pick_4: 42
 - match_id: 664211697
-  winner: dire
+  winner: radiant
   duration: 1859
   radiant_team_id: 1277104
   dire_team_id: 1245961
@@ -5472,7 +5472,7 @@
   d_pick_4: 98
   r_pick_4: 34
 - match_id: 661951244
-  winner: dire
+  winner: radiant
   duration: 1759
   radiant_team_id: 1531850
   dire_team_id: 2163
@@ -5509,7 +5509,7 @@
   d_pick_4: 74
   r_pick_4: 58
 - match_id: 662024558
-  winner: dire
+  winner: radiant
   duration: 905
   radiant_team_id: 2163
   dire_team_id: 1531850
@@ -5545,7 +5545,7 @@
   r_ban_: NA
   d_ban_: NA
 - match_id: 662051194
-  winner: dire
+  winner: radiant
   duration: 1684
   radiant_team_id: 1531850
   dire_team_id: 2163
@@ -5582,7 +5582,7 @@
   d_pick_4: 33
   r_pick_4: 55
 - match_id: 662090746
-  winner: dire
+  winner: radiant
   duration: 2880
   radiant_team_id: 2163
   dire_team_id: 1531850
@@ -5619,7 +5619,7 @@
   d_pick_4: 88
   r_pick_4: 63
 - match_id: 663816066
-  winner: dire
+  winner: radiant
   duration: 1160
   radiant_team_id: 2163
   dire_team_id: 1531850
@@ -5693,7 +5693,7 @@
   d_pick_4: 55
   r_pick_4: 36
 - match_id: 662944050
-  winner: dire
+  winner: radiant
   duration: 2822
   radiant_team_id: 1283482
   dire_team_id: 1105664
@@ -5767,7 +5767,7 @@
   d_pick_4: 10
   r_pick_4: 7
 - match_id: 662937323
-  winner: dire
+  winner: radiant
   duration: 2741
   radiant_team_id: 254140
   dire_team_id: 24
@@ -5803,7 +5803,7 @@
   r_ban_: NA
   d_ban_: NA
 - match_id: 662811772
-  winner: dire
+  winner: radiant
   duration: 1199
   radiant_team_id: 24
   dire_team_id: 494197
@@ -5877,7 +5877,7 @@
   d_pick_4: 86
   r_pick_4: 66
 - match_id: 662796077
-  winner: dire
+  winner: radiant
   duration: 1741
   radiant_team_id: 543897
   dire_team_id: 254140
@@ -5951,7 +5951,7 @@
   d_pick_4: 55
   r_pick_4: 63
 - match_id: 662704317
-  winner: dire
+  winner: radiant
   duration: 2490
   radiant_team_id: 24
   dire_team_id: 1283482
@@ -6062,7 +6062,7 @@
   d_pick_4: 76
   r_pick_4: 85
 - match_id: 662669467
-  winner: dire
+  winner: radiant
   duration: 1639
   radiant_team_id: 1148284
   dire_team_id: 1075534
@@ -6099,7 +6099,7 @@
   d_pick_4: 73
   r_pick_4: 28
 - match_id: 662643673
-  winner: dire
+  winner: radiant
   duration: 2131
   radiant_team_id: 1277104
   dire_team_id: 254140
@@ -6136,7 +6136,7 @@
   d_pick_4: 87
   r_pick_4: 39
 - match_id: 662591030
-  winner: dire
+  winner: radiant
   duration: 3610
   radiant_team_id: 543897
   dire_team_id: 1283482
@@ -6246,7 +6246,7 @@
   r_pick_4: 31
   d_pick_4: 33
 - match_id: 662535351
-  winner: dire
+  winner: radiant
   duration: 4053
   radiant_team_id: 494197
   dire_team_id: 254140
@@ -6283,7 +6283,7 @@
   d_pick_4: 7
   r_pick_4: 63
 - match_id: 662514307
-  winner: dire
+  winner: radiant
   duration: 1194
   radiant_team_id: 1277104
   dire_team_id: 1148284
@@ -6357,7 +6357,7 @@
   r_pick_4: 13
   d_pick_4: 60
 - match_id: 662497165
-  winner: dire
+  winner: radiant
   duration: 2811
   radiant_team_id: 543897
   dire_team_id: 1245961
@@ -6394,7 +6394,7 @@
   d_pick_4: 49
   r_pick_4: 69
 - match_id: 662435967
-  winner: dire
+  winner: radiant
   duration: 2563
   radiant_team_id: 1105664
   dire_team_id: 1148284
@@ -6615,7 +6615,7 @@
   d_pick_4: 69
   r_pick_4: 98
 - match_id: 662332063
-  winner: dire
+  winner: radiant
   duration: 1226
   radiant_team_id: 1283482
   dire_team_id: 494197
@@ -6726,7 +6726,7 @@
   r_pick_4: 53
   d_pick_4: 3
 - match_id: 661796577
-  winner: dire
+  winner: radiant
   duration: 1646
   radiant_team_id: 2163
   dire_team_id: 1453020
@@ -6837,7 +6837,7 @@
   r_pick_4: 103
   d_pick_4: 98
 - match_id: 660367687
-  winner: dire
+  winner: radiant
   duration: 2498
   radiant_team_id: 1453020
   dire_team_id: 720700
@@ -6874,7 +6874,7 @@
   d_pick_4: 63
   r_pick_4: 12
 - match_id: 659912531
-  winner: dire
+  winner: radiant
   duration: 2063
   radiant_team_id: 1531850
   dire_team_id: 2163
@@ -7059,7 +7059,7 @@
   d_pick_4: 70
   r_pick_4: 47
 - match_id: 658794490
-  winner: dire
+  winner: radiant
   duration: 3514
   radiant_team_id: 720700
   dire_team_id: 2163
@@ -7096,7 +7096,7 @@
   r_pick_4: 28
   d_pick_4: 39
 - match_id: 658792104
-  winner: dire
+  winner: radiant
   duration: 2934
   radiant_team_id: 1252040
   dire_team_id: 1318686
@@ -7133,7 +7133,7 @@
   d_pick_4: 82
   r_pick_4: 58
 - match_id: 658758992
-  winner: dire
+  winner: radiant
   duration: 2671
   radiant_team_id: 94968
   dire_team_id: 1453020
@@ -7170,7 +7170,7 @@
   d_pick_4: 63
   r_pick_4: 89
 - match_id: 658753872
-  winner: dire
+  winner: radiant
   duration: 2919
   radiant_team_id: 1252040
   dire_team_id: 1387750
@@ -7207,7 +7207,7 @@
   d_pick_4: 19
   r_pick_4: 42
 - match_id: 658752961
-  winner: dire
+  winner: radiant
   duration: 2981
   radiant_team_id: 2163
   dire_team_id: 1481943
@@ -7244,7 +7244,7 @@
   r_pick_4: 88
   d_pick_4: 15
 - match_id: 658750033
-  winner: dire
+  winner: radiant
   duration: 2054
   radiant_team_id: 720700
   dire_team_id: 1531850
@@ -7318,7 +7318,7 @@
   d_pick_4: 23
   r_pick_4: 29
 - match_id: 658704672
-  winner: dire
+  winner: radiant
   duration: 1221
   radiant_team_id: 367492
   dire_team_id: 720700
@@ -7392,7 +7392,7 @@
   r_pick_4: 103
   d_pick_4: 78
 - match_id: 658702989
-  winner: dire
+  winner: radiant
   duration: 1405
   radiant_team_id: 1531850
   dire_team_id: 1387750
@@ -7429,7 +7429,7 @@
   d_pick_4: 67
   r_pick_4: 17
 - match_id: 658650701
-  winner: dire
+  winner: radiant
   duration: 1250
   radiant_team_id: 1531850
   dire_team_id: 1318686
@@ -7466,7 +7466,7 @@
   d_pick_4: 46
   r_pick_4: 51
 - match_id: 658648866
-  winner: dire
+  winner: radiant
   duration: 1071
   radiant_team_id: 1481943
   dire_team_id: 1321909
@@ -7503,7 +7503,7 @@
   d_pick_4: 73
   r_pick_4: 47
 - match_id: 658647820
-  winner: dire
+  winner: radiant
   duration: 2029
   radiant_team_id: 367492
   dire_team_id: 94968
@@ -7614,7 +7614,7 @@
   d_pick_4: 15
   r_pick_4: 23
 - match_id: 658536142
-  winner: dire
+  winner: radiant
   duration: 2646
   radiant_team_id: 1481943
   dire_team_id: 1387750
@@ -7725,7 +7725,7 @@
   r_pick_4: 19
   d_pick_4: 49
 - match_id: 658410102
-  winner: dire
+  winner: radiant
   duration: 2830
   radiant_team_id: 1387750
   dire_team_id: 367492
@@ -7762,7 +7762,7 @@
   d_pick_4: 56
   r_pick_4: 48
 - match_id: 658409507
-  winner: dire
+  winner: radiant
   duration: 2730
   radiant_team_id: 1252040
   dire_team_id: 1453020
@@ -7836,7 +7836,7 @@
   d_pick_4: 42
   r_pick_4: 59
 - match_id: 658403479
-  winner: dire
+  winner: radiant
   duration: 1908
   radiant_team_id: 1531850
   dire_team_id: 94968
@@ -7910,7 +7910,7 @@
   r_pick_4: 78
   d_pick_4: 97
 - match_id: 658283136
-  winner: dire
+  winner: radiant
   duration: 1718
   radiant_team_id: 720700
   dire_team_id: 1321909
@@ -8058,7 +8058,7 @@
   d_pick_4: 29
   r_pick_4: 106
 - match_id: 657138638
-  winner: dire
+  winner: radiant
   duration: 2442
   radiant_team_id: 1531850
   dire_team_id: 2163
@@ -8095,7 +8095,7 @@
   d_pick_4: 43
   r_pick_4: 11
 - match_id: 657137532
-  winner: dire
+  winner: radiant
   duration: 900
   radiant_team_id: 1318686
   dire_team_id: 1321909
@@ -8169,7 +8169,7 @@
   d_pick_4: 88
   r_pick_4: 51
 - match_id: 657098467
-  winner: dire
+  winner: radiant
   duration: 2169
   radiant_team_id: 1531850
   dire_team_id: 367492
@@ -8354,7 +8354,7 @@
   d_pick_4: 90
   r_pick_4: 88
 - match_id: 657046328
-  winner: dire
+  winner: radiant
   duration: 2463
   radiant_team_id: 1252040
   dire_team_id: 1321909
@@ -8465,7 +8465,7 @@
   r_pick_4: 70
   d_pick_4: 39
 - match_id: 656979559
-  winner: dire
+  winner: radiant
   duration: 2017
   radiant_team_id: 1387750
   dire_team_id: 1321909
@@ -8539,7 +8539,7 @@
   r_pick_4: 19
   d_pick_4: 48
 - match_id: 656975736
-  winner: dire
+  winner: radiant
   duration: 1667
   radiant_team_id: 94968
   dire_team_id: 1481943
@@ -8613,7 +8613,7 @@
   d_pick_4: 23
   r_pick_4: 89
 - match_id: 656889032
-  winner: dire
+  winner: radiant
   duration: 2366
   radiant_team_id: 720700
   dire_team_id: 1387750
@@ -8724,7 +8724,7 @@
   d_pick_4: 30
   r_pick_4: 51
 - match_id: 656877636
-  winner: dire
+  winner: radiant
   duration: 2514
   radiant_team_id: 1252040
   dire_team_id: 1481943
@@ -8872,7 +8872,7 @@
   d_pick_4: 3
   r_pick_4: 75
 - match_id: 656759304
-  winner: dire
+  winner: radiant
   duration: 2467
   radiant_team_id: 1387750
   dire_team_id: 1318686
@@ -8946,7 +8946,7 @@
   d_pick_4: 60
   r_pick_4: 100
 - match_id: 656631467
-  winner: dire
+  winner: radiant
   duration: 1437
   radiant_team_id: 1387750
   dire_team_id: 94968
