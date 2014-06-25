@@ -37,6 +37,11 @@ gem 'spring',        group: :development
 # Add 
 gem 'frozen_record'
 
+# use Steam OpenID Omniauth gem for authenticating Steam users
+gem 'omniauth-steam'
+# gem for managing environment variables (steam webapi key)
+gem 'figaro'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
