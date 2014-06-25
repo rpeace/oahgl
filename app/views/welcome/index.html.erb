@@ -1,5 +1,3 @@
-<div id="container">
-
 <div><h1>TI4 data!!!</h1></div>
 
 	<div id="stats" style=float:left>
@@ -28,17 +26,16 @@
 		</p>
 	</div>
 
-	<div id="login" style=float:right>
-		<h1>WHO U R</h1><br>
-		<%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_large_noborder.png"), '/auth/steam' %>
-
-		<% if session.key? :current_user %>
-		<%= image_tag session[:current_user][:image] %>
-		<p><%= session[:current_user][:nickname] %></p>
-		<p><%= session[:current_user][:uid] %></p>
-		<% end %>
-	</div>
-
 </div>
 
+<div id="login" style=float:right>
+	<h1>WHO U R</h1><br>
+	<%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_large_noborder.png"), '/auth/steam' %>
+
+	<% if session.key? :current_user %>
+	<%= image_tag session[:current_user][:image] %>
+	<p><%= session[:current_user][:nickname] %></p>
+	<p><%= session[:current_user][:uid] %></p>
+	<% end %>
 </div>
+
