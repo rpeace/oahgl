@@ -1,0 +1,429 @@
+---
+antimage:
+  name: antimage
+  hero_id: 1
+  lname: Anti-Mage
+axe:
+  name: axe
+  hero_id: 2
+  lname: Axe
+bane:
+  name: bane
+  hero_id: 3
+  lname: Bane
+bloodseeker:
+  name: bloodseeker
+  hero_id: 4
+  lname: Bloodseeker
+crystal_maiden:
+  name: crystal_maiden
+  hero_id: 5
+  lname: Crystal Maiden
+drow_ranger:
+  name: drow_ranger
+  hero_id: 6
+  lname: Drow Ranger
+earthshaker:
+  name: earthshaker
+  hero_id: 7
+  lname: Earthshaker
+juggernaut:
+  name: juggernaut
+  hero_id: 8
+  lname: Juggernaut
+mirana:
+  name: mirana
+  hero_id: 9
+  lname: Mirana
+nevermore:
+  name: nevermore
+  hero_id: 11
+  lname: Shadow Fiend
+morphling:
+  name: morphling
+  hero_id: 10
+  lname: Morphling
+phantom_lancer:
+  name: phantom_lancer
+  hero_id: 12
+  lname: Phantom Lancer
+puck:
+  name: puck
+  hero_id: 13
+  lname: Puck
+pudge:
+  name: pudge
+  hero_id: 14
+  lname: Pudge
+razor:
+  name: razor
+  hero_id: 15
+  lname: Razor
+sand_king:
+  name: sand_king
+  hero_id: 16
+  lname: Sand King
+storm_spirit:
+  name: storm_spirit
+  hero_id: 17
+  lname: Storm Spirit
+sven:
+  name: sven
+  hero_id: 18
+  lname: Sven
+tiny:
+  name: tiny
+  hero_id: 19
+  lname: Tiny
+vengefulspirit:
+  name: vengefulspirit
+  hero_id: 20
+  lname: Vengeful Spirit
+windrunner:
+  name: windrunner
+  hero_id: 21
+  lname: Windranger
+zuus:
+  name: zuus
+  hero_id: 22
+  lname: Zeus
+kunkka:
+  name: kunkka
+  hero_id: 23
+  lname: Kunkka
+lina:
+  name: lina
+  hero_id: 25
+  lname: Lina
+lich:
+  name: lich
+  hero_id: 31
+  lname: Lich
+lion:
+  name: lion
+  hero_id: 26
+  lname: Lion
+shadow_shaman:
+  name: shadow_shaman
+  hero_id: 27
+  lname: Shadow Shaman
+slardar:
+  name: slardar
+  hero_id: 28
+  lname: Slardar
+tidehunter:
+  name: tidehunter
+  hero_id: 29
+  lname: Tidehunter
+witch_doctor:
+  name: witch_doctor
+  hero_id: 30
+  lname: Witch Doctor
+riki:
+  name: riki
+  hero_id: 32
+  lname: Riki
+enigma:
+  name: enigma
+  hero_id: 33
+  lname: Enigma
+tinker:
+  name: tinker
+  hero_id: 34
+  lname: Tinker
+sniper:
+  name: sniper
+  hero_id: 35
+  lname: Sniper
+necrolyte:
+  name: necrolyte
+  hero_id: 36
+  lname: Necrophos
+warlock:
+  name: warlock
+  hero_id: 37
+  lname: Warlock
+beastmaster:
+  name: beastmaster
+  hero_id: 38
+  lname: Beastmaster
+queenofpain:
+  name: queenofpain
+  hero_id: 39
+  lname: Queen of Pain
+venomancer:
+  name: venomancer
+  hero_id: 40
+  lname: Venomancer
+faceless_void:
+  name: faceless_void
+  hero_id: 41
+  lname: Faceless Void
+skeleton_king:
+  name: skeleton_king
+  hero_id: 42
+  lname: Wraith King
+death_prophet:
+  name: death_prophet
+  hero_id: 43
+  lname: Death Prophet
+phantom_assassin:
+  name: phantom_assassin
+  hero_id: 44
+  lname: Phantom Assassin
+pugna:
+  name: pugna
+  hero_id: 45
+  lname: Pugna
+templar_assassin:
+  name: templar_assassin
+  hero_id: 46
+  lname: Templar Assassin
+viper:
+  name: viper
+  hero_id: 47
+  lname: Viper
+luna:
+  name: luna
+  hero_id: 48
+  lname: Luna
+dragon_knight:
+  name: dragon_knight
+  hero_id: 49
+  lname: Dragon Knight
+dazzle:
+  name: dazzle
+  hero_id: 50
+  lname: Dazzle
+rattletrap:
+  name: rattletrap
+  hero_id: 51
+  lname: Clockwerk
+leshrac:
+  name: leshrac
+  hero_id: 52
+  lname: Leshrac
+furion:
+  name: furion
+  hero_id: 53
+  lname: Nature's Prophet
+life_stealer:
+  name: life_stealer
+  hero_id: 54
+  lname: Lifestealer
+dark_seer:
+  name: dark_seer
+  hero_id: 55
+  lname: Dark Seer
+clinkz:
+  name: clinkz
+  hero_id: 56
+  lname: Clinkz
+omniknight:
+  name: omniknight
+  hero_id: 57
+  lname: Omniknight
+enchantress:
+  name: enchantress
+  hero_id: 58
+  lname: Enchantress
+huskar:
+  name: huskar
+  hero_id: 59
+  lname: Huskar
+night_stalker:
+  name: night_stalker
+  hero_id: 60
+  lname: Night Stalker
+broodmother:
+  name: broodmother
+  hero_id: 61
+  lname: Broodmother
+bounty_hunter:
+  name: bounty_hunter
+  hero_id: 62
+  lname: Bounty Hunter
+weaver:
+  name: weaver
+  hero_id: 63
+  lname: Weaver
+jakiro:
+  name: jakiro
+  hero_id: 64
+  lname: Jakiro
+batrider:
+  name: batrider
+  hero_id: 65
+  lname: Batrider
+chen:
+  name: chen
+  hero_id: 66
+  lname: Chen
+spectre:
+  name: spectre
+  hero_id: 67
+  lname: Spectre
+doom_bringer:
+  name: doom_bringer
+  hero_id: 69
+  lname: Doom
+ancient_apparition:
+  name: ancient_apparition
+  hero_id: 68
+  lname: Ancient Apparition
+ursa:
+  name: ursa
+  hero_id: 70
+  lname: Ursa
+spirit_breaker:
+  name: spirit_breaker
+  hero_id: 71
+  lname: Spirit Breaker
+gyrocopter:
+  name: gyrocopter
+  hero_id: 72
+  lname: Gyrocopter
+alchemist:
+  name: alchemist
+  hero_id: 73
+  lname: Alchemist
+invoker:
+  name: invoker
+  hero_id: 74
+  lname: Invoker
+silencer:
+  name: silencer
+  hero_id: 75
+  lname: Silencer
+obsidian_destroyer:
+  name: obsidian_destroyer
+  hero_id: 76
+  lname: Outworld Devourer
+lycan:
+  name: lycan
+  hero_id: 77
+  lname: Lycan
+brewmaster:
+  name: brewmaster
+  hero_id: 78
+  lname: Brewmaster
+shadow_demon:
+  name: shadow_demon
+  hero_id: 79
+  lname: Shadow Demon
+lone_druid:
+  name: lone_druid
+  hero_id: 80
+  lname: Lone Druid
+chaos_knight:
+  name: chaos_knight
+  hero_id: 81
+  lname: Chaos Knight
+meepo:
+  name: meepo
+  hero_id: 82
+  lname: Meepo
+treant:
+  name: treant
+  hero_id: 83
+  lname: Treant Protector
+ogre_magi:
+  name: ogre_magi
+  hero_id: 84
+  lname: Ogre Magi
+undying:
+  name: undying
+  hero_id: 85
+  lname: Undying
+rubick:
+  name: rubick
+  hero_id: 86
+  lname: Rubick
+disruptor:
+  name: disruptor
+  hero_id: 87
+  lname: Disruptor
+nyx_assassin:
+  name: nyx_assassin
+  hero_id: 88
+  lname: Nyx Assassin
+naga_siren:
+  name: naga_siren
+  hero_id: 89
+  lname: Naga Siren
+keeper_of_the_light:
+  name: keeper_of_the_light
+  hero_id: 90
+  lname: Keeper of the Light
+wisp:
+  name: wisp
+  hero_id: 91
+  lname: Io
+visage:
+  name: visage
+  hero_id: 92
+  lname: Visage
+slark:
+  name: slark
+  hero_id: 93
+  lname: Slark
+medusa:
+  name: medusa
+  hero_id: 94
+  lname: Medusa
+troll_warlord:
+  name: troll_warlord
+  hero_id: 95
+  lname: Troll Warlord
+centaur:
+  name: centaur
+  hero_id: 96
+  lname: Centaur Warrunner
+magnataur:
+  name: magnataur
+  hero_id: 97
+  lname: Magnus
+shredder:
+  name: shredder
+  hero_id: 98
+  lname: Timbersaw
+bristleback:
+  name: bristleback
+  hero_id: 99
+  lname: Bristleback
+tusk:
+  name: tusk
+  hero_id: 100
+  lname: Tusk
+skywrath_mage:
+  name: skywrath_mage
+  hero_id: 101
+  lname: Skywrath Mage
+abaddon:
+  name: abaddon
+  hero_id: 102
+  lname: Abaddon
+elder_titan:
+  name: elder_titan
+  hero_id: 103
+  lname: Elder Titan
+legion_commander:
+  name: legion_commander
+  hero_id: 104
+  lname: Legion Commander
+ember_spirit:
+  name: ember_spirit
+  hero_id: 106
+  lname: Ember Spirit
+earth_spirit:
+  name: earth_spirit
+  hero_id: 107
+  lname: Earth Spirit
+terrorblade:
+  name: terrorblade
+  hero_id: 109
+  lname: Terrorblade
+phoenix:
+  name: phoenix
+  hero_id: 110
+  lname: Phoenix

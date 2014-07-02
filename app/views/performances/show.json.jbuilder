@@ -1,1 +1,1 @@
-json.extract! @performance, :id, :performance_id, :hero_id, :item_0, :item_1, :item_2, :item_3, :item_4, :item_5, :level, :kills, :deaths, :assists, :last_hits, :denies, :gpm, :xpm, :hero_damage, :tower_damage, :hero_healing, :created_at, :updated_at
+json.extract! @performance, :id, :performance_id, :level, :kills, :deaths, :assists, :last_hits, :denies, :gpm, :xpm, :hero_damage, :tower_damage, :hero_healing, :created_at, :updated_at

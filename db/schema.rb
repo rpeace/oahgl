@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140625014732) do
+ActiveRecord::Schema.define(version: 20140630045034) do
 
-  create_table "heros", force: true do |t|
+  create_table "api_heros", force: true do |t|
     t.string   "name"
     t.string   "lname"
     t.integer  "hero_id"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20140625014732) do
     t.datetime "updated_at"
   end
 
-  create_table "items", force: true do |t|
+  create_table "api_items", force: true do |t|
     t.string   "name"
     t.integer  "item_id"
     t.string   "lname"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20140625014732) do
     t.datetime "updated_at"
   end
 
-  create_table "matches", force: true do |t|
+  create_table "api_matches", force: true do |t|
     t.string   "match_id"
     t.string   "winner"
     t.string   "duration"
@@ -71,7 +71,7 @@ ActiveRecord::Schema.define(version: 20140625014732) do
     t.datetime "updated_at"
   end
 
-  create_table "performances", force: true do |t|
+  create_table "api_performances", force: true do |t|
     t.string   "performance_id"
     t.string   "hero_id"
     t.string   "item_0"
@@ -95,10 +95,85 @@ ActiveRecord::Schema.define(version: 20140625014732) do
     t.datetime "updated_at"
   end
 
-  create_table "series", force: true do |t|
+  create_table "api_series", force: true do |t|
     t.string   "series_id"
     t.string   "series_type"
     t.text     "matches"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "heros", force: true do |t|
+    t.string   "hero_id"
+    t.string   "name"
+    t.string   "lname"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "items", force: true do |t|
+    t.string   "item_id"
+    t.string   "name"
+    t.string   "lname"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "items_performances", id: false, force: true do |t|
+    t.integer "items_id"
+    t.integer "performances_id"
+    t.integer "item_id"
+    t.integer "performance_id"
+  end
+
+  create_table "matches", force: true do |t|
+    t.string   "match_id"
+    t.boolean  "radiant_win"
+    t.string   "start_time"
+    t.string   "duration"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "winner_id"
+    t.integer  "loser_id"
+    t.integer  "series_id"
+  end
+
+  create_table "performances", force: true do |t|
+    t.integer  "level"
+    t.integer  "kills"
+    t.integer  "deaths"
+    t.integer  "assists"
+    t.integer  "last_hits"
+    t.integer  "denies"
+    t.integer  "gpm"
+    t.integer  "xpm"
+    t.integer  "hero_damage"
+    t.integer  "tower_damage"
+    t.integer  "hero_healing"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "hero_id"
+    t.integer  "player_id"
+    t.integer  "match_id"
+  end
+
+  create_table "players", force: true do |t|
+    t.integer  "team_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "series", force: true do |t|
+    t.string   "series_type"
+    t.integer  "winner_id"
+    t.integer  "loser_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "teams", force: true do |t|
+    t.string   "name"
+    t.string   "logo"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

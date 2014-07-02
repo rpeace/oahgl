@@ -64,11 +64,11 @@ class HerosController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_hero
-      @hero = Hero.find_by_name(params[:id])
+      @hero = Hero.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def hero_params
-      params.require(:hero).permit(:name, :lname, :hero_id)
+      params.require(:hero).permit(:hero_id, :name, :lname)
     end
 end

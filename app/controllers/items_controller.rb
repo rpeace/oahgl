@@ -64,11 +64,11 @@ class ItemsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_item
-      @item = Item.find_by_name(params[:id])
+      @item = Item.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_params
-      params.require(:item).permit(:name, :item_id, :lname)
+      params.require(:item).permit(:item_id, :name, :lname)
     end
 end

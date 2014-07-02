@@ -3,9 +3,9 @@
 <table>
   <thead>
     <tr>
-      <th>Portrait</th>
-      <th>Lname</th>
       <th>Hero</th>
+      <th>Name</th>
+      <th>Lname</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -13,9 +13,9 @@
   <tbody>
     <% @heros.each do |hero| %>
       <tr>
-        <td><img src=<%= hero.get_portrait_url_small %>></td>
-        <td><%= hero.lname %></td>
         <td><%= hero.hero_id %></td>
+        <td><%= hero.name %></td>
+        <td><%= hero.lname %></td>
         <td><%= link_to 'Show', hero %></td>
         <td><%= link_to 'Edit', edit_hero_path(hero) %></td>
         <td><%= link_to 'Destroy', hero, method: :delete, data: { confirm: 'Are you sure?' } %></td>

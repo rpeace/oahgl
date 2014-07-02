@@ -4,13 +4,6 @@
   <thead>
     <tr>
       <th>Performance</th>
-      <th>Hero</th>
-      <th>Item 0</th>
-      <th>Item 1</th>
-      <th>Item 2</th>
-      <th>Item 3</th>
-      <th>Item 4</th>
-      <th>Item 5</th>
       <th>Level</th>
       <th>Kills</th>
       <th>Deaths</th>
@@ -22,6 +15,7 @@
       <th>Hero damage</th>
       <th>Tower damage</th>
       <th>Hero healing</th>
+      <th colspan="3"></th>
     </tr>
   </thead>
 
@@ -29,13 +23,6 @@
     <% @performances.each do |performance| %>
       <tr>
         <td><%= performance.performance_id %></td>
-        <td><img src=<%= Hero.get_portrait_url(performance.hero_id) %>></td>
-        <td><img src=<%= Item.get_portrait_url(performance.item_0) %> height="42" width="32"></td>
-        <td><img src=<%= Item.get_portrait_url(performance.item_1) %> height="42" width="32"></td>
-        <td><img src=<%= Item.get_portrait_url(performance.item_2) %> height="42" width="32"></td>
-        <td><img src=<%= Item.get_portrait_url(performance.item_3) %> height="42" width="32"></td>
-        <td><img src=<%= Item.get_portrait_url(performance.item_4) %> height="42" width="32"></td>
-        <td><img src=<%= Item.get_portrait_url(performance.item_5) %> height="42" width="32"></td>
         <td><%= performance.level %></td>
         <td><%= performance.kills %></td>
         <td><%= performance.deaths %></td>
@@ -47,6 +34,9 @@
         <td><%= performance.hero_damage %></td>
         <td><%= performance.tower_damage %></td>
         <td><%= performance.hero_healing %></td>
+        <td><%= link_to 'Show', performance %></td>
+        <td><%= link_to 'Edit', edit_performance_path(performance) %></td>
+        <td><%= link_to 'Destroy', performance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

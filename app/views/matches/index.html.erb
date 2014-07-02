@@ -4,42 +4,9 @@
   <thead>
     <tr>
       <th>Match</th>
-      <th>Winner</th>
+      <th>Radiant win</th>
+      <th>Start time</th>
       <th>Duration</th>
-      <th>Radiant team</th>
-      <th>Dire team</th>
-      <th>Player 0</th>
-      <th>Player 1</th>
-      <th>Player 2</th>
-      <th>Player 3</th>
-      <th>Player 4</th>
-      <th>Player 5</th>
-      <th>Player 6</th>
-      <th>Player 7</th>
-      <th>Player 8</th>
-      <th>Player 9</th>
-      <th>First pick</th>
-      <th>Ap remake</th>
-      <th>D ban 0</th>
-      <th>R ban 0</th>
-      <th>D ban 1</th>
-      <th>R ban 1</th>
-      <th>D pick 0</th>
-      <th>R pick 0</th>
-      <th>R pick 1</th>
-      <th>D pick 1</th>
-      <th>D ban 2</th>
-      <th>R ban 2</th>
-      <th>D ban 3</th>
-      <th>R ban 3</th>
-      <th>R pick 2</th>
-      <th>D pick 2</th>
-      <th>R pick 3</th>
-      <th>D pick 3</th>
-      <th>R ban 4</th>
-      <th>D ban 4</th>
-      <th>R pick 4</th>
-      <th>D pick 4</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -48,42 +15,9 @@
     <% @matches.each do |match| %>
       <tr>
         <td><%= match.match_id %></td>
-        <td><%= match.winner %></td>
+        <td><%= match.radiant_win %></td>
+        <td><%= match.start_time %></td>
         <td><%= match.duration %></td>
-        <td><%= match.radiant_team_id %></td>
-        <td><%= match.dire_team_id %></td>
-        <td><%= match.player_0_id %></td>
-        <td><%= match.player_1_id %></td>
-        <td><%= match.player_2_id %></td>
-        <td><%= match.player_3_id %></td>
-        <td><%= match.player_4_id %></td>
-        <td><%= match.player_5_id %></td>
-        <td><%= match.player_6_id %></td>
-        <td><%= match.player_7_id %></td>
-        <td><%= match.player_8_id %></td>
-        <td><%= match.player_9_id %></td>
-        <td><%= match.first_pick %></td>
-        <td><%= match.ap_remake %></td>
-        <td><%= match.d_ban_0 %></td>
-        <td><%= match.r_ban_0 %></td>
-        <td><%= match.d_ban_1 %></td>
-        <td><%= match.r_ban_1 %></td>
-        <td><%= match.d_pick_0 %></td>
-        <td><%= match.r_pick_0 %></td>
-        <td><%= match.r_pick_1 %></td>
-        <td><%= match.d_pick_1 %></td>
-        <td><%= match.d_ban_2 %></td>
-        <td><%= match.r_ban_2 %></td>
-        <td><%= match.d_ban_3 %></td>
-        <td><%= match.r_ban_3 %></td>
-        <td><%= match.r_pick_2 %></td>
-        <td><%= match.d_pick_2 %></td>
-        <td><%= match.r_pick_3 %></td>
-        <td><%= match.d_pick_3 %></td>
-        <td><%= match.r_ban_4 %></td>
-        <td><%= match.d_ban_4 %></td>
-        <td><%= match.r_pick_4 %></td>
-        <td><%= match.d_pick_4 %></td>
         <td><%= link_to 'Show', match %></td>
         <td><%= link_to 'Edit', edit_match_path(match) %></td>
         <td><%= link_to 'Destroy', match, method: :delete, data: { confirm: 'Are you sure?' } %></td>

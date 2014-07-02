@@ -10,17 +10,6 @@ class MatchesController < ApplicationController
   # GET /matches/1
   # GET /matches/1.json
   def show
-    @performances = []
-    @performances.push(Performance.find_by_performance_id(@match.match_id.to_s + "-" + @match.player_0_id.to_s))
-    @performances.push(Performance.find_by_performance_id(@match.match_id.to_s + "-" + @match.player_1_id.to_s))
-    @performances.push(Performance.find_by_performance_id(@match.match_id.to_s + "-" + @match.player_2_id.to_s))
-    @performances.push(Performance.find_by_performance_id(@match.match_id.to_s + "-" + @match.player_3_id.to_s))
-    @performances.push(Performance.find_by_performance_id(@match.match_id.to_s + "-" + @match.player_4_id.to_s))
-    @performances.push(Performance.find_by_performance_id(@match.match_id.to_s + "-" + @match.player_5_id.to_s))
-    @performances.push(Performance.find_by_performance_id(@match.match_id.to_s + "-" + @match.player_6_id.to_s))
-    @performances.push(Performance.find_by_performance_id(@match.match_id.to_s + "-" + @match.player_7_id.to_s))
-    @performances.push(Performance.find_by_performance_id(@match.match_id.to_s + "-" + @match.player_8_id.to_s))
-    @performances.push(Performance.find_by_performance_id(@match.match_id.to_s + "-" + @match.player_9_id.to_s))
   end
 
   # GET /matches/new
@@ -75,11 +64,11 @@ class MatchesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_match
-      @match = Match.find_by_match_id(params[:id].to_i)
+      @match = Match.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def match_params
-      params.require(:match).permit(:match_id, :winner, :duration, :radiant_team_id, :dire_team_id, :player_0_id, :player_1_id, :player_2_id, :player_3_id, :player_4_id, :player_5_id, :player_6_id, :player_7_id, :player_8_id, :player_9_id, :first_pick, :ap_remake, :d_ban_0, :r_ban_0, :d_ban_1, :r_ban_1, :d_pick_0, :r_pick_0, :r_pick_1, :d_pick_1, :d_ban_2, :r_ban_2, :d_ban_3, :r_ban_3, :r_pick_2, :d_pick_2, :r_pick_3, :d_pick_3, :r_ban_4, :d_ban_4, :r_pick_4, :d_pick_4)
+      params.require(:match).permit(:match_id, :radiant_win, :start_time, :duration)
     end
 end

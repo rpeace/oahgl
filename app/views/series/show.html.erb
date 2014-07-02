@@ -1,18 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Series:</strong>
-  <%= @series.series_id %>
-</p>
-
-<p>
   <strong>Series type:</strong>
   <%= @series.series_type %>
 </p>
 
 <p>
-  <strong>Matches:</strong>
-  <%= @series.matches %>
+  <strong>Winner:</strong>
+  <%= @series.winner_id %>
+</p>
+
+<p>
+  <strong>Loser:</strong>
+  <%= @series.loser_id %>
 </p>
 
 <%= link_to 'Edit', edit_series_path(@series) %> |

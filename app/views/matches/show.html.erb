@@ -6,150 +6,18 @@
 </p>
 
 <p>
-  <strong>Winner:</strong>
-  <%= @match.winner %>
+  <strong>Radiant win:</strong>
+  <%= @match.radiant_win %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @match.start_time %>
 </p>
 
 <p>
   <strong>Duration:</strong>
   <%= @match.duration %>
-</p>
-
-<p>
-  <strong>Radiant team:</strong>
-  <%= @match.radiant_team_id %>
-</p>
-
-<p>
-  <strong>Dire team:</strong>
-  <%= @match.dire_team_id %>
-</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Performance</th>
-      <th>Hero</th>
-      <th>Item 0</th>
-      <th>Item 1</th>
-      <th>Item 2</th>
-      <th>Item 3</th>
-      <th>Item 4</th>
-      <th>Item 5</th>
-      <th>Level</th>
-      <th>Kills</th>
-      <th>Deaths</th>
-      <th>Assists</th>
-      <th>Last hits</th>
-      <th>Denies</th>
-      <th>Gpm</th>
-      <th>Xpm</th>
-      <th>Hero damage</th>
-      <th>Tower damage</th>
-      <th>Hero healing</th>
-    </tr>
-  </thead>
-  <%= render :partial => "performances/lines", :performances => @performances %>
-</table>
-
-<p>
-  <strong>Dire ban 0:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.d_ban_0) %>>
-</p>
-
-<p>
-  <strong>Radiant ban 0:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.r_ban_0) %>>
-</p>
-
-<p>
-  <strong>Dire ban 1:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.d_ban_1) %>>
-</p>
-
-<p>
-  <strong>Radiant ban 1:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.r_ban_1) %>>
-</p>
-
-<p>
-  <strong>Dire pick 0:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.d_pick_0) %>>
-</p>
-
-<p>
-  <strong>Radiant pick 0:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.r_pick_0) %>>
-</p>
-
-<p>
-  <strong>Radiant pick 1:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.r_pick_1) %>>
-</p>
-
-<p>
-  <strong>Dire pick 1:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.d_pick_1) %>>
-</p>
-
-<p>
-  <strong>Dire ban 2:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.d_ban_2) %>>
-</p>
-
-<p>
-  <strong>R ban 2:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.r_ban_2) %>>
-</p>
-
-<p>
-  <strong>D ban 3:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.d_ban_3) %>>
-</p>
-
-<p>
-  <strong>Radiant ban 3:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.r_ban_3) %>>
-</p>
-
-<p>
-  <strong>Radiant pick 2:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.r_pick_2) %>>
-</p>
-
-<p>
-  <strong>Dire pick 2:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.d_pick_2) %>>
-</p>
-
-<p>
-  <strong>Radiant pick 3:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.r_pick_3) %>>
-</p>
-
-<p>
-  <strong>Dire pick 3:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.d_pick_3) %>>
-</p>
-
-<p>
-  <strong>Radiant ban 4:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.r_ban_4) %>>
-</p>
-
-<p>
-  <strong>Dire ban 4:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.d_ban_4) %>>
-</p>
-
-<p>
-  <strong>Radiant pick 4:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.r_pick_4) %>>
-</p>
-
-<p>
-  <strong>Dire pick 4:</strong>
-  <img src = <%= Hero.get_portrait_url(@match.d_pick_4) %>>
 </p>
 
 <%= link_to 'Edit', edit_match_path(@match) %> |

@@ -1,3 +1,5 @@
-rails generate scaffold Performance performance_id:string hero_id:string item_0:string item_1:string item_2:string item_3:string item_4:string item_5:string level:integer kills:integer deaths:integer assists:integer last_hits:integer denies:integer gpm:integer xpm:integer hero_damage:integer tower_damage:integer hero_healing:integer
+rails generate scaffold Performance performance_id:string level:integer kills:integer deaths:integer assists:integer last_hits:integer denies:integer gpm:integer xpm:integer hero_damage:integer tower_damage:integer hero_healing:integer
 
 rails generate scaffold Match match_id:string winner:string duration:string radiant_team_id:string dire_team_id:string player_0_id:string player_1_id:string player_2_id:string player_3_id:string player_4_id:string player_5_id:string player_6_id:string player_7_id:string player_8_id:string player_9_id:string first_pick:string ap_remake:string d_ban_0:string r_ban_0:string d_ban_1:string r_ban_1:string d_pick_0:string r_pick_0:string r_pick_1:string d_pick_1:string d_ban_2:string r_ban_2:string d_ban_3:string r_ban_3:string r_pick_2:string d_pick_2:string r_pick_3:string d_pick_3:string r_ban_4:string d_ban_4:string r_pick_4:string d_pick_4:string
+
+rails generate scaffold Hero 

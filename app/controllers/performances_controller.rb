@@ -69,6 +69,6 @@ class PerformancesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def performance_params
-      params.require(:performance).permit(:performance_id, :hero_id, :item_0, :item_1, :item_2, :item_3, :item_4, :item_5, :level, :kills, :deaths, :assists, :last_hits, :denies, :gpm, :xpm, :hero_damage, :tower_damage, :hero_healing)
+      params.require(:performance).permit(:performance_id, :level, :kills, :deaths, :assists, :last_hits, :denies, :gpm, :xpm, :hero_damage, :tower_damage, :hero_healing)
     end
 end

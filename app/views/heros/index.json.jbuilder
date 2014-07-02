@@ -1,4 +1,4 @@
 json.array!(@heros) do |hero|
-  json.extract! hero, :id, :name, :lname, :hero_id
+  json.extract! hero, :id, :hero_id, :name, :lname
   json.url hero_url(hero, format: :json)
 end
