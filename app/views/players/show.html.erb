@@ -5,5 +5,110 @@
   <%= @player.team_id %>
 </p>
 
+<p>
+	<strong>Average Stats:</strong>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Kills</th>
+      <th>Deaths</th>
+      <th>Assists</th>
+      <th>Last hits</th>
+      <th>Denies</th>
+      <th>Gpm</th>
+      <th>Xpm</th>
+      <th>Hero damage</th>
+      <th>Tower damage</th>
+      <th>Hero healing</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><%= (@player.performances.collect(&:level).sum.to_f / @player.performances.size).round(2) %></td>
+      <td><%= (@player.performances.collect(&:kills).sum.to_f / @player.performances.size).round(2) %></td>
+      <td><%= (@player.performances.collect(&:deaths).sum.to_f / @player.performances.size).round(2) %></td>
+      <td><%= (@player.performances.collect(&:assists).sum.to_f / @player.performances.size).round(2) %></td>
+      <td><%= (@player.performances.collect(&:last_hits).sum.to_f / @player.performances.size).round(2) %></td>
+      <td><%= (@player.performances.collect(&:denies).sum.to_f / @player.performances.size).round(2) %></td>
+      <td><%= (@player.performances.collect(&:gpm).sum.to_f / @player.performances.size).round(2) %></td>
+      <td><%= (@player.performances.collect(&:xpm).sum.to_f / @player.performances.size).round(2) %></td>
+      <td><%= (@player.performances.collect(&:hero_damage).sum.to_f / @player.performances.size).round(2) %></td>
+      <td><%= (@player.performances.collect(&:tower_damage).sum.to_f / @player.performances.size).round(2) %></td>
+      <td><%= (@player.performances.collect(&:hero_healing).sum.to_f / @player.performances.size).round(2) %></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+	<strong>Performances:</strong>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Kills</th>
+      <th>Deaths</th>
+      <th>Assists</th>
+      <th>Last hits</th>
+      <th>Denies</th>
+      <th>Gpm</th>
+      <th>Xpm</th>
+      <th>Hero damage</th>
+      <th>Tower damage</th>
+      <th>Hero healing</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @player.performances.each do |performance| %>
+      <tr>
+        <td><%= performance.level %></td>
+        <td><%= performance.kills %></td>
+        <td><%= performance.deaths %></td>
+        <td><%= performance.assists %></td>
+        <td><%= performance.last_hits %></td>
+        <td><%= performance.denies %></td>
+        <td><%= performance.gpm %></td>
+        <td><%= performance.xpm %></td>
+        <td><%= performance.hero_damage %></td>
+        <td><%= performance.tower_damage %></td>
+        <td><%= performance.hero_healing %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<p>
+	<strong>Heroes used:</strong>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hero</th>
+      <th>Times played</th>
+      <th>Wins</th>
+      <th>Losses</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @player.heros.uniq.each do |hero| %>
+      <tr>
+        <td><%= hero.lname %></td>
+        <td><%= @player.heros.where("name = ?", hero.name).size %></td>
+        <td><%= hero.performances.where("player_id = ?", @player.id).joins(:match).where("matches.winner_id = ?", @player.team).size %></td>
+        <td><%= hero.performances.where("player_id = ?", @player.id).joins(:match).where("matches.loser_id = ?", @player.team).size %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
 <%= link_to 'Edit', edit_player_path(@player) %> |
 <%= link_to 'Back', players_path %>

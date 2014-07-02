@@ -1,6 +1,23 @@
 <h1>Listing performances</h1>
 
 <table>
+  <tr>
+    <th><%= sortable "level" %></th>
+    <th><%= sortable "kills" %></th>
+    <th><%= sortable "deaths", "Released" %></th>
+  </tr>
+  <tbody>
+    <% @performances.each do |performance| %>
+      <tr>
+        <td><%= performance.level %></td>
+        <td><%= performance.kills %></td>
+        <td><%= performance.deaths %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<table>
   <thead>
     <tr>
       <th>Performance</th>
@@ -22,7 +39,6 @@
   <tbody>
     <% @performances.each do |performance| %>
       <tr>
-        <td><%= performance.performance_id %></td>
         <td><%= performance.level %></td>
         <td><%= performance.kills %></td>
         <td><%= performance.deaths %></td>
