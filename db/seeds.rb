@@ -15,4 +15,16 @@ Player.delete_all
 Team.delete_all
 Match.delete_all
 Series.delete_all
-ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/db/seeds", ["items","players","heros","matches","performances","series","teams"])
+Pick.delete_all
+Ban.delete_all
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/db/seeds", ["items","players","heros","matches","performances","series","teams","picks","bans"])
+
+Hero.all.each do |h|
+	h.update_attribute :bans_count, h.bans.length
+	h.update_attribute :picks_count, h.picks.length
+end
+
+Team.all.each do |h|
+	h.update_attribute :bans_count, h.bans.length
+	h.update_attribute :picks_count, h.picks.length
+end

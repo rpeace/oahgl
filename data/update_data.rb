@@ -60,7 +60,7 @@ end
 
 playerToTeam = {}
 # Build the Performances fixture, and log some player/team combos while we're at it...
-outFile = File.open("../test/fixtures/performances.yml","w")
+outFile = File.open("../db/seeds/performances.yml","w")
 heroPerformances = {}
 heroNames.keys.each do |id|
 	heroPerformances[id] = []
@@ -120,7 +120,7 @@ outFile.close()
 
 
 # Build the Items fixture
-outFile = File.open("../test/fixtures/items.yml","w")
+outFile = File.open("../db/seeds/items.yml","w")
 items.each do |item|
 	outFile.write(item['name']+":\n")
 	outFile.write("  name: "+item['name']+"\n")
@@ -130,7 +130,7 @@ items.each do |item|
 end
 
 # Build the Heros fixture
-outFile = File.open("../test/fixtures/heros.yml","w")
+outFile = File.open("../db/seeds/heros.yml","w")
 json = JSON.parse(File.open("heros.json").read)['result']['heroes']
 json.each do |hero|
 	outFile.write(hero['name'][14..-1]+":\n")
@@ -141,7 +141,7 @@ json.each do |hero|
 end
 
 # Build the Series fixture
-outFile = File.open("../test/fixtures/series.yml", "w")
+outFile = File.open("../db/seeds/series.yml", "w")
 matches = JSON.parse(File.open("match_history.json").read)['result']['matches']
 matchToSeries = {}
 last_series = 0
@@ -175,7 +175,7 @@ outFile.write("  loser: t"+match_json['result']['dire_team_id'].to_s+"\n")
 outFile.close()
 
 # Build the Matches fixture
-outFile = File.open("../test/fixtures/matches.yml","w")
+outFile = File.open("../db/seeds/matches.yml","w")
 match_ids.each do |match_id|
 	json = JSON.parse(File.open("matches/"+match_id.to_s+".json").read)['result']
 	outFile.write("m"+match_id.to_s+":\n")
@@ -251,7 +251,7 @@ end
 outFile.close()
 
 # Build the Teams fixture
-outFile = File.open("../test/fixtures/teams.yml","w")
+outFile = File.open("../db/seeds/teams.yml","w")
 teams = {}
 match_ids.each do |match_id|
 	json = JSON.parse(File.open("matches/"+match_id.to_s+".json").read)
@@ -272,12 +272,47 @@ end
 outFile.close()
 
 # Build the players fixture
-outFile = File.open("../test/fixtures/players.yml","w")
+outFile = File.open("../db/seeds/players.yml","w")
 playerToTeam.keys.each do |p|
 	outFile.write("p"+p.to_s+":\n")
 	outFile.write("  team: t"+playerToTeam[p].to_s+"\n")
 end
+outFile.close()
 
+# Build the picks fixture
+pickFile = File.open("../db/seeds/picks.yml","w")
+banFile = File.open("../db/seeds/bans.yml","w")
+match_ids.each do |match_id|
+	json = JSON.parse(File.open("matches/"+match_id.to_s+".json").read)['result']
+	if json['game_mode'] == 2
+		# First picks
+		json['picks_bans'].each do |pb|
+			if pb['is_pick'] == true
+				pickFile.write("pb"+match_id.to_s+"n"+pb['order'].to_s+":\n")
+				pickFile.write("  order: "+pb['order'].to_s+"\n")
+				pickFile.write("  match: m"+match_id.to_s+"\n")
+				pickFile.write("  hero: "+heroNames[pb['hero_id']]+"\n")
+				if pb['team'] == 0
+					pickFile.write("  team: t"+json['radiant_team_id'].to_s+"\n")
+				else
+					pickFile.write("  team: t"+json['dire_team_id'].to_s+"\n")
+				end
+			else
+				banFile.write("pb"+match_id.to_s+"n"+pb['order'].to_s+":\n")
+				banFile.write("  order: "+pb['order'].to_s+"\n")
+				banFile.write("  match: m"+match_id.to_s+"\n")
+				banFile.write("  hero: "+heroNames[pb['hero_id']]+"\n")
+				if pb['team'] == 0
+					banFile.write("  team: t"+json['radiant_team_id'].to_s+"\n")
+				else
+					banFile.write("  team: t"+json['dire_team_id'].to_s+"\n")
+				end
+			end
+		end
+	end
+end
+pickFile.close()
+banFile.close()
 
 # outFile = File.open("api_abilitybuilds.yml","w")
 # match_ids.each do |match_id|

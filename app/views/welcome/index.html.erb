@@ -1,27 +1,19 @@
-<div><h1>NEW TITLE!</h1></div>
+<div><h1>RANDOM LEAGUE STATS!</h1></div>
 
 	<div id="stats" style=float:left>
 		<p>
 			<strong>Most picked heros:</strong><br />
-			<% Api_Hero.all_by_picks[0..9].each do |hero| %>
+			<% Hero.order('picks_count DESC').limit(10).each do |hero| %>
 				<%= hero.lname %>
-				<%= Api_Match.num_picked(hero.hero_id) %><br />
+				<%= hero.picks_count %><br />
 			<% end %>
 		</p>
 
 		<p>
 			<strong>Most banned heros:</strong><br />
-			<% Api_Hero.all_by_bans[0..9].each do |hero| %>
+			<% Hero.order('bans_count DESC').limit(10).each do |hero| %>
 				<%= hero.lname %>
-				<%= Api_Match.num_banned(hero.hero_id) %><br />
-			<% end %>
-		</p>
-
-		<p>
-			<strong>Most successful heros:</strong><br />
-			<% Api_Hero.all_by_winrate[0..9].each do |hero| %>
-				<%= hero.lname %>
-				<%= number_with_precision(Api_Match.win_percentage(hero.hero_id), :precision=>2) %>%<br />
+				<%= hero.bans_count %><br />
 			<% end %>
 		</p>
 	</div>

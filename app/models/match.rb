@@ -3,4 +3,6 @@ class Match < ActiveRecord::Base
 	belongs_to :series
 	belongs_to :winner, :class_name => Team, inverse_of: :matches_won, foreign_key: "winner_id"
 	belongs_to :loser, :class_name => Team, inverse_of: :matches_lost, foreign_key: "loser_id"
+	has_many :picks
+	has_many :bans
 end

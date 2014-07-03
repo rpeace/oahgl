@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140630045034) do
+ActiveRecord::Schema.define(version: 20140703022730) do
 
   create_table "api_heros", force: true do |t|
     t.string   "name"
@@ -103,12 +103,23 @@ ActiveRecord::Schema.define(version: 20140630045034) do
     t.datetime "updated_at"
   end
 
+  create_table "bans", force: true do |t|
+    t.integer  "order"
+    t.integer  "match_id"
+    t.integer  "hero_id"
+    t.integer  "team_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "heros", force: true do |t|
     t.string   "hero_id"
     t.string   "name"
     t.string   "lname"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "bans_count",  default: 0
+    t.integer  "picks_count", default: 0
   end
 
   create_table "items", force: true do |t|
@@ -157,6 +168,15 @@ ActiveRecord::Schema.define(version: 20140630045034) do
     t.integer  "match_id"
   end
 
+  create_table "picks", force: true do |t|
+    t.integer  "order"
+    t.integer  "match_id"
+    t.integer  "hero_id"
+    t.integer  "team_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "players", force: true do |t|
     t.integer  "team_id"
     t.datetime "created_at"
@@ -176,6 +196,8 @@ ActiveRecord::Schema.define(version: 20140630045034) do
     t.string   "logo"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "bans_count",  default: 0
+    t.integer  "picks_count", default: 0
   end
 
 end

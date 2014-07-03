@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :bans
+
+  resources :picks
+
   resources :players
 
   resources :teams
