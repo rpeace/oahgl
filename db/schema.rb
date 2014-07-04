@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140703022730) do
+ActiveRecord::Schema.define(version: 20140704000307) do
 
   create_table "api_heros", force: true do |t|
     t.string   "name"
@@ -166,6 +166,7 @@ ActiveRecord::Schema.define(version: 20140703022730) do
     t.integer  "hero_id"
     t.integer  "player_id"
     t.integer  "match_id"
+    t.boolean  "is_winner"
   end
 
   create_table "picks", force: true do |t|

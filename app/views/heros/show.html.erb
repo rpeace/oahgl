@@ -1,19 +1,54 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Hero:</strong>
-  <%= @hero.hero_id %>
+  <strong><%= @hero.lname %></strong>
 </p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @hero.name %>
+  <strong>Record:</strong><br />
+  <% @wins = @hero.performances.where("is_winner = ?", true).size %>
+  <% @losses = @hero.performances.where("is_winner = ?", false).size %>
+  W: <%= @wins %> L: <%= @losses %> ( <%= (100.0*@wins/@losses).round(2) %>%)
 </p>
 
 <p>
-  <strong>Lname:</strong>
-  <%= @hero.lname %>
+  <strong>Played by:</strong>
+  <table>
+  <thead>
+    <tr>
+      <th>Team</th>
+      <th>Picks</th>
+    </tr>
+  </thead>
+
+  <tbody>
+	  <% @hero.picked_by.uniq.each do |team| %>
+	  	<tr>
+		  	<td><%= team.name %></td>
+		  	<td><%= @hero.picked_by.where("name = ?", team.name).size %></td>
+	    </tr>
+	  <% end %>
+	</tbody>
+	</table>
 </p>
 
-<%= link_to 'Edit', edit_hero_path(@hero) %> |
-<%= link_to 'Back', heros_path %>
+<p>
+  <strong>Banned by:</strong>
+  <table>
+  <thead>
+    <tr>
+      <th>Team</th>
+      <th>Bans</th>
+    </tr>
+  </thead>
+
+  <tbody>
+	  <% @hero.banned_by.uniq.each do |team| %>
+	  	<tr>
+		  	<td><%= team.name %></td>
+		  	<td><%= @hero.banned_by.where("name = ?", team.name).size %></td>
+	    </tr>
+	  <% end %>
+	</tbody>
+	</table>
+</p>

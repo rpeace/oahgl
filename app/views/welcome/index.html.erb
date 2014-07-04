@@ -16,18 +16,37 @@
 				<%= hero.bans_count %><br />
 			<% end %>
 		</p>
+		<p>
+			<strong>Top Performances</strong><br />
+			Highest GPM: <%= Performance.order(gpm: :desc).first.gpm %> 
+					by <%= Performance.order(gpm: :desc).first.player.id %><br />
+			Highest XPM: <%= Performance.order(xpm: :desc).first.xpm %> 
+					by <%= Performance.order(xpm: :desc).first.player.id %><br />
+			Most kills: <%= Performance.order(kills: :desc).first.kills %> 
+					by <%= Performance.order(kills: :desc).first.player.id %><br />
+			Most assists: <%= Performance.order(assists: :desc).first.assists %> 
+					by <%= Performance.order(assists: :desc).first.player.id %><br />
+			Most deaths: <%= Performance.order(deaths: :desc).first.deaths %> 
+					by <%= Performance.order(deaths: :desc).first.player.id %><br />
+			Most last hits: <%= Performance.order(last_hits: :desc).first.last_hits %> 
+					by <%= Performance.order(denies: :desc).first.player.id %><br />
+			Most denies: <%= Performance.order(denies: :desc).first.denies %> 
+					by <%= Performance.order(denies: :desc).first.player.id %><br />
+		</p>
 	</div>
 
 </div>
+
+
 
 <div id="login" style=float:right>
 	<h1>WHO U R</h1><br>
 	<%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_large_noborder.png"), '/auth/steam' %>
 
 	<% if session.key? :current_user %>
-	<%= image_tag session[:current_user][:image] %>
-	<p><%= session[:current_user][:nickname] %></p>
-	<p><%= session[:current_user][:uid] %></p>
+		<%= image_tag session[:current_user][:image] %>
+		<p><%= session[:current_user][:nickname] %></p>
+		<p><%= session[:current_user][:uid] %></p>
 	<% end %>
 </div>
 
