@@ -90,6 +90,11 @@ match_ids.each do |match_id|
 		itemPerformances[p['item_4']].push(performance_id)
 		itemPerformances[p['item_5']].push(performance_id)
 		outFile.write(performance_id+":\n")
+		if p['player_slot'] < 5
+			outFile.write("  is_winner: "+json['result']['radiant_win'].to_s+"\n")
+		else
+			outFile.write("  is_winner: "+(!json['result']['radiant_win']).to_s+"\n")
+		end
 		outFile.write("  player: p"+p['account_id'].to_s+"\n")
 		outFile.write("  level: "+p['level'].to_s+"\n")
 		outFile.write("  kills: "+p['kills'].to_s+"\n")
