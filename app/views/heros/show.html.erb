@@ -8,7 +8,7 @@
   <strong>Record:</strong><br />
   <% @wins = @hero.performances.where("is_winner = ?", true).size %>
   <% @losses = @hero.performances.where("is_winner = ?", false).size %>
-  W: <%= @wins %> L: <%= @losses %> ( <%= (100.0*@wins/@losses).round(2) %>%)
+  W: <%= @wins %> L: <%= @losses %> ( <%= (100.0*@wins/(@wins+@losses)).round(2) %>%)
 </p>
 
 <p>
