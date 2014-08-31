@@ -1,0 +1,29 @@
+<% if current_user != nil && current_user.id == @user.id %>
+	<p><strong>WELCOME TO YOUR SUPER COOL STATS PAGE, BREH</strong></p>
+	<p>
+	  <%= image_tag(@user.logo) %>
+	  <%= @user.name %>
+	</p>
+
+	<p>
+	  <strong>Mmr:</strong>
+	  <%= @user.mmr %>
+	</p>
+
+	<p>
+		<strong>Favourite heroes:</strong>
+		<% HerosUsers.where(:user_id => current_user.id).each do |hu| %>
+			<%= image_tag(Hero.find(hu.hero_id).small_portrait_url) %>
+		<% end %>
+	<p>
+
+	<p>
+	  <strong>Profile:</strong>
+	  <%= link_to 'Steam profile', @user.steam_profile %>
+	</p>
+
+	<%= link_to 'Edit', edit_user_path(@user) %> |
+	<%= link_to 'Back', users_path %>
+<%else%>
+	<p>WHY YOU GOTTA SNOOP, BREH?</p>
+<%end%>

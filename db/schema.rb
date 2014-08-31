@@ -11,97 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140704000307) do
-
-  create_table "api_heros", force: true do |t|
-    t.string   "name"
-    t.string   "lname"
-    t.integer  "hero_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "api_items", force: true do |t|
-    t.string   "name"
-    t.integer  "item_id"
-    t.string   "lname"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "api_matches", force: true do |t|
-    t.string   "match_id"
-    t.string   "winner"
-    t.string   "duration"
-    t.string   "radiant_team_id"
-    t.string   "dire_team_id"
-    t.string   "player_0_id"
-    t.string   "player_1_id"
-    t.string   "player_2_id"
-    t.string   "player_3_id"
-    t.string   "player_4_id"
-    t.string   "player_5_id"
-    t.string   "player_6_id"
-    t.string   "player_7_id"
-    t.string   "player_8_id"
-    t.string   "player_9_id"
-    t.string   "first_pick"
-    t.string   "ap_remake"
-    t.string   "d_ban_0"
-    t.string   "r_ban_0"
-    t.string   "d_ban_1"
-    t.string   "r_ban_1"
-    t.string   "d_pick_0"
-    t.string   "r_pick_0"
-    t.string   "r_pick_1"
-    t.string   "d_pick_1"
-    t.string   "d_ban_2"
-    t.string   "r_ban_2"
-    t.string   "d_ban_3"
-    t.string   "r_ban_3"
-    t.string   "r_pick_2"
-    t.string   "d_pick_2"
-    t.string   "r_pick_3"
-    t.string   "d_pick_3"
-    t.string   "r_ban_4"
-    t.string   "d_ban_4"
-    t.string   "r_pick_4"
-    t.string   "d_pick_4"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "api_performances", force: true do |t|
-    t.string   "performance_id"
-    t.string   "hero_id"
-    t.string   "item_0"
-    t.string   "item_1"
-    t.string   "item_2"
-    t.string   "item_3"
-    t.string   "item_4"
-    t.string   "item_5"
-    t.integer  "level"
-    t.integer  "kills"
-    t.integer  "deaths"
-    t.integer  "assists"
-    t.integer  "last_hits"
-    t.integer  "denies"
-    t.integer  "gpm"
-    t.integer  "xpm"
-    t.integer  "hero_damage"
-    t.integer  "tower_damage"
-    t.integer  "hero_healing"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "api_series", force: true do |t|
-    t.string   "series_id"
-    t.string   "series_type"
-    t.text     "matches"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20140826011150) do
 
   create_table "bans", force: true do |t|
     t.integer  "order"
@@ -120,6 +30,15 @@ ActiveRecord::Schema.define(version: 20140704000307) do
     t.datetime "updated_at"
     t.integer  "bans_count",  default: 0
     t.integer  "picks_count", default: 0
+  end
+
+  create_table "heros_users", force: true do |t|
+    t.integer  "heros_id"
+    t.integer  "users_id"
+    t.string   "user_id"
+    t.string   "hero_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "items", force: true do |t|
@@ -178,6 +97,14 @@ ActiveRecord::Schema.define(version: 20140704000307) do
     t.datetime "updated_at"
   end
 
+  create_table "player_roles", force: true do |t|
+    t.string   "team_id"
+    t.string   "role"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "user_id"
+  end
+
   create_table "players", force: true do |t|
     t.integer  "team_id"
     t.datetime "created_at"
@@ -199,6 +126,21 @@ ActiveRecord::Schema.define(version: 20140704000307) do
     t.datetime "updated_at"
     t.integer  "bans_count",  default: 0
     t.integer  "picks_count", default: 0
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "logo"
+    t.integer  "mmr"
+    t.string   "email"
+    t.string   "provider"
+    t.string   "uid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "first_pos"
+    t.string   "second_pos"
+    t.string   "steam_profile"
+    t.string   "player_type"
   end
 
 end

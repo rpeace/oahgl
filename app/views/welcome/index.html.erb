@@ -1,6 +1,5 @@
-<div><h1>RANDOM LEAGUE STATS!</h1></div>
-
 	<div id="stats" style=float:left>
+		<h1>RANDOM LEAGUE STATS!</h1>
 		<p>
 			<strong>Most picked heros:</strong><br />
 			<% Hero.order('picks_count DESC').limit(10).each do |hero| %>
@@ -35,18 +34,31 @@
 		</p>
 	</div>
 
+	<% if current_user != nil %>
+		<div id="accountmgmt" style=float:left>
+			<h1>Account stuff</h1>
+			 <% if current_user.player_type == "captain" %>
+			 	<% if current_user.team == nil %>
+			 		<p>You are not on a team.</p>
+			 		<%= link_to "You should make one!", new_team_path %>
+			 	<% end %>
+			 <% end %>
+		</div>
+	<% end %>
+
 </div>
 
 
 
 <div id="login" style=float:right>
 	<h1>WHO U R</h1><br>
-	<%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_large_noborder.png"), '/auth/steam' %>
-
-	<% if session.key? :current_user %>
-		<%= image_tag session[:current_user][:image] %>
-		<p><%= session[:current_user][:nickname] %></p>
-		<p><%= session[:current_user][:uid] %></p>
+	<% if current_user %>
+		<%= link_to image_tag(current_user.logo), current_user.steam_profile %>
+		<%= link_to "Sign Out", signout_path %>
+		<p><%= current_user.name %></p>
+		<p><%= user_steam_state(current_user) %></p>
+	<% else %>
+		<%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_large_noborder.png"), '/auth/steam' %>
 	<% end %>
 </div>
 

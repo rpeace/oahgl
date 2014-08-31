@@ -8,4 +8,7 @@ class Team < ActiveRecord::Base
 	has_many :players
 	has_many :picks
 	has_many :bans
+
+	has_many :player_roles
+	has_many :users, through: :player_roles
 end

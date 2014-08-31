@@ -1,0 +1,10 @@
+<h1>Editing user</h1>
+
+<% if logged_in_as_user(@user) %>
+	<%= render 'form' %>
+	<%= link_to 'Show', @user %>
+<% else %>
+	<p>You are not currently logged in as this user.</p>
+<% end %>
+
+<%= link_to 'Back', users_path %>

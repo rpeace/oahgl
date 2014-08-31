@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :player_roles
+
   resources :bans
 
   resources :picks
@@ -13,7 +15,8 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  post 'auth/steam/callback' => 'welcome#auth_callback'
+  post 'auth/steam/callback' => 'sessions#create'
+  get '/signout' => 'sessions#destroy', :as => :signout
 
   resources :matches
 
@@ -23,6 +26,8 @@ Rails.application.routes.draw do
     get 'items/:name', to: 'items#show'
 
   resources :heros
+
+  resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

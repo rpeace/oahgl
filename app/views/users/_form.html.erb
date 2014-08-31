@@ -1,0 +1,65 @@
+<%= form_for(@user) do |f| %>
+
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    What's your MMR (solo or team)? Captains will be able to see this information when picking their teams, but otherwise it'll be kept private.
+  </p>
+  <div class="field">
+    <%= f.label :mmr %><br>
+    <%= f.number_field :mmr %>
+  </div>
+  <p>
+    Please enter your email as well. This information will be kept private, and will only be used in the event that the OAHGL admins need to contact you.
+  </p>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :player_type, "Are you joining the league as a captain or a player?" %><br>
+    <%= select("user", "player_type", User::PLAYER_TYPES, {include_blank: 'Select a position'}) %>
+  </div>
+  <p>
+  <p>
+    Select your first- and second-favourite positions
+  </p>
+  <p>
+    Favourite position:
+  </p>
+  <div class="field">
+    <%= f.label :first_pos %><br>
+    <%= select("user", "first_pos", User::POSITIONS, {include_blank: 'Select a position'}) %>
+  </div>
+  <p>
+    Second favourite position:
+  </p>
+  <div class="field">
+    <%= f.label :second_pos %><br>
+    <%= select("user", "second_pos", User::POSITIONS, {include_blank: 'Select a position'}) %>
+  </div>
+  <p>
+    Favourite heroes:
+  </p>
+  <div class="field">
+    <%= select_tag(:first_hero, options_from_collection_for_select(Hero.all, :id, :lname) ) %>
+    <%= select_tag(:second_hero, options_from_collection_for_select(Hero.all, :id, :lname) ) %>
+    <%= select_tag(:third_hero, options_from_collection_for_select(Hero.all, :id, :lname) ) %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+  
+<% end %>

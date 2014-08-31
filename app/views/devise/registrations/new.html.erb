@@ -1,0 +1,19 @@
+<h2>Sign up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div><%= f.label :email %><br />
+  <%= f.email_field :email, autofocus: true %></div>
+
+  <% gen_pass =  Devise.friendly_token[0,20] %>
+  <% resource.password = gen_pass %>
+  <% resource.password_confirmation = gen_pass %>
+
+  <div><%= f.label :mmr %><br />
+  	<%= f.number_field :mmr %></div>
+
+  <div><%= f.submit "Sign up" %></div>
+<% end %>
+
+<%= render "devise/shared/links" %>

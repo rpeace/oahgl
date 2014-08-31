@@ -1,0 +1,21 @@
+class User < ActiveRecord::Base
+
+	has_and_belongs_to_many :heros
+  has_one :player_role
+  has_one :team, through: :player_role
+
+	POSITIONS = ['carry', 'mid', 'offlane', 'support']
+  PLAYER_TYPES = ['captain', 'player']
+
+	# validates_inclusion_of :first_pos, :in => POSITIONS
+	# validates_inclusion_of :second_pos, :in => POSITIONS
+
+	# before_create :save_steam_fields
+  def save_steam_fields(session)
+    self.logo = session[:steam_logo]
+  	self.name = session[:steam_name]
+  	self.uid = session[:steam_uid]
+   	self.provider = session[:provider]
+   	self.steam_profile = session[:steam_profile]
+  end
+end
