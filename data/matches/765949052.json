@@ -1,0 +1,147 @@
+{
+	"result": {
+		"players": [
+			{
+				"account_id": 88585077,
+				"player_slot": 0,
+				"hero_id": 11,
+				"item_0": 0,
+				"item_1": 0,
+				"item_2": 0,
+				"item_3": 0,
+				"item_4": 0,
+				"item_5": 75,
+				"kills": 0,
+				"deaths": 1,
+				"assists": 0,
+				"leaver_status": 0,
+				"gold": 354,
+				"last_hits": 16,
+				"denies": 7,
+				"gold_per_min": 234,
+				"xp_per_min": 376,
+				"gold_spent": 1575,
+				"hero_damage": 1739,
+				"tower_damage": 0,
+				"hero_healing": 0,
+				"level": 6,
+				"ability_upgrades": [
+					{
+						"ability": 5062,
+						"time": 46,
+						"level": 1
+					},
+					{
+						"ability": 5059,
+						"time": 176,
+						"level": 2
+					},
+					{
+						"ability": 5059,
+						"time": 205,
+						"level": 3
+					},
+					{
+						"ability": 5062,
+						"time": 276,
+						"level": 4
+					},
+					{
+						"ability": 5059,
+						"time": 356,
+						"level": 5
+					},
+					{
+						"ability": 5062,
+						"time": 417,
+						"level": 6
+					}
+				]
+				
+			},
+			{
+				"account_id": 41231571,
+				"player_slot": 128,
+				"hero_id": 11,
+				"item_0": 41,
+				"item_1": 16,
+				"item_2": 16,
+				"item_3": 0,
+				"item_4": 75,
+				"item_5": 29,
+				"kills": 1,
+				"deaths": 0,
+				"assists": 0,
+				"leaver_status": 0,
+				"gold": 795,
+				"last_hits": 24,
+				"denies": 14,
+				"gold_per_min": 383,
+				"xp_per_min": 537,
+				"gold_spent": 1925,
+				"hero_damage": 1593,
+				"tower_damage": 0,
+				"hero_healing": 0,
+				"level": 7,
+				"ability_upgrades": [
+					{
+						"ability": 5062,
+						"time": 57,
+						"level": 1
+					},
+					{
+						"ability": 5059,
+						"time": 165,
+						"level": 2
+					},
+					{
+						"ability": 5059,
+						"time": 206,
+						"level": 3
+					},
+					{
+						"ability": 5062,
+						"time": 255,
+						"level": 4
+					},
+					{
+						"ability": 5059,
+						"time": 331,
+						"level": 5
+					},
+					{
+						"ability": 5062,
+						"time": 410,
+						"level": 6
+					},
+					{
+						"ability": 5059,
+						"time": 428,
+						"level": 7
+					}
+				]
+				
+			}
+		]
+		,
+		"radiant_win": false,
+		"duration": 328,
+		"start_time": 1404862579,
+		"match_id": 765949052,
+		"match_seq_num": 688274532,
+		"tower_status_radiant": 2047,
+		"tower_status_dire": 2047,
+		"barracks_status_radiant": 63,
+		"barracks_status_dire": 63,
+		"cluster": 111,
+		"first_blood_time": 316,
+		"lobby_type": 1,
+		"human_players": 2,
+		"leagueid": 600,
+		"positive_votes": 1303,
+		"negative_votes": 88,
+		"game_mode": 21,
+		"radiant_captain": 88585077,
+		"dire_captain": 88585077
+	}
+}

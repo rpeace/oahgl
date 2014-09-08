@@ -1,31 +1,12 @@
 <h1>Listing users</h1>
 
-<table>
-<!--   <thead>
-    <tr>
-      <th>Name</th>
-      <th>Steamid</th>
-      <th>Logo</th>
-      <th>Mmr</th>
-      <th>Email</th>
-      <th></th>
-    </tr>
-  </thead>
- -->
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= link_to image_tag(user.logo), user %></td>
-        <td><%= user.name %></td>
-        <td><%= user_steam_state(user) %></td>
-        <% if logged_in_as_user(user) %>
-          <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <% end %>
-      </tr>
+  <% if current_user != nil %>
+    <% if current_user.player_type == "captain" %>
+      <%= render 'captain_table' %>
+    <% else %>   
+      <%= render 'public_table' %>
     <% end %>
-  </tbody>
-</table>
-
+  <% else %>
+    Sign in to see user data!
+  <% end %>
 <br>
-
-<%= link_to 'New User', new_user_path %>

@@ -1,0 +1,184 @@
+{
+	"result": {
+		"players": [
+			{
+				"account_id": 89871557,
+				"player_slot": 0,
+				"hero_id": 13,
+				"item_0": 41,
+				"item_1": 36,
+				"item_2": 63,
+				"item_3": 0,
+				"item_4": 77,
+				"item_5": 88,
+				"kills": 1,
+				"deaths": 0,
+				"assists": 0,
+				"leaver_status": 0,
+				"gold": 1049,
+				"last_hits": 61,
+				"denies": 19,
+				"gold_per_min": 371,
+				"xp_per_min": 504,
+				"gold_spent": 3980,
+				"hero_damage": 2234,
+				"tower_damage": 35,
+				"hero_healing": 0,
+				"level": 10,
+				"ability_upgrades": [
+					{
+						"ability": 5072,
+						"time": 140,
+						"level": 1
+					},
+					{
+						"ability": 5069,
+						"time": 181,
+						"level": 2
+					},
+					{
+						"ability": 5069,
+						"time": 211,
+						"level": 3
+					},
+					{
+						"ability": 5071,
+						"time": 269,
+						"level": 4
+					},
+					{
+						"ability": 5069,
+						"time": 335,
+						"level": 5
+					},
+					{
+						"ability": 5073,
+						"time": 420,
+						"level": 6
+					},
+					{
+						"ability": 5069,
+						"time": 534,
+						"level": 7
+					},
+					{
+						"ability": 5071,
+						"time": 605,
+						"level": 8
+					},
+					{
+						"ability": 5071,
+						"time": 785,
+						"level": 9
+					},
+					{
+						"ability": 5071,
+						"time": 820,
+						"level": 10
+					}
+				]
+				
+			},
+			{
+				"account_id": 88585077,
+				"player_slot": 128,
+				"hero_id": 13,
+				"item_0": 36,
+				"item_1": 20,
+				"item_2": 0,
+				"item_3": 73,
+				"item_4": 88,
+				"item_5": 29,
+				"kills": 0,
+				"deaths": 1,
+				"assists": 0,
+				"leaver_status": 0,
+				"gold": 618,
+				"last_hits": 54,
+				"denies": 16,
+				"gold_per_min": 300,
+				"xp_per_min": 371,
+				"gold_spent": 3305,
+				"hero_damage": 2415,
+				"tower_damage": 0,
+				"hero_healing": 0,
+				"level": 9,
+				"ability_upgrades": [
+					{
+						"ability": 5069,
+						"time": 88,
+						"level": 1
+					},
+					{
+						"ability": 5072,
+						"time": 162,
+						"level": 2
+					},
+					{
+						"ability": 5069,
+						"time": 225,
+						"level": 3
+					},
+					{
+						"ability": 5071,
+						"time": 271,
+						"level": 4
+					},
+					{
+						"ability": 5069,
+						"time": 346,
+						"level": 5
+					},
+					{
+						"ability": 5073,
+						"time": 447,
+						"level": 6
+					},
+					{
+						"ability": 5069,
+						"time": 536,
+						"level": 7
+					},
+					{
+						"ability": 5071,
+						"time": 626,
+						"level": 8
+					},
+					{
+						"ability": 5071,
+						"time": 782,
+						"level": 9
+					}
+				]
+				
+			}
+		]
+		,
+		"radiant_win": true,
+		"duration": 712,
+		"start_time": 1404847883,
+		"match_id": 765752317,
+		"match_seq_num": 688097007,
+		"tower_status_radiant": 2047,
+		"tower_status_dire": 2047,
+		"barracks_status_radiant": 63,
+		"barracks_status_dire": 63,
+		"cluster": 111,
+		"first_blood_time": 700,
+		"lobby_type": 1,
+		"human_players": 2,
+		"leagueid": 600,
+		"positive_votes": 836,
+		"negative_votes": 58,
+		"game_mode": 21,
+		"dire_team_id": 5,
+		"dire_name": "Invictus Gaming",
+		"dire_logo": 79128337325388690,
+		"dire_team_complete": 0,
+		"dire_guild_id": 14122,
+		"dire_guild_name": "Girls of Dota",
+		"dire_guild_logo": 577869921277002577,
+		"radiant_captain": 89871557,
+		"dire_captain": 89871557
+	}
+}

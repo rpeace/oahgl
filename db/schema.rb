@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140826011150) do
+ActiveRecord::Schema.define(version: 20140908212804) do
 
   create_table "bans", force: true do |t|
     t.integer  "order"
@@ -126,6 +126,7 @@ ActiveRecord::Schema.define(version: 20140826011150) do
     t.datetime "updated_at"
     t.integer  "bans_count",  default: 0
     t.integer  "picks_count", default: 0
+    t.string   "team_id"
   end
 
   create_table "users", force: true do |t|

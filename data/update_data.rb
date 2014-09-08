@@ -271,6 +271,7 @@ match_ids.each do |match_id|
 end
 teams.keys.each do |team_id|
 	outFile.write(team_id + ":\n")
+	outFile.write("  team_id: "+team_id[1,team_id.length]+"\n")
 	outFile.write("  name: "+teams[team_id][0].to_s+"\n")
 	outFile.write("  logo: "+teams[team_id][1].to_s+"\n")
 end

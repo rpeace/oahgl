@@ -9,6 +9,7 @@ class Team < ActiveRecord::Base
 	has_many :picks
 	has_many :bans
 
-	has_many :player_roles
-	has_many :users, through: :player_roles
+	def logo_path
+		return "team_logo_"+self.team_id.to_s+".png"
+	end
 end

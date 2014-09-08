@@ -1,4 +1,5 @@
 	<div id="stats" style=float:left>
+		<%= image_tag(current_user.player.team.logo_path) %>
 		<h1>RANDOM LEAGUE STATS!</h1>
 		<p>
 			<strong>Most picked heros:</strong><br />
@@ -38,7 +39,7 @@
 		<div id="accountmgmt" style=float:left>
 			<h1>Account stuff</h1>
 			 <% if current_user.player_type == "captain" %>
-			 	<% if current_user.team == nil %>
+			 	<% if current_user.player.team == nil %>
 			 		<p>You are not on a team.</p>
 			 		<%= link_to "You should make one!", new_team_path %>
 			 	<% end %>

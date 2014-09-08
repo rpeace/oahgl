@@ -53,7 +53,6 @@ class UsersController < ApplicationController
         HerosUsers.find_or_create_by(:hero_id => params[:first_hero], :user_id => @user.id)
         HerosUsers.find_or_create_by(:hero_id => params[:second_hero], :user_id => @user.id)
         HerosUsers.find_or_create_by(:hero_id => params[:third_hero], :user_id => @user.id)
-        PlayerRole.find_or_create_by(:user_id => @user.id, :role => @user.player_type)
       else
         format.html { render :edit }
         format.json { render json: @user.errors, status: :unprocessable_entity }
@@ -65,7 +64,6 @@ class UsersController < ApplicationController
   # DELETE /users/1.json
   def destroy
     HerosUsers.destroy_all(:user_id => @user.id)
-    PlayerRole.destroy_all(:user_id => @user.id)
     @user.destroy
     respond_to do |format|
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }

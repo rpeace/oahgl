@@ -7,9 +7,37 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  helper_method :users_on_same_team
+  helper_method :players_on_same_team
 	helper_method :current_user
 	helper_method :user_steam_state
   helper_method :logged_in_as_user
+
+  def players_on_same_team(p1, p2)
+    t1 = p1.team
+    t2 = p2.team
+    if t1 == t2 and t1 != nil and t2 != nil
+      return true
+    else
+      return false
+    end
+  end
+
+  def users_on_same_team(user1, user2)
+    p1 = get_player_for_user(user1)
+    p2 = get_player_for_user(user2)
+    if p1 != nil and p2 != nil
+      return on_same_team(p1, p2)
+    else
+      return false
+    end
+  end
+
+  def get_player_for_user(user)
+    # id32 = user.uid.to_i - 76561197960265728
+    # return Player.find_by_id(id32)
+    return Player.find_by_id(120214727)
+  end
 
   def logged_in_as_user(user)
     current_user != nil && user.id == current_user.id
@@ -39,7 +67,6 @@ class ApplicationController < ActionController::Base
   	elsif state == 6
   		return "Looking to play"
   	end
-  		
   end
 
 end

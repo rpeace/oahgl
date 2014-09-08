@@ -1,0 +1,33 @@
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Mmr</th>
+      <th>Preferred heroes</th>
+      <th>Preferred positions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= link_to image_tag(user.player.team.logo_path), user.player.team %>
+        <td><%= link_to image_tag(user.logo), user.steam_profile %></td>
+        <td><%= user.name %></td>
+        <td><%= user_steam_state(user) %></td>
+        <td><%= user.mmr %></td>
+        <td>
+          <% HerosUsers.where(user_id = user.id).each do |hero_id| %>
+            <%= image_tag(Hero.find_by_hero_id(hero_id).small_portrait_url) %>
+          <% end %>
+        </td>
+        <td><%=user.first_pos%>, <%=user.second_pos%></td>
+        <% if logged_in_as_user(user) %>
+          <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

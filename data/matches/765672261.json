@@ -1,0 +1,159 @@
+{
+	"result": {
+		"players": [
+			{
+				"account_id": 41231571,
+				"player_slot": 0,
+				"hero_id": 13,
+				"item_0": 77,
+				"item_1": 36,
+				"item_2": 44,
+				"item_3": 63,
+				"item_4": 39,
+				"item_5": 0,
+				"kills": 1,
+				"deaths": 1,
+				"assists": 0,
+				"leaver_status": 0,
+				"gold": 531,
+				"last_hits": 36,
+				"denies": 20,
+				"gold_per_min": 392,
+				"xp_per_min": 522,
+				"gold_spent": 2610,
+				"hero_damage": 1676,
+				"tower_damage": 0,
+				"hero_healing": 0,
+				"level": 8,
+				"ability_upgrades": [
+					{
+						"ability": 5072,
+						"time": 87,
+						"level": 1
+					},
+					{
+						"ability": 5069,
+						"time": 175,
+						"level": 2
+					},
+					{
+						"ability": 5069,
+						"time": 216,
+						"level": 3
+					},
+					{
+						"ability": 5071,
+						"time": 255,
+						"level": 4
+					},
+					{
+						"ability": 5069,
+						"time": 329,
+						"level": 5
+					},
+					{
+						"ability": 5073,
+						"time": 394,
+						"level": 6
+					},
+					{
+						"ability": 5071,
+						"time": 524,
+						"level": 7
+					},
+					{
+						"ability": 5071,
+						"time": 539,
+						"level": 8
+					}
+				]
+				
+			},
+			{
+				"account_id": 84772440,
+				"player_slot": 128,
+				"hero_id": 13,
+				"item_0": 29,
+				"item_1": 16,
+				"item_2": 88,
+				"item_3": 44,
+				"item_4": 77,
+				"item_5": 38,
+				"kills": 1,
+				"deaths": 1,
+				"assists": 0,
+				"leaver_status": 3,
+				"gold": 366,
+				"last_hits": 16,
+				"denies": 2,
+				"gold_per_min": 240,
+				"xp_per_min": 368,
+				"gold_spent": 1770,
+				"hero_damage": 1072,
+				"tower_damage": 40,
+				"hero_healing": 0,
+				"level": 6,
+				"ability_upgrades": [
+					{
+						"ability": 5072,
+						"time": 118,
+						"level": 1
+					},
+					{
+						"ability": 5069,
+						"time": 189,
+						"level": 2
+					},
+					{
+						"ability": 5071,
+						"time": 229,
+						"level": 3
+					},
+					{
+						"ability": 5071,
+						"time": 293,
+						"level": 4
+					},
+					{
+						"ability": 5071,
+						"time": 361,
+						"level": 5
+					},
+					{
+						"ability": 5073,
+						"time": 431,
+						"level": 6
+					}
+				]
+				
+			}
+		]
+		,
+		"radiant_win": true,
+		"duration": 421,
+		"start_time": 1404844324,
+		"match_id": 765672261,
+		"match_seq_num": 688017893,
+		"tower_status_radiant": 2047,
+		"tower_status_dire": 2047,
+		"barracks_status_radiant": 63,
+		"barracks_status_dire": 63,
+		"cluster": 114,
+		"first_blood_time": 408,
+		"lobby_type": 1,
+		"human_players": 2,
+		"leagueid": 600,
+		"positive_votes": 2468,
+		"negative_votes": 173,
+		"game_mode": 21,
+		"dire_team_id": 824639,
+		"dire_name": "XBOCT's All-Stars",
+		"dire_logo": 79127787849578802,
+		"dire_team_complete": 0,
+		"dire_guild_id": 119,
+		"dire_guild_name": "Zenith",
+		"dire_guild_logo": 0,
+		"radiant_captain": 41231571,
+		"dire_captain": 41231571
+	}
+}
