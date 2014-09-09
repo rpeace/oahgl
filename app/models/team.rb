@@ -9,6 +9,14 @@ class Team < ActiveRecord::Base
 	has_many :picks
 	has_many :bans
 
+	def wins
+		return Match.where(winner_id: self.id).length
+	end
+
+	def losses
+		return Match.where(loser_id: self.id).length
+	end
+
 	def logo_path
 		return "team_logo_"+self.team_id.to_s+".png"
 	end

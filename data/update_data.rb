@@ -72,50 +72,53 @@ end
 p heroPerformances.keys
 match_ids.each do |match_id|
 	json = JSON.parse(File.open("matches/"+match_id.to_s+".json").read)
-	# Log player/team combos
-	json['result']['players'][0..4].each do |p|
-		playerToTeam[p['account_id']] = json['result']['radiant_team_id']
-	end
-	json['result']['players'][5..9].each do |p|
-		playerToTeam[p['account_id']] = json['result']['dire_team_id']
-	end
-	# And now fill out the performance fixture.
-	json['result']['players'].each do |p|
-		performance_id = "m"+match_id.to_s+"_"+"p"+p['account_id'].to_s
-		heroPerformances[p['hero_id']].push(performance_id)
-		itemPerformances[p['item_0']].push(performance_id)
-		itemPerformances[p['item_1']].push(performance_id)
-		itemPerformances[p['item_2']].push(performance_id)
-		itemPerformances[p['item_3']].push(performance_id)
-		itemPerformances[p['item_4']].push(performance_id)
-		itemPerformances[p['item_5']].push(performance_id)
-		outFile.write(performance_id+":\n")
-		if p['player_slot'] < 5
-			outFile.write("  is_winner: "+json['result']['radiant_win'].to_s+"\n")
-		else
-			outFile.write("  is_winner: "+(!json['result']['radiant_win']).to_s+"\n")
+	# ditch malformed match logs (not sure how they got in there?)
+	if json['result']['players'].length == 10
+		# Log player/team combos
+		json['result']['players'][0..4].each do |p|
+			playerToTeam[p['account_id']] = json['result']['radiant_team_id']
 		end
-		outFile.write("  player: p"+p['account_id'].to_s+"\n")
-		outFile.write("  level: "+p['level'].to_s+"\n")
-		outFile.write("  kills: "+p['kills'].to_s+"\n")
-		outFile.write("  deaths: "+p['deaths'].to_s+"\n")
-		outFile.write("  assists: "+p['assists'].to_s+"\n")
-		outFile.write("  last_hits: "+p['last_hits'].to_s+"\n")
-		outFile.write("  denies: "+p['denies'].to_s+"\n")
-		outFile.write("  gpm: "+p['gold_per_min'].to_s+"\n")
-		outFile.write("  xpm: "+p['xp_per_min'].to_s+"\n")
-		outFile.write("  hero_damage: "+p['hero_damage'].to_s+"\n")
-		outFile.write("  tower_damage: "+p['tower_damage'].to_s+"\n")
-		outFile.write("  hero_healing: "+p['hero_healing'].to_s+"\n")
-		outFile.write("  hero: "+heroNames[p['hero_id']]+"\n")
-		outFile.write("  match: m"+match_id.to_s+"\n")
-		outFile.write("  items: ")
-		outFile.write(itemNames[p['item_0']]+", ")
-		outFile.write(itemNames[p['item_1']]+", ")
-		outFile.write(itemNames[p['item_2']]+", ")
-		outFile.write(itemNames[p['item_3']]+", ")
-		outFile.write(itemNames[p['item_4']]+", ")
-		outFile.write(itemNames[p['item_5']]+"\n")
+		json['result']['players'][5..9].each do |p|
+			playerToTeam[p['account_id']] = json['result']['dire_team_id']
+		end
+		# And now fill out the performance fixture.
+		json['result']['players'].each do |p|
+			performance_id = "m"+match_id.to_s+"_"+"p"+p['account_id'].to_s
+			heroPerformances[p['hero_id']].push(performance_id)
+			itemPerformances[p['item_0']].push(performance_id)
+			itemPerformances[p['item_1']].push(performance_id)
+			itemPerformances[p['item_2']].push(performance_id)
+			itemPerformances[p['item_3']].push(performance_id)
+			itemPerformances[p['item_4']].push(performance_id)
+			itemPerformances[p['item_5']].push(performance_id)
+			outFile.write(performance_id+":\n")
+			if p['player_slot'] < 5
+				outFile.write("  is_winner: "+json['result']['radiant_win'].to_s+"\n")
+			else
+				outFile.write("  is_winner: "+(!json['result']['radiant_win']).to_s+"\n")
+			end
+			outFile.write("  player: p"+p['account_id'].to_s+"\n")
+			outFile.write("  level: "+p['level'].to_s+"\n")
+			outFile.write("  kills: "+p['kills'].to_s+"\n")
+			outFile.write("  deaths: "+p['deaths'].to_s+"\n")
+			outFile.write("  assists: "+p['assists'].to_s+"\n")
+			outFile.write("  last_hits: "+p['last_hits'].to_s+"\n")
+			outFile.write("  denies: "+p['denies'].to_s+"\n")
+			outFile.write("  gpm: "+p['gold_per_min'].to_s+"\n")
+			outFile.write("  xpm: "+p['xp_per_min'].to_s+"\n")
+			outFile.write("  hero_damage: "+p['hero_damage'].to_s+"\n")
+			outFile.write("  tower_damage: "+p['tower_damage'].to_s+"\n")
+			outFile.write("  hero_healing: "+p['hero_healing'].to_s+"\n")
+			outFile.write("  hero: "+heroNames[p['hero_id']]+"\n")
+			outFile.write("  match: m"+match_id.to_s+"\n")
+			outFile.write("  items: ")
+			outFile.write(itemNames[p['item_0']]+", ")
+			outFile.write(itemNames[p['item_1']]+", ")
+			outFile.write(itemNames[p['item_2']]+", ")
+			outFile.write(itemNames[p['item_3']]+", ")
+			outFile.write(itemNames[p['item_4']]+", ")
+			outFile.write(itemNames[p['item_5']]+"\n")
+		end
 	end
 end
 # itemPerformances.keys.each do |key|

@@ -1,0 +1,21 @@
+<% teams = Team.all.sort_by { |a| [100-a.wins, a.losses] } %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Team name</th>
+      <th>Wins</th>
+      <th>Losses</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% teams.each do |t| %>
+      <tr>
+        <td><%= link_to t.name, t %></td>
+        <td><%= t.wins %></td>
+        <td><%= t.losses %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

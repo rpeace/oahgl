@@ -6,18 +6,24 @@
 </p>
 
 <p>
-  <strong>Radiant win:</strong>
-  <%= @match.radiant_win %>
+	<% if @match.radiant_win %>
+		<%= image_tag(@match.winner.logo_path) %><h1>Vs.</h1><%= image_tag(@match.loser.logo_path) %>
+	<% else %>
+		<%= image_tag(@match.loser.logo_path) %><h1>Vs.</h1><%= image_tag(@match.winner.logo_path) %>
+	<% end %>
+	
+	<% if @match.radiant_win %>
+		
+	<% else %>
+		
+	<% end %>
 </p>
 
-<p>
-  <strong>Start time:</strong>
-  <%= @match.start_time %>
-</p>
+<%= render 'scoreboard' %>
 
 <p>
-  <strong>Duration:</strong>
-  <%= @match.duration %>
+  <strong>Winner:</strong>
+  <%= @match.winner.name %>
 </p>
 
 <%= link_to 'Edit', edit_match_path(@match) %> |

@@ -1,14 +1,31 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @team.name %>
+  <h1><%= @team.name %></h1>
+</p>
+<p>
+  <%= image_tag(@team.logo_path) %>
 </p>
 
 <p>
-  <strong>Logo:</strong>
-  <%= @team.logo %>
+	<h1>W: <%= Match.where(winner_id: @team.id).length %> L: <%= Match.where(loser_id: @team.id).length %></h1>
 </p>
+
+<p>
+	<strong>Roster:</strong>
+</p>
+
+<table>
+
+  <tbody>
+    <% @team.players.each do |p| %>
+      <tr>
+        <td><%= image_tag(p.user.logo) %></td>
+        <td><%= p.user.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
 <%= link_to 'Edit', edit_team_path(@team) %> |
 <%= link_to 'Back', teams_path %>

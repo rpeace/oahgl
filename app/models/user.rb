@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
 	# validates_inclusion_of :second_pos, :in => POSITIONS
 
   def player
-    # id32 = user.uid.to_i - 76561197960265728
+    # id32 = self.uid.to_i - 76561197960265728
     # return Player.find_by_id(id32)
     return Player.find_by_id(30600683)
   end

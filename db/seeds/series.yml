@@ -1,860 +1,860 @@
-s1:
+s7:
   series_type: 2
   winner: t40
   loser: t26
-s2:
+s8:
   series_type: 1
   winner: t40
   loser: t293390
-s3:
+s9:
   series_type: 1
   winner: t40
   loser: t1595874
-s4:
+s10:
   series_type: 1
   winner: t26
   loser: t293390
-s5:
+s11:
   series_type: 0
   winner: t293390
   loser: t26
-s6:
+s12:
   series_type: 0
   winner: t1161668
   loser: t1595874
-s7:
+s13:
   series_type: 0
   winner: t40
   loser: t1055544
-s8:
+s14:
   series_type: 0
   winner: t1335685
   loser: t1194118
-s9:
+s15:
   series_type: 0
   winner: t55
   loser: t1371515
-s10:
-  series_type: 0
-  winner: t1595874
-  loser: t1371515
-s11:
-  series_type: 0
-  winner: t1055544
-  loser: t1335685
-s12:
-  series_type: 0
-  winner: t26
-  loser: t40
-s13:
-  series_type: 0
-  winner: t1194118
-  loser: t1161668
-s14:
-  series_type: 0
-  winner: t293390
-  loser: t55
-s15:
-  series_type: 0
-  winner: t26
-  loser: t1335685
 s16:
   series_type: 0
-  winner: t1194118
+  winner: t1595874
   loser: t1371515
 s17:
   series_type: 0
   winner: t1055544
-  loser: t1161668
+  loser: t1335685
 s18:
   series_type: 0
   winner: t26
-  loser: t1161668
+  loser: t40
 s19:
   series_type: 0
-  winner: t293390
-  loser: t40
+  winner: t1194118
+  loser: t1161668
 s20:
   series_type: 0
-  winner: t1371515
-  loser: t1055544
+  winner: t293390
+  loser: t55
 s21:
   series_type: 0
-  winner: t1595874
-  loser: t55
+  winner: t26
+  loser: t1335685
 s22:
   series_type: 0
-  winner: t26
+  winner: t1194118
   loser: t1371515
 s23:
   series_type: 0
-  winner: t40
-  loser: t1335685
+  winner: t1055544
+  loser: t1161668
 s24:
   series_type: 0
-  winner: t293390
-  loser: t1595874
+  winner: t26
+  loser: t1161668
 s25:
   series_type: 0
-  winner: t55
-  loser: t1194118
+  winner: t293390
+  loser: t40
 s26:
   series_type: 0
-  winner: t293390
-  loser: t1335685
+  winner: t1371515
+  loser: t1055544
 s27:
   series_type: 0
-  winner: t1055544
+  winner: t1595874
   loser: t55
 s28:
   series_type: 0
-  winner: t1595874
-  loser: t1194118
+  winner: t26
+  loser: t1371515
 s29:
   series_type: 0
-  winner: t1161668
-  loser: t40
+  winner: t40
+  loser: t1335685
 s30:
   series_type: 0
-  winner: t1161668
-  loser: t1335685
+  winner: t293390
+  loser: t1595874
 s31:
   series_type: 0
-  winner: t1595874
-  loser: t1055544
+  winner: t55
+  loser: t1194118
 s32:
   series_type: 0
-  winner: t26
-  loser: t55
+  winner: t293390
+  loser: t1335685
 s33:
   series_type: 0
-  winner: t40
-  loser: t1371515
+  winner: t1055544
+  loser: t55
 s34:
   series_type: 0
-  winner: t293390
+  winner: t1595874
   loser: t1194118
 s35:
   series_type: 0
+  winner: t1161668
+  loser: t40
+s36:
+  series_type: 0
+  winner: t1161668
+  loser: t1335685
+s37:
+  series_type: 0
+  winner: t1595874
+  loser: t1055544
+s38:
+  series_type: 0
+  winner: t26
+  loser: t55
+s39:
+  series_type: 0
+  winner: t40
+  loser: t1371515
+s40:
+  series_type: 0
+  winner: t293390
+  loser: t1194118
+s41:
+  series_type: 0
   winner: t1335685
   loser: t1371515
-s36:
+s42:
   series_type: 0
   winner: t26
   loser: t1595874
-s37:
+s43:
   series_type: 0
   winner: t40
   loser: t55
-s38:
+s44:
   series_type: 0
   winner: t55
   loser: t1335685
-s39:
+s45:
   series_type: 0
   winner: t293390
   loser: t1161668
-s40:
+s46:
   series_type: 0
   winner: t1595874
   loser: t40
-s41:
+s47:
   series_type: 0
   winner: t1194118
   loser: t1055544
-s42:
+s48:
   series_type: 0
   winner: t1595874
   loser: t1335685
-s43:
+s49:
   series_type: 0
   winner: t293390
   loser: t1055544
-s44:
+s50:
   series_type: 0
   winner: t26
   loser: t1194118
-s45:
+s51:
   series_type: 0
   winner: t1161668
   loser: t1371515
-s46:
+s52:
   series_type: 0
   winner: t293390
   loser: t1371515
-s47:
+s53:
   series_type: 0
   winner: t26
   loser: t1055544
-s48:
+s54:
   series_type: 0
   winner: t55
   loser: t1161668
-s49:
+s55:
   series_type: 0
   winner: t40
   loser: t1194118
-s50:
+s56:
   series_type: 2
   winner: t15
   loser: t1312775
-s51:
-  series_type: 0
-  winner: t1312775
-  loser: t1059824
-s52:
-  series_type: 1
-  winner: t1312775
-  loser: t1059824
-s53:
-  series_type: 1
-  winner: t1059824
-  loser: t20
-s54:
-  series_type: 1
-  winner: t15
-  loser: t1312775
-s55:
-  series_type: 0
-  winner: t1059824
-  loser: t1520578
-s56:
-  series_type: 0
-  winner: t1059824
-  loser: t484909
 s57:
   series_type: 0
   winner: t1312775
-  loser: t20
+  loser: t1059824
 s58:
-  series_type: 0
-  winner: t15
+  series_type: 1
+  winner: t1312775
   loser: t1059824
 s59:
-  series_type: 0
-  winner: t20
-  loser: t1520578
+  series_type: 1
+  winner: t1059824
+  loser: t20
 s60:
-  series_type: 0
-  winner: t633833
-  loser: t1373008
+  series_type: 1
+  winner: t15
+  loser: t1312775
 s61:
   series_type: 0
-  winner: t484909
-  loser: t1392666
+  winner: t1059824
+  loser: t1520578
 s62:
   series_type: 0
-  winner: t1312775
-  loser: t465398
+  winner: t1059824
+  loser: t484909
 s63:
   series_type: 0
   winner: t1312775
-  loser: t1059824
+  loser: t20
 s64:
+  series_type: 0
+  winner: t15
+  loser: t1059824
+s65:
+  series_type: 0
+  winner: t20
+  loser: t1520578
+s66:
+  series_type: 0
+  winner: t633833
+  loser: t1373008
+s67:
+  series_type: 0
+  winner: t484909
+  loser: t1392666
+s68:
+  series_type: 0
+  winner: t1312775
+  loser: t465398
+s69:
+  series_type: 0
+  winner: t1312775
+  loser: t1059824
+s70:
   series_type: 0
   winner: t465398
   loser: t1373008
-s65:
-  series_type: 0
-  winner: t1520578
-  loser: t633833
-s66:
-  series_type: 0
-  winner: t20
-  loser: t1392666
-s67:
-  series_type: 0
-  winner: t15
-  loser: t484909
-s68:
-  series_type: 0
-  winner: t1392666
-  loser: t633833
-s69:
-  series_type: 0
-  winner: t1059824
-  loser: t1373008
-s70:
-  series_type: 0
-  winner: t1520578
-  loser: t465398
 s71:
   series_type: 0
-  winner: t1392666
-  loser: t465398
+  winner: t1520578
+  loser: t633833
 s72:
   series_type: 0
   winner: t20
-  loser: t484909
+  loser: t1392666
 s73:
   series_type: 0
-  winner: t1520578
-  loser: t1059824
+  winner: t15
+  loser: t484909
 s74:
   series_type: 0
-  winner: t1312775
-  loser: t15
+  winner: t1392666
+  loser: t633833
 s75:
   series_type: 0
-  winner: t15
-  loser: t465398
+  winner: t1059824
+  loser: t1373008
 s76:
   series_type: 0
-  winner: t15
-  loser: t20
+  winner: t1520578
+  loser: t465398
 s77:
   series_type: 0
-  winner: t1059824
-  loser: t1392666
+  winner: t1392666
+  loser: t465398
 s78:
   series_type: 0
-  winner: t633833
+  winner: t20
   loser: t484909
 s79:
   series_type: 0
+  winner: t1520578
+  loser: t1059824
+s80:
+  series_type: 0
+  winner: t1312775
+  loser: t15
+s81:
+  series_type: 0
+  winner: t15
+  loser: t465398
+s82:
+  series_type: 0
+  winner: t15
+  loser: t20
+s83:
+  series_type: 0
+  winner: t1059824
+  loser: t1392666
+s84:
+  series_type: 0
+  winner: t633833
+  loser: t484909
+s85:
+  series_type: 0
   winner: t1312775
   loser: t1373008
-s80:
+s86:
   series_type: 0
   winner: t1520578
   loser: t1312775
-s81:
+s87:
   series_type: 0
   winner: t20
   loser: t633833
-s82:
+s88:
   series_type: 0
   winner: t484909
   loser: t465398
-s83:
+s89:
   series_type: 0
   winner: t15
   loser: t1373008
-s84:
+s90:
   series_type: 0
   winner: t1520578
   loser: t1373008
-s85:
+s91:
   series_type: 0
   winner: t20
   loser: t465398
-s86:
+s92:
   series_type: 0
   winner: t1312775
   loser: t1392666
-s87:
+s93:
   series_type: 0
   winner: t1059824
   loser: t484909
-s88:
+s94:
   series_type: 0
   winner: t1059824
   loser: t20
-s89:
+s95:
   series_type: 0
   winner: t484909
   loser: t1312775
-s90:
+s96:
   series_type: 0
   winner: t15
   loser: t633833
-s91:
-  series_type: 0
-  winner: t1373008
-  loser: t1392666
-s92:
-  series_type: 0
-  winner: t633833
-  loser: t465398
-s93:
-  series_type: 0
-  winner: t20
-  loser: t1312775
-s94:
-  series_type: 0
-  winner: t633833
-  loser: t1059824
-s95:
-  series_type: 0
-  winner: t15
-  loser: t1520578
-s96:
-  series_type: 0
-  winner: t484909
-  loser: t1373008
 s97:
   series_type: 0
   winner: t1373008
-  loser: t20
+  loser: t1392666
 s98:
   series_type: 0
-  winner: t1392666
-  loser: t1520578
+  winner: t633833
+  loser: t465398
 s99:
   series_type: 0
-  winner: t15
-  loser: t1392666
+  winner: t20
+  loser: t1312775
 s100:
   series_type: 0
-  winner: t1059824
-  loser: t465398
+  winner: t633833
+  loser: t1059824
 s101:
   series_type: 0
-  winner: t484909
+  winner: t15
   loser: t1520578
 s102:
   series_type: 0
+  winner: t484909
+  loser: t1373008
+s103:
+  series_type: 0
+  winner: t1373008
+  loser: t20
+s104:
+  series_type: 0
+  winner: t1392666
+  loser: t1520578
+s105:
+  series_type: 0
+  winner: t15
+  loser: t1392666
+s106:
+  series_type: 0
+  winner: t1059824
+  loser: t465398
+s107:
+  series_type: 0
+  winner: t484909
+  loser: t1520578
+s108:
+  series_type: 0
   winner: t1312775
   loser: t633833
-s103:
+s109:
   series_type: 2
   winner: t1277104
   loser: t1148284
-s104:
+s110:
   series_type: 1
   winner: t1148284
   loser: t24
-s105:
+s111:
   series_type: 1
   winner: t24
   loser: t543897
-s106:
+s112:
   series_type: 0
   winner: t1277104
   loser: t1148284
-s107:
+s113:
   series_type: 0
   winner: t1277104
   loser: t1148284
-s108:
+s114:
   series_type: 0
   winner: t543897
   loser: t1075534
-s109:
+s115:
   series_type: 0
   winner: t543897
   loser: t24
-s110:
+s116:
   series_type: 0
   winner: t24
   loser: t1075534
-s111:
+s117:
   series_type: 0
   winner: t1283482
   loser: t1277104
-s112:
+s118:
   series_type: 0
   winner: t254140
   loser: t1075534
-s113:
+s119:
   series_type: 0
   winner: t1105664
   loser: t24
-s114:
-  series_type: 0
-  winner: t1245961
-  loser: t494197
-s115:
-  series_type: 0
-  winner: t1148284
-  loser: t543897
-s116:
-  series_type: 0
-  winner: t1245961
-  loser: t1283482
-s117:
-  series_type: 0
-  winner: t1148284
-  loser: t254140
-s118:
-  series_type: 0
-  winner: t1075534
-  loser: t494197
-s119:
-  series_type: 0
-  winner: t543897
-  loser: t1105664
 s120:
   series_type: 0
-  winner: t254140
-  loser: t1105664
+  winner: t1245961
+  loser: t494197
 s121:
   series_type: 0
   winner: t1148284
-  loser: t494197
+  loser: t543897
 s122:
+  series_type: 0
+  winner: t1245961
+  loser: t1283482
+s123:
+  series_type: 0
+  winner: t1148284
+  loser: t254140
+s124:
+  series_type: 0
+  winner: t1075534
+  loser: t494197
+s125:
+  series_type: 0
+  winner: t543897
+  loser: t1105664
+s126:
+  series_type: 0
+  winner: t254140
+  loser: t1105664
+s127:
+  series_type: 0
+  winner: t1148284
+  loser: t494197
+s128:
   series_type: 0
   winner: t24
   loser: t1277104
-s123:
+s129:
   series_type: 0
   winner: t1283482
   loser: t1075534
-s124:
+s130:
   series_type: 0
   winner: t1148284
   loser: t1283482
-s125:
+s131:
   series_type: 0
   winner: t1105664
   loser: t494197
-s126:
+s132:
   series_type: 0
   winner: t24
   loser: t543897
-s127:
+s133:
   series_type: 0
   winner: t1277104
   loser: t1245961
-s128:
+s134:
   series_type: 2
   winner: t1531850
   loser: t2163
-s129:
+s135:
   series_type: 0
   winner: t1075534
   loser: t1245961
-s130:
+s136:
   series_type: 0
   winner: t1283482
   loser: t1105664
-s131:
+s137:
   series_type: 0
   winner: t1277104
   loser: t543897
-s132:
+s138:
   series_type: 0
   winner: t254140
   loser: t24
-s133:
-  series_type: 0
-  winner: t24
-  loser: t494197
-s134:
-  series_type: 0
-  winner: t1148284
-  loser: t1245961
-s135:
-  series_type: 0
-  winner: t543897
-  loser: t254140
-s136:
-  series_type: 0
-  winner: t1277104
-  loser: t1075534
-s137:
-  series_type: 0
-  winner: t24
-  loser: t1283482
-s138:
-  series_type: 0
-  winner: t543897
-  loser: t494197
 s139:
   series_type: 0
-  winner: t1105664
-  loser: t1245961
+  winner: t24
+  loser: t494197
 s140:
   series_type: 0
   winner: t1148284
-  loser: t1075534
+  loser: t1245961
 s141:
   series_type: 0
-  winner: t1277104
+  winner: t543897
   loser: t254140
 s142:
   series_type: 0
-  winner: t543897
-  loser: t1283482
+  winner: t1277104
+  loser: t1075534
 s143:
   series_type: 0
-  winner: t1075534
-  loser: t1105664
+  winner: t24
+  loser: t1283482
 s144:
   series_type: 0
-  winner: t24
-  loser: t1245961
+  winner: t543897
+  loser: t494197
 s145:
   series_type: 0
-  winner: t494197
-  loser: t254140
+  winner: t1105664
+  loser: t1245961
 s146:
   series_type: 0
-  winner: t1277104
-  loser: t1148284
+  winner: t1148284
+  loser: t1075534
 s147:
   series_type: 0
-  winner: t1075534
-  loser: t24
+  winner: t1277104
+  loser: t254140
 s148:
   series_type: 0
   winner: t543897
-  loser: t1245961
+  loser: t1283482
 s149:
   series_type: 0
-  winner: t1105664
-  loser: t1148284
+  winner: t1075534
+  loser: t1105664
 s150:
   series_type: 0
-  winner: t1075534
-  loser: t543897
+  winner: t24
+  loser: t1245961
 s151:
   series_type: 0
-  winner: t254140
-  loser: t1283482
+  winner: t494197
+  loser: t254140
 s152:
   series_type: 0
   winner: t1277104
-  loser: t494197
+  loser: t1148284
 s153:
   series_type: 0
-  winner: t1148284
+  winner: t1075534
   loser: t24
 s154:
   series_type: 0
+  winner: t543897
+  loser: t1245961
+s155:
+  series_type: 0
+  winner: t1105664
+  loser: t1148284
+s156:
+  series_type: 0
+  winner: t1075534
+  loser: t543897
+s157:
+  series_type: 0
+  winner: t254140
+  loser: t1283482
+s158:
+  series_type: 0
+  winner: t1277104
+  loser: t494197
+s159:
+  series_type: 0
+  winner: t1148284
+  loser: t24
+s160:
+  series_type: 0
   winner: t1245961
   loser: t254140
-s155:
+s161:
   series_type: 0
   winner: t1283482
   loser: t494197
-s156:
+s162:
   series_type: 0
   winner: t1277104
   loser: t1105664
-s157:
+s163:
   series_type: 1
   winner: t2163
   loser: t1453020
-s158:
+s164:
   series_type: 1
   winner: t1453020
   loser: t720700
-s159:
+s165:
   series_type: 1
   winner: t1531850
   loser: t2163
-s160:
+s166:
   series_type: 0
   winner: t720700
   loser: t1252040
-s161:
+s167:
   series_type: 0
   winner: t1453020
   loser: t720700
-s162:
+s168:
   series_type: 0
   winner: t1453020
   loser: t1252040
-s163:
+s169:
   series_type: 0
   winner: t720700
   loser: t2163
-s164:
+s170:
   series_type: 0
   winner: t1252040
   loser: t1318686
-s165:
+s171:
   series_type: 0
   winner: t94968
   loser: t1453020
-s166:
+s172:
   series_type: 0
   winner: t1252040
   loser: t1387750
-s167:
+s173:
   series_type: 0
   winner: t2163
   loser: t1481943
-s168:
+s174:
   series_type: 0
   winner: t720700
   loser: t1531850
-s169:
+s175:
   series_type: 0
   winner: t2163
   loser: t94968
-s170:
-  series_type: 0
-  winner: t367492
-  loser: t720700
-s171:
-  series_type: 0
-  winner: t1481943
-  loser: t1318686
-s172:
-  series_type: 0
-  winner: t1531850
-  loser: t1387750
-s173:
-  series_type: 0
-  winner: t1531850
-  loser: t1318686
-s174:
-  series_type: 0
-  winner: t1481943
-  loser: t1321909
-s175:
-  series_type: 0
-  winner: t367492
-  loser: t94968
 s176:
   series_type: 0
-  winner: t1453020
+  winner: t367492
   loser: t720700
 s177:
   series_type: 0
-  winner: t1321909
-  loser: t94968
+  winner: t1481943
+  loser: t1318686
 s178:
   series_type: 0
-  winner: t1481943
+  winner: t1531850
   loser: t1387750
 s179:
   series_type: 0
   winner: t1531850
-  loser: t1252040
+  loser: t1318686
 s180:
+  series_type: 0
+  winner: t1481943
+  loser: t1321909
+s181:
+  series_type: 0
+  winner: t367492
+  loser: t94968
+s182:
+  series_type: 0
+  winner: t1453020
+  loser: t720700
+s183:
+  series_type: 0
+  winner: t1321909
+  loser: t94968
+s184:
+  series_type: 0
+  winner: t1481943
+  loser: t1387750
+s185:
+  series_type: 0
+  winner: t1531850
+  loser: t1252040
+s186:
   series_type: 0
   winner: t1318686
   loser: t367492
-s181:
+s187:
   series_type: 0
   winner: t1387750
   loser: t367492
-s182:
+s188:
   series_type: 0
   winner: t1252040
   loser: t1453020
-s183:
-  series_type: 0
-  winner: t2163
-  loser: t1321909
-s184:
-  series_type: 0
-  winner: t1531850
-  loser: t94968
-s185:
-  series_type: 0
-  winner: t1252040
-  loser: t367492
-s186:
-  series_type: 0
-  winner: t720700
-  loser: t1321909
-s187:
-  series_type: 0
-  winner: t2163
-  loser: t1318686
-s188:
-  series_type: 0
-  winner: t1453020
-  loser: t1531850
 s189:
   series_type: 0
-  winner: t94968
-  loser: t720700
+  winner: t2163
+  loser: t1321909
 s190:
   series_type: 0
   winner: t1531850
-  loser: t2163
+  loser: t94968
 s191:
+  series_type: 0
+  winner: t1252040
+  loser: t367492
+s192:
+  series_type: 0
+  winner: t720700
+  loser: t1321909
+s193:
+  series_type: 0
+  winner: t2163
+  loser: t1318686
+s194:
+  series_type: 0
+  winner: t1453020
+  loser: t1531850
+s195:
+  series_type: 0
+  winner: t94968
+  loser: t720700
+s196:
+  series_type: 0
+  winner: t1531850
+  loser: t2163
+s197:
   series_type: 0
   winner: t1318686
   loser: t1321909
-s192:
+s198:
   series_type: 0
   winner: t1453020
   loser: t1387750
-s193:
+s199:
   series_type: 0
   winner: t1531850
   loser: t367492
-s194:
+s200:
   series_type: 0
   winner: t2163
   loser: t1252040
-s195:
+s201:
   series_type: 0
   winner: t1453020
   loser: t1318686
-s196:
+s202:
   series_type: 0
   winner: t1481943
   loser: t720700
-s197:
+s203:
   series_type: 0
   winner: t2163
   loser: t1387750
-s198:
+s204:
   series_type: 0
   winner: t1252040
   loser: t1321909
-s199:
+s205:
   series_type: 0
   winner: t94968
   loser: t1318686
-s200:
+s206:
   series_type: 0
   winner: t367492
   loser: t1453020
-s201:
+s207:
   series_type: 0
   winner: t1387750
   loser: t1321909
-s202:
+s208:
   series_type: 0
   winner: t720700
   loser: t1318686
-s203:
+s209:
   series_type: 0
   winner: t94968
   loser: t1481943
-s204:
+s210:
   series_type: 0
   winner: t2163
   loser: t1453020
-s205:
+s211:
   series_type: 0
   winner: t720700
   loser: t1387750
-s206:
+s212:
   series_type: 0
   winner: t1531850
   loser: t1321909
-s207:
+s213:
   series_type: 0
   winner: t2163
   loser: t367492
-s208:
+s214:
   series_type: 0
   winner: t1252040
   loser: t1481943
-s209:
+s215:
   series_type: 0
   winner: t1453020
   loser: t1321909
-s210:
+s216:
   series_type: 0
   winner: t94968
   loser: t1252040
-s211:
+s217:
   series_type: 0
   winner: t1531850
   loser: t1481943
-s212:
+s218:
   series_type: 0
   winner: t1387750
   loser: t1318686
-s213:
+s219:
   series_type: 0
   winner: t367492
   loser: t1321909
-s214:
+s220:
   series_type: 0
   winner: t1387750
   loser: t94968
-s215:
+s221:
   series_type: 0
   winner: t1481943
   loser: t1453020

@@ -1,0 +1,70 @@
+<table>
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Hero</th>
+      <th>Kills</th>
+      <th>Deaths</th>
+      <th>Assists</th>
+      <th>Level</th>
+      <th>GPM</th>
+      <th>XPM</th>
+      <th>Last hits</th>
+      <th>Denies</th>
+      <th>Hero damage</th>
+      <th>Tower damage</th>
+      <th>Hero healing</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  	<tr><td colspan = 13 align = "center">
+    	<strong><%= @match.radiant_team.name %></strong>
+    </td></tr>
+    <% @match.performances[0..4].each do |p| %>
+      <tr>
+      	<% if p.player.user %>
+      		<td><%= p.player.user.name %></td>
+      	<% else %>
+      		<td></td>
+      	<% end %>
+      	<td><%= image_tag(p.hero.small_portrait_url)%></td>
+        <td><%= p.kills %></td>
+        <td><%= p.deaths %></td>
+        <td><%= p.assists %></td>
+        <td><%= p.level %></td>
+        <td><%= p.gpm %></td>
+        <td><%= p.xpm %></td>
+        <td><%= p.last_hits %></td>
+        <td><%= p.denies %></td>
+        <td><%= p.hero_damage %></td>
+        <td><%= p.tower_damage %></td>
+        <td><%= p.hero_healing %></td>
+      </tr>
+    <% end %>
+    <tr><td colspan = 13 align = "center">
+    	<strong><%= @match.dire_team.name %></strong>
+    </td></tr>
+    <% @match.performances[5..9].each do |p| %>
+      <tr>
+      	<% if p.player.user %>
+      		<td><%= p.player.user.name %></td>
+      	<% else %>
+      		<td></td>
+      	<% end %>
+      	<td><%= image_tag(p.hero.small_portrait_url)%></td>
+        <td><%= p.kills %></td>
+        <td><%= p.deaths %></td>
+        <td><%= p.assists %></td>
+        <td><%= p.level %></td>
+        <td><%= p.gpm %></td>
+        <td><%= p.xpm %></td>
+        <td><%= p.last_hits %></td>
+        <td><%= p.denies %></td>
+        <td><%= p.hero_damage %></td>
+        <td><%= p.tower_damage %></td>
+        <td><%= p.hero_healing %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

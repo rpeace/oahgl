@@ -1,14 +1,16 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Team:</strong>
-  <%= @player.team_id %>
+  <h1><%= @player.user.name %></h1>
+</p>
+
+<p>
+  <%= image_tag(@player.team.logo_path) %>
 </p>
 
 <p>
 	<strong>Average Stats:</strong>
 </p>
-
 <table>
   <thead>
     <tr>
