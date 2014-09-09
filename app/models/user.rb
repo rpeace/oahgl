@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
 	has_and_belongs_to_many :heros
 
 	POSITIONS = ['carry', 'mid', 'offlane', 'support']
-  PLAYER_TYPES = ['captain', 'player']
+  PLAYER_TYPES = ['captain', 'player', 'standin']
 
 	# validates_inclusion_of :first_pos, :in => POSITIONS
 	# validates_inclusion_of :second_pos, :in => POSITIONS
