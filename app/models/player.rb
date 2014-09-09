@@ -7,7 +7,7 @@ class Player < ActiveRecord::Base
 
 	 def user
     id64 = self.id.to_i + 76561197960265728
-    @user = User.find_by_uid(id64)
+    @user = User.find_by_uid(id64.to_s)
     if @user != nil
     	return @user
     end
