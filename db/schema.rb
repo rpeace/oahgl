@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140908212804) do
+ActiveRecord::Schema.define(version: 20140909234127) do
 
   create_table "bans", force: true do |t|
     t.integer  "order"
@@ -135,7 +135,7 @@ ActiveRecord::Schema.define(version: 20140908212804) do
     t.integer  "mmr"
     t.string   "email"
     t.string   "provider"
-    t.string   "uid"
+    t.integer  "uid",           limit: 8
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "first_pos"
