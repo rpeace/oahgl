@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
   def player
     # id32 = self.uid.to_i - 76561197960265728
     # return Player.find_by_id(id32)
-    return Player.find_by_id("30600683")
+    return Player.find_by_id(30600683)
   end
 	# before_create :save_steam_fields
   def save_steam_fields(session)
