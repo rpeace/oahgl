@@ -19,7 +19,7 @@
         <td><%= user_steam_state(user) %></td>
         <td><%= user.mmr %></td>
         <td>
-          <% HerosUsers.where(user_id == user.id.to_s).each do |hero_id| %>
+          <% HerosUsers.where(user_id: user.id.to_s).each do |hero_id| %>
             <%= image_tag(Hero.find_by_hero_id(hero_id).small_portrait_url) %>
           <% end %>
         </td>
