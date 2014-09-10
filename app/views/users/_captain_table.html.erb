@@ -19,8 +19,8 @@
         <td><%= user_steam_state(user) %></td>
         <td><%= user.mmr %></td>
         <td>
-          <% HerosUsers.where(user_id: user.id.to_s).each do |hero_id| %>
-            <%= image_tag(Hero.find_by_hero_id(hero_id).small_portrait_url) %>
+          <% HerosUsers.where(user_id: user.id.to_s).each do |hu| %>
+            <%= image_tag(Hero.find_by_id(hu.hero_id.to_i).small_portrait_url) %>
           <% end %>
         </td>
         <td><%=user.first_pos%>, <%=user.second_pos%></td>
