@@ -9,6 +9,10 @@ class Team < ActiveRecord::Base
 	has_many :picks
 	has_many :bans
 
+	def upcoming_matches
+		return FutureMatch.where(team1_id: self.id) + FutureMatch.where(team2_id: self.id)
+	end
+
 	def wins
 		return Match.where(winner_id: self.id).length
 	end

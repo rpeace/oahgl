@@ -3,7 +3,7 @@
   <% if current_user != nil %>
     <% if current_user.player_type == "captain" %>
       <%= render 'captain_table' %>
-    <% else %>   
+    <% else %>
       <%= render 'public_table' %>
     <% end %>
   <% else %>

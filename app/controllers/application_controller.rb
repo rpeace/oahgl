@@ -12,6 +12,17 @@ class ApplicationController < ActionController::Base
 	helper_method :current_user
 	helper_method :user_steam_state
   helper_method :logged_in_as_user
+  helper_method :authenticate_admin_user!
+  helper_method :current_admin_user
+
+  def authenticate_admin_user!
+    if current_user != nil
+      if current_user.uid == "76561197970031959"
+        return true
+      end
+    end
+    return false
+  end
 
   def players_on_same_team(p1, p2)
     t1 = p1.team
@@ -41,6 +52,10 @@ class ApplicationController < ActionController::Base
 
   def logged_in_as_user(user)
     current_user != nil && user.id == current_user.id
+  end
+
+  def current_admin_user
+    return current_user
   end
 
 	def current_user
