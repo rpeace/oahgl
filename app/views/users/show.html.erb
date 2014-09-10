@@ -12,8 +12,8 @@
 
 	<p>
 		<strong>Favourite heroes:</strong>
-		<% HerosUsers.where(:user_id => current_user.id).each do |hu| %>
-			<%= image_tag(Hero.find(hu.hero_id).small_portrait_url) %>
+		<% HerosUsers.where(:user_id => @user.id.to_s).each do |hu| %>
+			<%= image_tag(Hero.find(hu.hero_id.to_i).small_portrait_url) %>
 		<% end %>
 	<p>
 
