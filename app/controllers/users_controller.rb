@@ -55,13 +55,13 @@ class UsersController < ApplicationController
           end
         end
         if params[:first_hero] != ""
-          HerosUsers.find_or_create_by(:hero_id => params[:first_hero], :user_id => @user.id)
+          HerosUsers.find_or_create_by(:hero_id => params[:first_hero], :user_id => @user.id.to_s)
         end
         if params[:second_hero] != ""
-          HerosUsers.find_or_create_by(:hero_id => params[:second_hero], :user_id => @user.id)
+          HerosUsers.find_or_create_by(:hero_id => params[:second_hero], :user_id => @user.id.to_s)
         end
         if params[:third_hero] != ""
-          HerosUsers.find_or_create_by(:hero_id => params[:third_hero], :user_id => @user.id)
+          HerosUsers.find_or_create_by(:hero_id => params[:third_hero], :user_id => @user.id.to_s)
         end
       else
         format.html { render :edit }
