@@ -1,15 +1,53 @@
+<h2>Captains</h2>
 <table>
   <tbody>
     <% @users.each do |user| %>
-      <tr>
-        <td><%= link_to image_tag(user.logo), current_user.steam_profile %></td>
-        <td><%= user.name %></td>
-        <td><%= user_steam_state(user) %></td>
-        <% if logged_in_as_user(user) %>
-          <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <% end %>
-      </tr>
+      <% if user.player_type == "captain" %>
+        <tr>
+          <td><%= link_to image_tag(user.logo), user.steam_profile %></td>
+          <td><%= user.name %></td>
+          <td><%= user_steam_state(user) %></td>
+          <% if logged_in_as_user(user) %>
+            <td><%= link_to 'Edit', edit_user_path(user) %></td>
+          <% end %>
+        </tr>
+      <% end %>
     <% end %>
   </tbody>
 </table>
 
+<h2>Players</h2>
+<table>
+  <tbody>
+    <% @users.each do |user| %>
+      <% if user.player_type == "player" %>
+        <tr>
+          <td><%= link_to image_tag(user.logo), user.steam_profile %></td>
+          <td><%= user.name %></td>
+          <td><%= user_steam_state(user) %></td>
+          <% if logged_in_as_user(user) %>
+            <td><%= link_to 'Edit', edit_user_path(user) %></td>
+          <% end %>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<h2>Standins</h2>
+<table>
+  <tbody>
+    <% @users.each do |user| %>
+      <% if user.player_type == "standin" %>
+        <tr>
+          <td><%= link_to image_tag(user.logo), user.steam_profile %></td>
+          <td><%= user.name %></td>
+          <td><%= user_steam_state(user) %></td>
+          <% if logged_in_as_user(user) %>
+            <td><%= link_to 'Edit', edit_user_path(user) %></td>
+          <% end %>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>

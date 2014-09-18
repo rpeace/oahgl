@@ -80,7 +80,7 @@
   </thead>
   <tbody>
     <% @users.each do |user| %>
-      <% if user.player_type == "player" %>
+      <% if user.player_type == "standin" %>
       <tr>
         <td><%= link_to image_tag(user.logo), user.steam_profile %></td>
         <td><%= user.name %></td>

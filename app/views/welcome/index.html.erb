@@ -2,8 +2,6 @@
 	
 		<br/><br/><center><%= image_tag("oahgl.png") %></center><br/>
 
-		
-
 	<% if not current_user %>
 		<p>
 			<h1><center>Temporary login site</center></h1>
@@ -16,6 +14,12 @@
 	<% else %>
 		<p>
 			<strong><center>Thanks for signing up, and good luck in the league!</center></strong>
+		</p>
+		<p>
+			<%= link_to "Sign Out", signout_path %>
+		</p>
+		<p>
+			<%= link_to "See users", users_path %>
 		</p>
 	<% end %>
 </div>
