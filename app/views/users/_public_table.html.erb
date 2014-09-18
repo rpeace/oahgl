@@ -1,5 +1,14 @@
 <h2>Captains</h2>
 <table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>Steam Status</th>
+      <th>Favourite heroes</th>
+      <th></th>
+    </tr>
+  </thead>
   <tbody>
     <% @users.each do |user| %>
       <% if user.player_type == "captain" %>
@@ -7,6 +16,11 @@
           <td><%= link_to image_tag(user.logo), user.steam_profile %></td>
           <td><%= user.name %></td>
           <td><%= user_steam_state(user) %></td>
+          <td>
+            <% HerosUsers.where(user_id: user.id.to_s).each do |hu| %>
+              <%= image_tag(Hero.find_by_id(hu.hero_id.to_i).small_portrait_url) %>
+            <% end %>
+          </td>
           <% if logged_in_as_user(user) %>
             <td><%= link_to 'Edit', edit_user_path(user) %></td>
           <% end %>
@@ -18,6 +32,15 @@
 
 <h2>Players</h2>
 <table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>Steam Status</th>
+      <th>Favourite heroes</th>
+      <th></th>
+    </tr>
+  </thead>
   <tbody>
     <% @users.each do |user| %>
       <% if user.player_type == "player" %>
@@ -25,6 +48,11 @@
           <td><%= link_to image_tag(user.logo), user.steam_profile %></td>
           <td><%= user.name %></td>
           <td><%= user_steam_state(user) %></td>
+          <td>
+            <% HerosUsers.where(user_id: user.id.to_s).each do |hu| %>
+              <%= image_tag(Hero.find_by_id(hu.hero_id.to_i).small_portrait_url) %>
+            <% end %>
+          </td>
           <% if logged_in_as_user(user) %>
             <td><%= link_to 'Edit', edit_user_path(user) %></td>
           <% end %>
@@ -36,6 +64,15 @@
 
 <h2>Standins</h2>
 <table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>Steam Status</th>
+      <th>Favourite heroes</th>
+      <th></th>
+    </tr>
+  </thead>
   <tbody>
     <% @users.each do |user| %>
       <% if user.player_type == "standin" %>
@@ -43,6 +80,11 @@
           <td><%= link_to image_tag(user.logo), user.steam_profile %></td>
           <td><%= user.name %></td>
           <td><%= user_steam_state(user) %></td>
+          <td>
+            <% HerosUsers.where(user_id: user.id.to_s).each do |hu| %>
+              <%= image_tag(Hero.find_by_id(hu.hero_id.to_i).small_portrait_url) %>
+            <% end %>
+          </td>
           <% if logged_in_as_user(user) %>
             <td><%= link_to 'Edit', edit_user_path(user) %></td>
           <% end %>

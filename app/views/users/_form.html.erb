@@ -27,25 +27,19 @@
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :player_type, "Are you joining the league as a captain or a player?" %><br>
+    <%= f.label :player_type, "Are you a captain, player, or standin?" %><br>
     <%= select("user", "player_type", User::PLAYER_TYPES, {include_blank: 'Select a position'}) %>
   </div>
   <p>
   <p>
-    Select your first- and second-favourite positions
-  </p>
-  <p>
-    Favourite position:
+    Select the positions that you would most like to play in the league
   </p>
   <div class="field">
-    <%= f.label :first_pos %><br>
+    <%= f.label :first_pos, "Favourite position" %><br>
     <%= select("user", "first_pos", User::POSITIONS, {include_blank: 'Select a position'}) %>
   </div>
-  <p>
-    Second favourite position:
-  </p>
   <div class="field">
-    <%= f.label :second_pos %><br>
+    <%= f.label :second_pos, "Second-favourite position" %><br>
     <%= select("user", "second_pos", User::POSITIONS, {include_blank: 'Select a position'}) %>
   </div>
   <p>
