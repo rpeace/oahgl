@@ -46,9 +46,9 @@
     Favourite heroes:
   </p>
   <div class="field">
-    <%= select_tag(:first_hero, options_from_collection_for_select(Hero.all, :id, :lname) ) %>
-    <%= select_tag(:second_hero, options_from_collection_for_select(Hero.all, :id, :lname) ) %>
-    <%= select_tag(:third_hero, options_from_collection_for_select(Hero.all, :id, :lname) ) %>
+    <%= select_tag(:first_hero, options_from_collection_for_select(Hero.all.order(:lname), :id, :lname) ) %>
+    <%= select_tag(:second_hero, options_from_collection_for_select(Hero.all.order(:lname), :id, :lname) ) %>
+    <%= select_tag(:third_hero, options_from_collection_for_select(Hero.all.order(:lname), :id, :lname) ) %>
   </div>
   
   <div class="actions">
