@@ -32,7 +32,7 @@
       <th>Hero damage</th>
       <th>Tower damage</th>
       <th>Hero healing</th>
-      <th colspan="3"></th>
+      <th colspan></th>
     </tr>
   </thead>
 
@@ -51,8 +51,6 @@
         <td><%= performance.tower_damage %></td>
         <td><%= performance.hero_healing %></td>
         <td><%= link_to 'Show', performance %></td>
-        <td><%= link_to 'Edit', edit_performance_path(performance) %></td>
-        <td><%= link_to 'Destroy', performance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

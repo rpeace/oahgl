@@ -3,7 +3,7 @@
 <table>
   <thead>
     <tr>
-      <th colspan="3"></th>
+      <th></th>
     </tr>
   </thead>
 
@@ -11,8 +11,6 @@
     <% @player_roles.each do |player_role| %>
       <tr>
         <td><%= link_to 'Show', player_role %></td>
-        <td><%= link_to 'Edit', edit_player_role_path(player_role) %></td>
-        <td><%= link_to 'Destroy', player_role, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

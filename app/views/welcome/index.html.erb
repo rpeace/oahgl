@@ -1,4 +1,26 @@
-	<div id="stats" style=float:left>
+<div id="temp" style="width:800px; margin:0 auto;">
+	
+		<br/><br/><center><%= image_tag("oahgl.png") %></center><br/>
+
+		
+
+	<% if not current_user %>
+		<p>
+			<h1><center>Temporary login site</center></h1>
+		</p>
+		<p>
+			Hey everyone, the OAHGL site is still under construction (clearly) (unveiling soon) but I need all captains, players and standins to log in with your Steam ID and then fill out a short questionnaire. It'll take, like, a minute total, so please hit this button down here:
+		<p><br/>
+			<center><%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_large_noborder.png"), '/auth/steam' %></center>
+			
+	<% else %>
+		<p>
+			<strong><center>Thanks for signing up, and good luck in the league!</center></strong>
+		</p>
+	<% end %>
+</div>
+
+<!-- 	<div id="stats" style=float:left>
 		<h1>RANDOM LEAGUE STATS!</h1>
 		<p>
 			<strong>Most picked heros:</strong><br />
@@ -46,11 +68,11 @@
 		</div>
 	<% end %>
 
-</div>
+</div> -->
 
 
 
-<div id="login" style=float:right>
+<!-- <div id="login" style=float:right>
 	<h1>WHO U R</h1><br>
 	<% if current_user %>
 		<%= link_to image_tag(current_user.logo), current_user.steam_profile %>
@@ -60,5 +82,5 @@
 	<% else %>
 		<%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_large_noborder.png"), '/auth/steam' %>
 	<% end %>
-</div>
+</div> -->
 
