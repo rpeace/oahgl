@@ -50,7 +50,7 @@ class UsersController < ApplicationController
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { render :show, status: :ok, location: @user }
         if params[:first_hero] != "" or params[:second_hero] != "" or params[:third_hero] != ""
-          HerosUsers.where(:user_id => @user.id).each do |hu|
+          HerosUsers.where(:user_id => @user.id.to_s).each do |hu|
             hu.destroy
           end
         end
