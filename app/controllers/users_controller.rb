@@ -29,7 +29,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.html { redirect_to root_path, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
         session[:user_id] = @user.id
         HerosUsers.create(:hero_id => params[:first_hero], :user_id => @user.id)
@@ -47,7 +47,7 @@ class UsersController < ApplicationController
   def update
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+        format.html { redirect_to root_path, notice: 'User was successfully updated.' }
         format.json { render :show, status: :ok, location: @user }
         if params[:first_hero] != "" or params[:second_hero] != "" or params[:third_hero] != ""
           HerosUsers.where(:user_id => @user.id.to_s).each do |hu|
