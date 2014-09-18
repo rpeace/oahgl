@@ -6,7 +6,6 @@
       <th>Name</th>
       <th>Steam Status</th>
       <th>Favourite heroes</th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -21,9 +20,6 @@
               <%= image_tag(Hero.find_by_id(hu.hero_id.to_i).small_portrait_url) %>
             <% end %>
           </td>
-          <% if logged_in_as_user(user) %>
-            <td><%= link_to 'Edit', edit_user_path(user) %></td>
-          <% end %>
         </tr>
       <% end %>
     <% end %>
@@ -38,7 +34,6 @@
       <th>Name</th>
       <th>Steam Status</th>
       <th>Favourite heroes</th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -53,9 +48,6 @@
               <%= image_tag(Hero.find_by_id(hu.hero_id.to_i).small_portrait_url) %>
             <% end %>
           </td>
-          <% if logged_in_as_user(user) %>
-            <td><%= link_to 'Edit', edit_user_path(user) %></td>
-          <% end %>
         </tr>
       <% end %>
     <% end %>
@@ -70,7 +62,6 @@
       <th>Name</th>
       <th>Steam Status</th>
       <th>Favourite heroes</th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -85,9 +76,6 @@
               <%= image_tag(Hero.find_by_id(hu.hero_id.to_i).small_portrait_url) %>
             <% end %>
           </td>
-          <% if logged_in_as_user(user) %>
-            <td><%= link_to 'Edit', edit_user_path(user) %></td>
-          <% end %>
         </tr>
       <% end %>
     <% end %>

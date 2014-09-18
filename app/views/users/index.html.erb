@@ -1,6 +1,8 @@
+
 <h1>Listing users</h1>
 
   <% if current_user != nil %>
+  	<td><%= link_to 'Edit my info', edit_user_path(current_user) %></td>
     <% if current_user.player_type == "captain" %>
       <%= render 'captain_table' %>
     <% else %>
