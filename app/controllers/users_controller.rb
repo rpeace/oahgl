@@ -35,7 +35,6 @@ class UsersController < ApplicationController
         HerosUsers.create(:hero_id => params[:first_hero], :user_id => @user.id)
         HerosUsers.create(:hero_id => params[:second_hero], :user_id => @user.id)
         HerosUsers.create(:hero_id => params[:third_hero], :user_id => @user.id)
-        PlayerRole.create(:user_id => @user.id, :role => @user.player_type)
       else
         format.html { render :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }
@@ -50,9 +49,20 @@ class UsersController < ApplicationController
       if @user.update(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { render :show, status: :ok, location: @user }
-        HerosUsers.find_or_create_by(:hero_id => params[:first_hero], :user_id => @user.id)
-        HerosUsers.find_or_create_by(:hero_id => params[:second_hero], :user_id => @user.id)
-        HerosUsers.find_or_create_by(:hero_id => params[:third_hero], :user_id => @user.id)
+        if params[:first_hero] != "" or params[:second_hero] != "" or params[:third_hero] != ""
+          HerosUsers.where(:user_id => @user.id).each do |hu|
+            hu.destroy
+          end
+        end
+        if params[:first_hero] != ""
+          HerosUsers.find_or_create_by(:hero_id => params[:first_hero], :user_id => @user.id)
+        end
+        if params[:second_hero] != ""
+          HerosUsers.find_or_create_by(:hero_id => params[:second_hero], :user_id => @user.id)
+        end
+        if params[:third_hero] != ""
+          HerosUsers.find_or_create_by(:hero_id => params[:third_hero], :user_id => @user.id)
+        end
       else
         format.html { render :edit }
         format.json { render json: @user.errors, status: :unprocessable_entity }
